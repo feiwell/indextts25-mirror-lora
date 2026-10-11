@@ -1,0 +1,471 @@
+{
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "text": "清晨，许宁走进社区活动室的时候，里面还没有开灯。窗外的雨刚刚停，玻璃上留着几道细细的水痕。她把背包放在门边，打开靠近墙角的灯，桌上的纸箱便显出了原来的颜色。箱子里装着旧照片、几本笔记，还有一张已经折过很多次的街区地图。今天，她要和几位邻居一起整理这些东西，为周末的社区展览做准备。",
+      "path": "paragraph-01.wav",
+      "duration_seconds": 31.779138321995465,
+      "opening_pcm_identical": true
+    },
+    {
+      "paragraph": 2,
+      "text": "最先来的邻居姓周，大家平时叫他周叔。他端着一杯热茶，站在门口看了看，问道，这么多材料，真的能在两天里整理完吗？许宁笑着说，先把能确定的部分挑出来，剩下的可以留一个位置，请来看展览的人帮忙补充。周叔点点头，放下茶杯，从箱子里拿出一张照片。照片上是一条窄窄的小路，两边没有现在这么多商店，只有几棵树和一间修自行车的小铺。",
+      "path": "paragraph-02.wav",
+      "seed": 20261023,
+      "duration_seconds": 34.762902494331065,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 120,
+          "target_frames": 2126
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 42,
+          "target_frames": 851
+        }
+      ],
+      "inference_seconds": 28.31358458500108
+    },
+    {
+      "paragraph": 3,
+      "text": "周叔说，他小时候每天从这条路去学校，走到拐角，总会听见打气筒的声音。修车的师傅很少抬头说话，但看见孩子的轮胎瘪了，常常会招手让他们停下来。许宁把这段话记在纸上，又问，您还记得那位师傅的名字吗？周叔想了很久，摇摇头，说，大家都喊他师傅，好像没有谁认真问过名字。他说完以后，把照片放回桌上，神情有一点遗憾。",
+      "path": "paragraph-03.wav",
+      "seed": 20261024,
+      "duration_seconds": 34.159183673469386,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 119,
+          "target_frames": 2198
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 36,
+          "target_frames": 727
+        }
+      ],
+      "inference_seconds": 26.877403328999208
+    },
+    {
+      "paragraph": 4,
+      "text": "过了一会儿，隔壁楼的阿姨也来了。她带着一个透明的文件袋，里面是几封旧信和一张手写的菜谱。她解释说，这些东西看起来不算特别珍贵，可是当年搬到这里的时候，附近的邻居经常照着这张菜谱一起做饭。谁家的孩子放学早，就先到有人在家的那一户等着。那时候大家都忙，门口却总能找到一个愿意帮忙的人。",
+      "path": "paragraph-04.wav",
+      "seed": 20261025,
+      "duration_seconds": 29.840272108843536,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 118,
+          "target_frames": 2077
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 26,
+          "target_frames": 476
+        }
+      ],
+      "inference_seconds": 23.288075146001574
+    },
+    {
+      "paragraph": 5,
+      "text": "许宁听着这些故事，原来写好的展览标题忽然显得太大了。她原本想介绍街区的发展，准备按年代排出一条长长的时间线。现在她发现，真正让人停下来看的，可能是一张普通的照片，或是一句只在某个家庭里记得的话。她把时间线挪到旁边，另取一张白纸，写下照片中的路、门口的饭香和放学后的等待，准备把这些小事分别整理出来。",
+      "path": "paragraph-05.wav",
+      "seed": 20261026,
+      "duration_seconds": 34.7512925170068,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 116,
+          "target_frames": 2217
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 37,
+          "target_frames": 759
+        }
+      ],
+      "inference_seconds": 26.90845233500113
+    },
+    {
+      "paragraph": 6,
+      "text": "上午快结束的时候，一个背着书包的男孩在门口探了探头。他说老师布置了一个作业，要采访家附近的老人，了解一件过去发生的事。周叔把椅子往旁边挪了挪，请他坐下。男孩打开本子，第一句话就问，您觉得以前的生活更好，还是现在更好？屋子里安静了一瞬，周叔笑了，说，这个问题太难了，以前有以前的难处，现在也有现在的不方便，不如先问问我们当时怎么过一天。",
+      "path": "paragraph-06.wav",
+      "seed": 20261027,
+      "duration_seconds": 36.016780045351474,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 119,
+          "target_frames": 2009
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 52,
+          "target_frames": 1076
+        }
+      ],
+      "inference_seconds": 27.860874930000136
+    },
+    {
+      "paragraph": 7,
+      "text": "男孩想了想，把问题改成了，您小时候最喜欢一天里的哪个时候？周叔说，是夏天吃过晚饭以后，大家搬着小凳子坐到门外。有的人聊工作，有的人修东西，孩子在旁边跑来跑去。街灯没有那么亮，可是走到哪一段，都知道门后住着谁。男孩一边听一边写，偶尔抬头追问。许宁没有打断他们，只把窗户开了一点，让屋子里的空气更清爽一些。",
+      "path": "paragraph-07.wav",
+      "seed": 20261028,
+      "duration_seconds": 32.16226757369615,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 115,
+          "target_frames": 1997
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 40,
+          "target_frames": 756
+        }
+      ],
+      "inference_seconds": 24.92145554200033
+    },
+    {
+      "paragraph": 8,
+      "text": "下午，整理工作遇到了一个小问题。两张照片的背面写着不同的年份，画面里却出现了同一块刚换好的招牌。许宁没有急着把其中一张判成错误，而是把两张并排放好，贴上需要核实的纸条。阿姨说，也许写日期的人记错了，也许照片洗出来的时候已经过了一年。周叔建议，等隔壁修表店的老板来看看，他对那块招牌应该还有印象。",
+      "path": "paragraph-08.wav",
+      "seed": 20261029,
+      "duration_seconds": 32.70793650793651,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 118,
+          "target_frames": 2168
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 33,
+          "target_frames": 632
+        }
+      ],
+      "inference_seconds": 25.03082573500069
+    },
+    {
+      "paragraph": 9,
+      "text": "天色慢慢暗下来，几张桌子终于整理出空隙。许宁把确定的信息贴到展板上，又留了几个空白位置。男孩临走前看着那些空白，问，是不是还有很多事情不知道？许宁回答说，是啊，这也是展览的一部分。我们不一定能把每个名字和日期都找回来，但可以把已经知道的认真保存，也让后来的人有机会补上新的线索。男孩点点头，说周末会带奶奶一起来。",
+      "path": "paragraph-09.wav",
+      "seed": 20261030,
+      "duration_seconds": 35.76136054421769,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 111,
+          "target_frames": 2141
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 49,
+          "target_frames": 922
+        }
+      ],
+      "inference_seconds": 27.868067756000528
+    },
+    {
+      "paragraph": 10,
+      "text": "锁门之前，许宁又看了一眼最早拿出来的街区地图。上面有几条路已经改了名字，还有一些小店早就不在了。可是今天听到的声音，让那些地方重新有了具体的样子。她没有再改展览的标题，只在下面加了一行很小的字，写着这些故事还在继续。走出活动室的时候，路边有人正收起雨伞。许宁向对方点了点头，沿着熟悉的小路慢慢往家走。",
+      "path": "paragraph-10.wav",
+      "seed": 20261031,
+      "duration_seconds": 33.13750566893424,
+      "controls": [
+        {
+          "index": 0,
+          "factor": 1.1,
+          "text_tokens": 119,
+          "target_frames": 2107
+        },
+        {
+          "index": 1,
+          "factor": 0.948,
+          "text_tokens": 35,
+          "target_frames": 730
+        }
+      ],
+      "inference_seconds": 25.796940064999944
+    }
+  ],
+  "segments": [
+    {
+      "paragraph": 1,
+      "segment": 1,
+      "text": "清晨,许宁走进社区活动室的时候,里面还没有开灯.窗外的雨刚刚停,玻璃上留着几道细细的水痕.她把背包放在门边,打开靠近墙角的灯,桌上的纸箱便显出了原来的颜色.箱子里装着旧照片,几本笔记,还有一张已经折过很多次的街区地图.今天,",
+      "path": "segments/p01-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 114,
+      "start_seconds": 0.0,
+      "duration_seconds": 24.241632653061224,
+      "finite": true,
+      "clipping_ratio": 0.0006379460009578544,
+      "source": "User-approved opening, exact original PCM"
+    },
+    {
+      "paragraph": 1,
+      "segment": 2,
+      "text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备.",
+      "path": "segments/p01-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 30,
+      "start_seconds": 24.441632653061223,
+      "duration_seconds": 7.337505668934241,
+      "finite": true,
+      "clipping_ratio": 0.0009271162974683544,
+      "source": "User-approved opening, exact original PCM"
+    },
+    {
+      "paragraph": 2,
+      "segment": 1,
+      "text": "最先来的邻居姓周,大家平时叫他周叔.他端着一杯热茶,站在门口看了看,问道,这么多材料,真的能在两天里整理完吗?许宁笑着说,先把能确定的部分挑出来,剩下的可以留一个位置,请来看展览的人帮忙补充.周叔点点头,放下茶杯,从箱子里拿出一张照片.",
+      "path": "segments/p02-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 120,
+      "start_seconds": 31.979138321995464,
+      "duration_seconds": 24.68281179138322,
+      "finite": true,
+      "clipping_ratio": 0.0009664569614299154,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 2,
+      "segment": 2,
+      "text": "照片上是一条窄窄的小路,两边没有现在这么多商店,只有几棵树和一间修自行车的小铺.",
+      "path": "segments/p02-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 42,
+      "start_seconds": 56.86195011337868,
+      "duration_seconds": 9.880090702947847,
+      "finite": true,
+      "clipping_ratio": 0.0001744271445358402,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 3,
+      "segment": 1,
+      "text": "周叔说,他小时候每天从这条路去学校,走到拐角,总会听见打气筒的声音.修车的师傅很少抬头说话,但看见孩子的轮胎瘪了,常常会招手让他们停下来.许宁把这段话记在纸上,又问,您还记得那位师傅的名字吗?周叔想了很久,摇摇头,说,大家都喊他师傅,",
+      "path": "segments/p03-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 119,
+      "start_seconds": 66.94204081632653,
+      "duration_seconds": 25.518730158730158,
+      "finite": true,
+      "clipping_ratio": 0.0007517487488626024,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 3,
+      "segment": 2,
+      "text": "好像没有谁认真问过名字.他说完以后,把照片放回桌上,神情有一点遗憾.",
+      "path": "segments/p03-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 36,
+      "start_seconds": 92.66077097505669,
+      "duration_seconds": 8.440453514739229,
+      "finite": true,
+      "clipping_ratio": 0.00014507393397524072,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 4,
+      "segment": 1,
+      "text": "过了一会儿,隔壁楼的阿姨也来了.她带着一个透明的文件袋,里面是几封旧信和一张手写的菜谱.她解释说,这些东西看起来不算特别珍贵,可是当年搬到这里的时候,附近的邻居经常照着这张菜谱一起做饭.谁家的孩子放学早,就先到有人在家的那一户等着.",
+      "path": "segments/p04-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 118,
+      "start_seconds": 101.30122448979591,
+      "duration_seconds": 24.11392290249433,
+      "finite": true,
+      "clipping_ratio": 0.0013992537313432835,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 4,
+      "segment": 2,
+      "text": "那时候大家都忙,门口却总能找到一个愿意帮忙的人.",
+      "path": "segments/p04-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 26,
+      "start_seconds": 125.61514739229025,
+      "duration_seconds": 5.526349206349207,
+      "finite": true,
+      "clipping_ratio": 3.282563025210084e-05,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 5,
+      "segment": 1,
+      "text": "许宁听着这些故事,原来写好的展览标题忽然显得太大了.她原本想介绍街区的发展,准备按年代排出一条长长的时间线.现在她发现,真正让人停下来看的,可能是一张普通的照片,或是一句只在某个家庭里记得的话.她把时间线挪到旁边,另取一张白纸,",
+      "path": "segments/p05-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 116,
+      "start_seconds": 131.34149659863945,
+      "duration_seconds": 25.739319727891157,
+      "finite": true,
+      "clipping_ratio": 0.0005391576454668471,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 5,
+      "segment": 2,
+      "text": "写下照片中的路,门口的饭香和放学后的等待,准备把这些小事分别整理出来.",
+      "path": "segments/p05-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 37,
+      "start_seconds": 157.2808163265306,
+      "duration_seconds": 8.811972789115647,
+      "finite": true,
+      "clipping_ratio": 0.00018013010540184453,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 6,
+      "segment": 1,
+      "text": "上午快结束的时候,一个背着书包的男孩在门口探了探头.他说老师布置了一个作业,要采访家附近的老人,了解一件过去发生的事.周叔把椅子往旁边挪了挪,请他坐下.男孩打开本子,第一句话就问,您觉得以前的生活更好,还是现在更好?屋子里安静了一瞬,",
+      "path": "segments/p06-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 119,
+      "start_seconds": 166.29278911564626,
+      "duration_seconds": 23.324444444444445,
+      "finite": true,
+      "clipping_ratio": 0.0003169331757093081,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 6,
+      "segment": 2,
+      "text": "周叔笑了,说,这个问题太难了,以前有以前的难处,现在也有现在的不方便,不如先问问我们当时怎么过一天.",
+      "path": "segments/p06-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 52,
+      "start_seconds": 189.8172335600907,
+      "duration_seconds": 12.49233560090703,
+      "finite": true,
+      "clipping_ratio": 0.0008240880576208179,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 7,
+      "segment": 1,
+      "text": "男孩想了想,把问题改成了,您小时候最喜欢一天里的哪个时候?周叔说,是夏天吃过晚饭以后,大家搬着小凳子坐到门外.有的人聊工作,有的人修东西,孩子在旁边跑来跑去.街灯没有那么亮,可是走到哪一段,都知道门后住着谁.男孩一边听一边写,",
+      "path": "segments/p07-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 115,
+      "start_seconds": 202.50956916099773,
+      "duration_seconds": 23.18512471655329,
+      "finite": true,
+      "clipping_ratio": 0.00044402541311967954,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 7,
+      "segment": 2,
+      "text": "偶尔抬头追问.许宁没有打断他们,只把窗户开了一点,让屋子里的空气更清爽一些.",
+      "path": "segments/p07-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 40,
+      "start_seconds": 225.89469387755102,
+      "duration_seconds": 8.777142857142858,
+      "finite": true,
+      "clipping_ratio": 0.00018601190476190475,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 8,
+      "segment": 1,
+      "text": "下午,整理工作遇到了一个小问题.两张照片的背面写着不同的年份,画面里却出现了同一块刚换好的招牌.许宁没有急着把其中一张判成错误,而是把两张并排放好,贴上需要核实的纸条.阿姨说,也许写日期的人记错了,也许照片洗出来的时候已经过了一年.",
+      "path": "segments/p08-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 118,
+      "start_seconds": 234.8718367346939,
+      "duration_seconds": 25.170430839002268,
+      "finite": true,
+      "clipping_ratio": 0.0009405269833948339,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 8,
+      "segment": 2,
+      "text": "周叔建议,等隔壁修表店的老板来看看,他对那块招牌应该还有印象.",
+      "path": "segments/p08-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 33,
+      "start_seconds": 260.24226757369615,
+      "duration_seconds": 7.337505668934241,
+      "finite": true,
+      "clipping_ratio": 0.0005624505537974683,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 9,
+      "segment": 1,
+      "text": "天色慢慢暗下来,几张桌子终于整理出空隙.许宁把确定的信息贴到展板上,又留了几个空白位置.男孩临走前看着那些空白,问,是不是还有很多事情不知道?许宁回答说,是啊,这也是展览的一部分.我们不一定能把每个名字和日期都找回来,",
+      "path": "segments/p09-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 111,
+      "start_seconds": 267.77977324263037,
+      "duration_seconds": 24.856961451247166,
+      "finite": true,
+      "clipping_ratio": 0.0002919196637085474,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 9,
+      "segment": 2,
+      "text": "但可以把已经知道的认真保存,也让后来的人有机会补上新的线索.男孩点点头,说周末会带奶奶一起来.",
+      "path": "segments/p09-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 49,
+      "start_seconds": 292.83673469387753,
+      "duration_seconds": 10.704399092970522,
+      "finite": true,
+      "clipping_ratio": 0.00032622695227765727,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 10,
+      "segment": 1,
+      "text": "锁门之前,许宁又看了一眼最早拿出来的街区地图.上面有几条路已经改了名字,还有一些小店早就不在了.可是今天听到的声音,让那些地方重新有了具体的样子.她没有再改展览的标题,只在下面加了一行很小的字,写着这些故事还在继续.走出活动室的时候,",
+      "path": "segments/p10-s01.wav",
+      "duration_factor": 1.1,
+      "text_tokens": 119,
+      "start_seconds": 303.7411337868481,
+      "duration_seconds": 24.462222222222223,
+      "finite": true,
+      "clipping_ratio": 0.0003448327005220693,
+      "source": "Native synthesis with per-segment length control"
+    },
+    {
+      "paragraph": 10,
+      "segment": 2,
+      "text": "路边有人正收起雨伞.许宁向对方点了点头,沿着熟悉的小路慢慢往家走.",
+      "path": "segments/p10-s02.wav",
+      "duration_factor": 0.948,
+      "text_tokens": 35,
+      "start_seconds": 328.4033560090703,
+      "duration_seconds": 8.475283446712018,
+      "finite": true,
+      "clipping_ratio": 0.0005351027397260274,
+      "source": "Native synthesis with per-segment length control"
+    }
+  ]
+}

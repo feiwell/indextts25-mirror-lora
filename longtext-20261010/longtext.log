@@ -1,0 +1,301 @@
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  1.1839415179997559
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:46:07,131 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:46:07,131 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:46:07,131 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:46:07,625 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:46:07,625 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:46:07,625 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天早上,我比平时提前半个小时出门.街边的早餐店刚刚开门,老板正在把热腾腾的包子放进蒸笼.我买了一杯豆浆,沿着河边慢慢走到地铁站.原本以为这个时间会很拥挤,没想到车厢里还有几个空位.到了公司以后,我先整理了昨天的会议记录,再把需要确认的问题发给同事.忙完这些事情,窗外的阳光正好照在桌面上,一天就这样开始了.
+Use the specified emotion vector
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.53.0. You should pass an instance of `Cache` instead, e.g. `past_key_values=DynamicCache.from_legacy_cache(past_key_values)`.
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:03,  7.89it/s] 20%|██        | 5/25 [00:00<00:00, 21.80it/s] 32%|███▏      | 8/25 [00:00<00:00, 22.63it/s] 44%|████▍     | 11/25 [00:00<00:00, 23.00it/s] 56%|█████▌    | 14/25 [00:00<00:00, 23.21it/s] 68%|██████▊   | 17/25 [00:00<00:00, 23.33it/s] 80%|████████  | 20/25 [00:00<00:00, 23.39it/s] 92%|█████████▏| 23/25 [00:01<00:00, 23.44it/s]100%|██████████| 25/25 [00:01<00:00, 22.68it/s]
+torch.Size([1, 466688])
+SEGMENT COMPLETE baseline 01 1
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 12%|█▏        | 3/25 [00:00<00:00, 26.63it/s] 32%|███▏      | 8/25 [00:00<00:00, 35.42it/s] 48%|████▊     | 12/25 [00:00<00:00, 36.89it/s] 64%|██████▍   | 16/25 [00:00<00:00, 37.62it/s] 80%|████████  | 20/25 [00:00<00:00, 38.05it/s] 96%|█████████▌| 24/25 [00:00<00:00, 38.32it/s]100%|██████████| 25/25 [00:00<00:00, 37.22it/s]
+torch.Size([1, 249088])
+SEGMENT COMPLETE baseline 01 2
+>> gpt_gen_time: 17.09 seconds
+>> s2mel_time: 1.80 seconds
+>> bigvgan_time: 0.44 seconds
+>> Total inference time: 20.55 seconds
+>> Generated audio length: 32.66 seconds
+>> RTF: 0.6290
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/longtext-20261010/audio/baseline/01.wav
+LONGTEXT COMPLETE baseline 01 32.66149659863945
+>> starting inference...
+text after normalization: 准备一次周末旅行,不一定要安排得特别复杂.首先,想清楚自己更喜欢安静的地方,还是热闹的街区.如果只是想休息,可以选择离家不远的小镇,留出足够的时间散步和吃饭. 其次,提前查看天气和交通情况.遇到下雨,不妨把室外活动换成博物馆或书店,如果火车票已经售完,也可以调整出发时间,不必为了赶路把整个行程排得太满. 整理行李的时候,把证件,充电器和常用药放在容易找到的位置.衣服够用就好,带得太多,反而会让路上变得不方便.同行的人如果有不同的想法,最好在出发之前聊一聊,决定哪些事情一起做,哪些时间可以各自安排. 最后,给计划留一点空白.也许你会遇见一家喜欢的小店,或者发现一条原来不知道的步道.旅行的乐趣,往往就藏在这些没有提前写进清单的时刻里.回来的路上,记得检查随身物品,也给自己留一点整理心情的时间.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:05,  4.38it/s] 20%|██        | 5/25 [00:00<00:01, 15.14it/s] 28%|██▊       | 7/25 [00:00<00:01, 16.52it/s] 36%|███▌      | 9/25 [00:00<00:00, 17.58it/s] 48%|████▊     | 12/25 [00:00<00:00, 18.59it/s] 60%|██████    | 15/25 [00:00<00:00, 19.12it/s] 72%|███████▏  | 18/25 [00:01<00:00, 19.45it/s] 84%|████████▍ | 21/25 [00:01<00:00, 19.66it/s] 96%|█████████▌| 24/25 [00:01<00:00, 19.79it/s]100%|██████████| 25/25 [00:01<00:00, 18.13it/s]
+torch.Size([1, 540672])
+SEGMENT COMPLETE baseline 02 1
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 30.24it/s] 32%|███▏      | 8/25 [00:00<00:00, 25.29it/s] 44%|████▍     | 11/25 [00:00<00:00, 24.26it/s] 56%|█████▌    | 14/25 [00:00<00:00, 23.72it/s] 68%|██████▊   | 17/25 [00:00<00:00, 23.39it/s] 80%|████████  | 20/25 [00:00<00:00, 23.17it/s] 92%|█████████▏| 23/25 [00:00<00:00, 23.03it/s]100%|██████████| 25/25 [00:01<00:00, 23.68it/s]
+torch.Size([1, 491264])
+SEGMENT COMPLETE baseline 02 2
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 33.47it/s] 32%|███▏      | 8/25 [00:00<00:00, 27.73it/s] 44%|████▍     | 11/25 [00:00<00:00, 26.81it/s] 56%|█████▌    | 14/25 [00:00<00:00, 26.31it/s] 68%|██████▊   | 17/25 [00:00<00:00, 26.00it/s] 80%|████████  | 20/25 [00:00<00:00, 25.81it/s] 92%|█████████▏| 23/25 [00:00<00:00, 25.68it/s]100%|██████████| 25/25 [00:00<00:00, 26.32it/s]
+torch.Size([1, 441088])
+SEGMENT COMPLETE baseline 02 3
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 53.01it/s] 48%|████▊     | 12/25 [00:00<00:00, 54.48it/s] 72%|███████▏  | 18/25 [00:00<00:00, 55.04it/s] 96%|█████████▌| 24/25 [00:00<00:00, 55.30it/s]100%|██████████| 25/25 [00:00<00:00, 55.00it/s]
+torch.Size([1, 110848])
+SEGMENT COMPLETE baseline 02 4
+>> gpt_gen_time: 37.54 seconds
+>> s2mel_time: 3.89 seconds
+>> bigvgan_time: 0.74 seconds
+>> Total inference time: 42.68 seconds
+>> Generated audio length: 72.43 seconds
+>> RTF: 0.5893
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/longtext-20261010/audio/baseline/02.wav
+LONGTEXT COMPLETE baseline 02 72.43092970521542
+>> starting inference...
+text after normalization: 傍晚的时候,林然来到那家开在街角的旧书店.门口挂着一只铜铃,她轻轻推开门,铃声就在安静的屋子里响了起来.老板正在柜台后面整理书签,抬头看见她,笑着说,今天比上次来得早一些.林然点点头,把雨伞收好,回答说,下午的事情提前做完了,想来找一本适合周末读的书. 她沿着靠窗的书架慢慢往里面走.那里放着旅行随笔,短篇小说,还有几本已经很久没有再版的画册.一本浅绿色封面的书吸引了她的注意.翻开第一页,里面夹着一张小小的车票,日期已经模糊,只能看清终点站的名字.她把车票拿给老板看,问这是不是上一位读者忘记取走的东西. 老板想了一会儿,说,这本书是附近一位老师送来的.他以前喜欢坐火车去不同的城市,每到一个地方,就会找一家书店,买一本书留作纪念.后来搬家,装不下那么多东西,便把一部分送到了这里.也许这张车票,就是某一次旅行留下来的. 林然重新坐到窗边的椅子上,读了几页.书里写的是一位年轻人第一次独自出门的经历,没有惊险的冒险,也没有特别宏大的道理,只是一些关于问路,等车和认识陌生人的小事.她忽然想起,自己也曾经因为害怕走错路,放弃过一个计划了很久的行程.现在回头看,那些担心似乎并没有当时想象得那么严重. 外面的雨渐渐停了,街上亮起一盏又一盏灯.老板给她倒了一杯温水,说,不用着急,今天可以晚一点关门.林然笑了笑,继续往下读.读到最后一章的时候,她已经决定,下个月找一个空闲的周末,去看看车票上写着的那座城市. 离开书店之前,她买下了这本书,却把旧车票留在柜台上.她对老板说,如果那位老师以后再回来,也许还会想起这段旅程.老板把车票夹进一个透明的小袋子,认真地点了点头.走出门的时候,空气里还有雨后的凉意.林然没有立刻回家,而是沿着街道多走了一会儿.她觉得,有些变化并不需要很大的理由,只要从一个小小的决定开始就够了.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 28.34it/s] 28%|██▊       | 7/25 [00:00<00:00, 24.23it/s] 40%|████      | 10/25 [00:00<00:00, 22.97it/s] 52%|█████▏    | 13/25 [00:00<00:00, 22.35it/s] 64%|██████▍   | 16/25 [00:00<00:00, 22.01it/s] 76%|███████▌  | 19/25 [00:00<00:00, 21.81it/s] 88%|████████▊ | 22/25 [00:00<00:00, 21.67it/s]100%|██████████| 25/25 [00:01<00:00, 21.60it/s]100%|██████████| 25/25 [00:01<00:00, 22.28it/s]
+torch.Size([1, 517632])
+SEGMENT COMPLETE baseline 03 1
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 31.18it/s] 32%|███▏      | 8/25 [00:00<00:00, 26.09it/s] 44%|████▍     | 11/25 [00:00<00:00, 24.99it/s] 56%|█████▌    | 14/25 [00:00<00:00, 24.40it/s] 68%|██████▊   | 17/25 [00:00<00:00, 24.05it/s] 80%|████████  | 20/25 [00:00<00:00, 23.84it/s] 92%|█████████▏| 23/25 [00:00<00:00, 23.69it/s]100%|██████████| 25/25 [00:01<00:00, 24.38it/s]
+torch.Size([1, 466688])
+SEGMENT COMPLETE baseline 03 2
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 30.57it/s] 32%|███▏      | 8/25 [00:00<00:00, 25.30it/s] 44%|████▍     | 11/25 [00:00<00:00, 24.23it/s] 56%|█████▌    | 14/25 [00:00<00:00, 23.65it/s] 68%|██████▊   | 17/25 [00:00<00:00, 23.32it/s] 80%|████████  | 20/25 [00:00<00:00, 23.11it/s] 92%|█████████▏| 23/25 [00:00<00:00, 22.96it/s]100%|██████████| 25/25 [00:01<00:00, 23.64it/s]
+torch.Size([1, 492032])
+SEGMENT COMPLETE baseline 03 3
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 30.91it/s] 32%|███▏      | 8/25 [00:00<00:00, 25.98it/s] 44%|████▍     | 11/25 [00:00<00:00, 24.92it/s] 56%|█████▌    | 14/25 [00:00<00:00, 24.35it/s] 68%|██████▊   | 17/25 [00:00<00:00, 24.02it/s] 80%|████████  | 20/25 [00:00<00:00, 23.81it/s] 92%|█████████▏| 23/25 [00:00<00:00, 23.68it/s]100%|██████████| 25/25 [00:01<00:00, 24.34it/s]
+torch.Size([1, 481536])
+SEGMENT COMPLETE baseline 03 4
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 30.21it/s] 32%|███▏      | 8/25 [00:00<00:00, 25.08it/s] 44%|████▍     | 11/25 [00:00<00:00, 24.08it/s] 56%|█████▌    | 14/25 [00:00<00:00, 23.55it/s] 68%|██████▊   | 17/25 [00:00<00:00, 23.24it/s] 80%|████████  | 20/25 [00:00<00:00, 23.05it/s] 92%|█████████▏| 23/25 [00:00<00:00, 22.92it/s]100%|██████████| 25/25 [00:01<00:00, 23.55it/s]
+torch.Size([1, 491264])
+SEGMENT COMPLETE baseline 03 5
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 29.44it/s] 28%|██▊       | 7/25 [00:00<00:00, 25.10it/s] 40%|████      | 10/25 [00:00<00:00, 23.69it/s] 52%|█████▏    | 13/25 [00:00<00:00, 23.04it/s] 64%|██████▍   | 16/25 [00:00<00:00, 22.66it/s] 76%|███████▌  | 19/25 [00:00<00:00, 22.45it/s] 88%|████████▊ | 22/25 [00:00<00:00, 22.32it/s]100%|██████████| 25/25 [00:01<00:00, 22.22it/s]100%|██████████| 25/25 [00:01<00:00, 22.95it/s]
+torch.Size([1, 500992])
+SEGMENT COMPLETE baseline 03 6
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 43.29it/s] 40%|████      | 10/25 [00:00<00:00, 38.11it/s] 56%|█████▌    | 14/25 [00:00<00:00, 37.00it/s] 72%|███████▏  | 18/25 [00:00<00:00, 36.40it/s] 88%|████████▊ | 22/25 [00:00<00:00, 36.03it/s]100%|██████████| 25/25 [00:00<00:00, 36.68it/s]
+torch.Size([1, 315904])
+SEGMENT COMPLETE baseline 03 7
+>> gpt_gen_time: 77.48 seconds
+>> s2mel_time: 7.14 seconds
+>> bigvgan_time: 1.40 seconds
+>> Total inference time: 87.14 seconds
+>> Generated audio length: 149.32 seconds
+>> RTF: 0.5836
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/longtext-20261010/audio/baseline/03.wav
+LONGTEXT COMPLETE baseline 03 149.32009070294785
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  0.8831848089998857
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:48:55,462 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:48:55,463 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:48:55,463 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:48:56,063 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:48:56,063 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:48:56,063 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天早上,我比平时提前半个小时出门.街边的早餐店刚刚开门,老板正在把热腾腾的包子放进蒸笼.我买了一杯豆浆,沿着河边慢慢走到地铁站.原本以为这个时间会很拥挤,没想到车厢里还有几个空位.到了公司以后,我先整理了昨天的会议记录,再把需要确认的问题发给同事.忙完这些事情,窗外的阳光正好照在桌面上,一天就这样开始了.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 28.88it/s] 28%|██▊       | 7/25 [00:00<00:00, 25.01it/s] 40%|████      | 10/25 [00:00<00:00, 23.89it/s] 52%|█████▏    | 13/25 [00:00<00:00, 23.34it/s] 64%|██████▍   | 16/25 [00:00<00:00, 23.02it/s] 76%|███████▌  | 19/25 [00:00<00:00, 22.84it/s] 88%|████████▊ | 22/25 [00:00<00:00, 22.72it/s]100%|██████████| 25/25 [00:01<00:00, 22.65it/s]100%|██████████| 25/25 [00:01<00:00, 23.27it/s]
+torch.Size([1, 472832])
+SEGMENT COMPLETE finetuned 01 1
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 42.35it/s] 40%|████      | 10/25 [00:00<00:00, 41.60it/s] 60%|██████    | 15/25 [00:00<00:00, 40.66it/s] 80%|████████  | 20/25 [00:00<00:00, 40.21it/s]100%|██████████| 25/25 [00:00<00:00, 39.96it/s]100%|██████████| 25/25 [00:00<00:00, 40.38it/s]
+torch.Size([1, 235776])
+SEGMENT COMPLETE finetuned 01 2
+>> gpt_gen_time: 23.77 seconds
+>> s2mel_time: 1.78 seconds
+>> bigvgan_time: 0.31 seconds
+>> Total inference time: 26.32 seconds
+>> Generated audio length: 32.34 seconds
+>> RTF: 0.8141
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/longtext-20261010/audio/finetuned/01.wav
+LONGTEXT COMPLETE finetuned 01 32.33641723356009
+>> starting inference...
+text after normalization: 准备一次周末旅行,不一定要安排得特别复杂.首先,想清楚自己更喜欢安静的地方,还是热闹的街区.如果只是想休息,可以选择离家不远的小镇,留出足够的时间散步和吃饭. 其次,提前查看天气和交通情况.遇到下雨,不妨把室外活动换成博物馆或书店,如果火车票已经售完,也可以调整出发时间,不必为了赶路把整个行程排得太满. 整理行李的时候,把证件,充电器和常用药放在容易找到的位置.衣服够用就好,带得太多,反而会让路上变得不方便.同行的人如果有不同的想法,最好在出发之前聊一聊,决定哪些事情一起做,哪些时间可以各自安排. 最后,给计划留一点空白.也许你会遇见一家喜欢的小店,或者发现一条原来不知道的步道.旅行的乐趣,往往就藏在这些没有提前写进清单的时刻里.回来的路上,记得检查随身物品,也给自己留一点整理心情的时间.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 27.82it/s] 28%|██▊       | 7/25 [00:00<00:00, 24.13it/s] 40%|████      | 10/25 [00:00<00:00, 22.94it/s] 52%|█████▏    | 13/25 [00:00<00:00, 22.35it/s] 64%|██████▍   | 16/25 [00:00<00:00, 22.02it/s] 76%|███████▌  | 19/25 [00:00<00:00, 21.82it/s] 88%|████████▊ | 22/25 [00:00<00:00, 21.68it/s]100%|██████████| 25/25 [00:01<00:00, 21.60it/s]100%|██████████| 25/25 [00:01<00:00, 22.26it/s]
+torch.Size([1, 493824])
+SEGMENT COMPLETE finetuned 02 1
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 30.78it/s] 32%|███▏      | 8/25 [00:00<00:00, 26.27it/s] 44%|████▍     | 11/25 [00:00<00:00, 25.40it/s] 56%|█████▌    | 14/25 [00:00<00:00, 24.95it/s] 68%|██████▊   | 17/25 [00:00<00:00, 24.68it/s] 80%|████████  | 20/25 [00:00<00:00, 24.48it/s] 92%|█████████▏| 23/25 [00:00<00:00, 24.35it/s]100%|██████████| 25/25 [00:01<00:00, 24.94it/s]
+torch.Size([1, 437504])
+SEGMENT COMPLETE finetuned 02 2
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 30.70it/s] 32%|███▏      | 8/25 [00:00<00:00, 26.53it/s] 44%|████▍     | 11/25 [00:00<00:00, 25.58it/s] 56%|█████▌    | 14/25 [00:00<00:00, 25.07it/s] 68%|██████▊   | 17/25 [00:00<00:00, 24.78it/s] 80%|████████  | 20/25 [00:00<00:00, 24.59it/s] 92%|█████████▏| 23/25 [00:00<00:00, 24.46it/s]100%|██████████| 25/25 [00:00<00:00, 25.05it/s]
+torch.Size([1, 436736])
+SEGMENT COMPLETE finetuned 02 3
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 44.91it/s] 40%|████      | 10/25 [00:00<00:00, 46.79it/s] 60%|██████    | 15/25 [00:00<00:00, 47.54it/s] 80%|████████  | 20/25 [00:00<00:00, 47.92it/s]100%|██████████| 25/25 [00:00<00:00, 47.49it/s]100%|██████████| 25/25 [00:00<00:00, 47.30it/s]
+torch.Size([1, 106496])
+SEGMENT COMPLETE finetuned 02 4
+>> gpt_gen_time: 50.01 seconds
+>> s2mel_time: 3.81 seconds
+>> bigvgan_time: 0.69 seconds
+>> Total inference time: 55.10 seconds
+>> Generated audio length: 67.47 seconds
+>> RTF: 0.8166
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/longtext-20261010/audio/finetuned/02.wav
+LONGTEXT COMPLETE finetuned 02 67.4734693877551
+>> starting inference...
+text after normalization: 傍晚的时候,林然来到那家开在街角的旧书店.门口挂着一只铜铃,她轻轻推开门,铃声就在安静的屋子里响了起来.老板正在柜台后面整理书签,抬头看见她,笑着说,今天比上次来得早一些.林然点点头,把雨伞收好,回答说,下午的事情提前做完了,想来找一本适合周末读的书. 她沿着靠窗的书架慢慢往里面走.那里放着旅行随笔,短篇小说,还有几本已经很久没有再版的画册.一本浅绿色封面的书吸引了她的注意.翻开第一页,里面夹着一张小小的车票,日期已经模糊,只能看清终点站的名字.她把车票拿给老板看,问这是不是上一位读者忘记取走的东西. 老板想了一会儿,说,这本书是附近一位老师送来的.他以前喜欢坐火车去不同的城市,每到一个地方,就会找一家书店,买一本书留作纪念.后来搬家,装不下那么多东西,便把一部分送到了这里.也许这张车票,就是某一次旅行留下来的. 林然重新坐到窗边的椅子上,读了几页.书里写的是一位年轻人第一次独自出门的经历,没有惊险的冒险,也没有特别宏大的道理,只是一些关于问路,等车和认识陌生人的小事.她忽然想起,自己也曾经因为害怕走错路,放弃过一个计划了很久的行程.现在回头看,那些担心似乎并没有当时想象得那么严重. 外面的雨渐渐停了,街上亮起一盏又一盏灯.老板给她倒了一杯温水,说,不用着急,今天可以晚一点关门.林然笑了笑,继续往下读.读到最后一章的时候,她已经决定,下个月找一个空闲的周末,去看看车票上写着的那座城市. 离开书店之前,她买下了这本书,却把旧车票留在柜台上.她对老板说,如果那位老师以后再回来,也许还会想起这段旅程.老板把车票夹进一个透明的小袋子,认真地点了点头.走出门的时候,空气里还有雨后的凉意.林然没有立刻回家,而是沿着街道多走了一会儿.她觉得,有些变化并不需要很大的理由,只要从一个小小的决定开始就够了.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 29.08it/s] 28%|██▊       | 7/25 [00:00<00:00, 25.26it/s] 40%|████      | 10/25 [00:00<00:00, 24.02it/s] 52%|█████▏    | 13/25 [00:00<00:00, 23.42it/s] 64%|██████▍   | 16/25 [00:00<00:00, 23.10it/s] 76%|███████▌  | 19/25 [00:00<00:00, 22.90it/s] 88%|████████▊ | 22/25 [00:00<00:00, 22.77it/s]100%|██████████| 25/25 [00:01<00:00, 22.68it/s]100%|██████████| 25/25 [00:01<00:00, 23.35it/s]
+torch.Size([1, 480768])
+SEGMENT COMPLETE finetuned 03 1
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 28.69it/s] 28%|██▊       | 7/25 [00:00<00:00, 24.86it/s] 40%|████      | 10/25 [00:00<00:00, 23.61it/s] 52%|█████▏    | 13/25 [00:00<00:00, 23.01it/s] 64%|██████▍   | 16/25 [00:00<00:00, 22.68it/s] 76%|███████▌  | 19/25 [00:00<00:00, 22.46it/s] 88%|████████▊ | 22/25 [00:00<00:00, 22.34it/s]100%|██████████| 25/25 [00:01<00:00, 22.25it/s]100%|██████████| 25/25 [00:01<00:00, 22.92it/s]
+torch.Size([1, 485888])
+SEGMENT COMPLETE finetuned 03 2
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 12%|█▏        | 3/25 [00:00<00:00, 28.69it/s] 24%|██▍       | 6/25 [00:00<00:00, 22.50it/s] 36%|███▌      | 9/25 [00:00<00:00, 21.29it/s] 48%|████▊     | 12/25 [00:00<00:00, 20.77it/s] 60%|██████    | 15/25 [00:00<00:00, 20.49it/s] 72%|███████▏  | 18/25 [00:00<00:00, 20.34it/s] 84%|████████▍ | 21/25 [00:01<00:00, 20.23it/s] 96%|█████████▌| 24/25 [00:01<00:00, 20.16it/s]100%|██████████| 25/25 [00:01<00:00, 20.71it/s]
+torch.Size([1, 509696])
+SEGMENT COMPLETE finetuned 03 3
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 27.47it/s] 28%|██▊       | 7/25 [00:00<00:00, 23.77it/s] 40%|████      | 10/25 [00:00<00:00, 22.71it/s] 52%|█████▏    | 13/25 [00:00<00:00, 22.17it/s] 64%|██████▍   | 16/25 [00:00<00:00, 21.88it/s] 76%|███████▌  | 19/25 [00:00<00:00, 21.71it/s] 88%|████████▊ | 22/25 [00:00<00:00, 21.59it/s]100%|██████████| 25/25 [00:01<00:00, 21.51it/s]100%|██████████| 25/25 [00:01<00:00, 22.12it/s]
+torch.Size([1, 498432])
+SEGMENT COMPLETE finetuned 03 4
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 27.31it/s] 28%|██▊       | 7/25 [00:00<00:00, 23.74it/s] 40%|████      | 10/25 [00:00<00:00, 22.63it/s] 52%|█████▏    | 13/25 [00:00<00:00, 22.08it/s] 64%|██████▍   | 16/25 [00:00<00:00, 21.78it/s] 76%|███████▌  | 19/25 [00:00<00:00, 21.58it/s] 88%|████████▊ | 22/25 [00:00<00:00, 21.46it/s]100%|██████████| 25/25 [00:01<00:00, 21.39it/s]100%|██████████| 25/25 [00:01<00:00, 22.00it/s]
+torch.Size([1, 504576])
+SEGMENT COMPLETE finetuned 03 5
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 16%|█▌        | 4/25 [00:00<00:00, 27.68it/s] 28%|██▊       | 7/25 [00:00<00:00, 23.97it/s] 40%|████      | 10/25 [00:00<00:00, 22.75it/s] 52%|█████▏    | 13/25 [00:00<00:00, 22.15it/s] 64%|██████▍   | 16/25 [00:00<00:00, 21.81it/s] 76%|███████▌  | 19/25 [00:00<00:00, 21.61it/s] 88%|████████▊ | 22/25 [00:00<00:00, 21.47it/s]100%|██████████| 25/25 [00:01<00:00, 21.39it/s]100%|██████████| 25/25 [00:01<00:00, 22.06it/s]
+torch.Size([1, 504576])
+SEGMENT COMPLETE finetuned 03 6
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 39.73it/s] 36%|███▌      | 9/25 [00:00<00:00, 35.33it/s] 52%|█████▏    | 13/25 [00:00<00:00, 34.46it/s] 68%|██████▊   | 17/25 [00:00<00:00, 33.99it/s] 84%|████████▍ | 21/25 [00:00<00:00, 33.74it/s]100%|██████████| 25/25 [00:00<00:00, 33.58it/s]100%|██████████| 25/25 [00:00<00:00, 34.21it/s]
+torch.Size([1, 323840])
+SEGMENT COMPLETE finetuned 03 7
+>> gpt_gen_time: 111.58 seconds
+>> s2mel_time: 7.68 seconds
+>> bigvgan_time: 1.40 seconds
+>> Total inference time: 122.08 seconds
+>> Generated audio length: 151.21 seconds
+>> RTF: 0.8073
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/longtext-20261010/audio/finetuned/03.wav
+LONGTEXT COMPLETE finetuned 03 151.21251700680273
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  0.882333823999943
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:52:37,792 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:52:37,792 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:52:37,792 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:52:39,026 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:52:39,026 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:52:39,026 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 傍晚的时候,林然来到那家开在街角的旧书店.门口挂着一只铜铃,她轻轻推开门,铃声就在安静的屋子里响了起来.老板正在柜台后面整理书签,抬头看见她,笑着说,今天比上次来得早一些.林然点点头,把雨伞收好,回答说,下午的事情提前做完了,想来找一本适合周末读的书. 她沿着靠窗的书架慢慢往里面走.那里放着旅行随笔,短篇小说,还有几本已经很久没有再版的画册.一本浅绿色封面的书吸引了她的注意.翻开第一页,里面夹着一张小小的车票,日期已经模糊,只能看清终点站的名字.她把车票拿给老板看,问这是不是上一位读者忘记取走的东西. 老板想了一会儿,说,这本书是附近一位老师送来的.他以前喜欢坐火车去不同的城市,每到一个地方,就会找一家书店,买一本书留作纪念.后来搬家,装不下那么多东西,便把一部分送到了这里.也许这张车票,就是某一次旅行留下来的. 林然重新坐到窗边的椅子上,读了几页.书里写的是一位年轻人第一次独自出门的经历,没有惊险的冒险,也没有特别宏大的道理,只是一些关于问路,等车和认识陌生人的小事.她忽然想起,自己也曾经因为害怕走错路,放弃过一个计划了很久的行程.现在回头看,那些担心似乎并没有当时想象得那么严重. 外面的雨渐渐停了,街上亮起一盏又一盏灯.老板给她倒了一杯温水,说,不用着急,今天可以晚一点关门.林然笑了笑,继续往下读.读到最后一章的时候,她已经决定,下个月找一个空闲的周末,去看看车票上写着的那座城市. 离开书店之前,她买下了这本书,却把旧车票留在柜台上.她对老板说,如果那位老师以后再回来,也许还会想起这段旅程.老板把车票夹进一个透明的小袋子,认真地点了点头.走出门的时候,空气里还有雨后的凉意.林然没有立刻回家,而是沿着街道多走了一会儿.她觉得,有些变化并不需要很大的理由,只要从一个小小的决定开始就够了.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 41.36it/s] 40%|████      | 10/25 [00:00<00:00, 36.90it/s] 56%|█████▌    | 14/25 [00:00<00:00, 36.19it/s] 72%|███████▏  | 18/25 [00:00<00:00, 35.71it/s] 88%|████████▊ | 22/25 [00:00<00:00, 35.49it/s]100%|██████████| 25/25 [00:00<00:00, 35.98it/s]
+torch.Size([1, 265728])
+SEGMENT COMPLETE finetuned-short-segments 03 1
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 39.39it/s] 36%|███▌      | 9/25 [00:00<00:00, 35.73it/s] 52%|█████▏    | 13/25 [00:00<00:00, 34.77it/s] 68%|██████▊   | 17/25 [00:00<00:00, 34.33it/s] 84%|████████▍ | 21/25 [00:00<00:00, 34.10it/s]100%|██████████| 25/25 [00:00<00:00, 33.93it/s]100%|██████████| 25/25 [00:00<00:00, 34.53it/s]
+torch.Size([1, 282624])
+SEGMENT COMPLETE finetuned-short-segments 03 2
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 41.23it/s] 40%|████      | 10/25 [00:00<00:00, 37.19it/s] 56%|█████▌    | 14/25 [00:00<00:00, 36.22it/s] 72%|███████▏  | 18/25 [00:00<00:00, 35.75it/s] 88%|████████▊ | 22/25 [00:00<00:00, 35.47it/s]100%|██████████| 25/25 [00:00<00:00, 36.01it/s]
+torch.Size([1, 265728])
+SEGMENT COMPLETE finetuned-short-segments 03 3
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 39.08it/s] 36%|███▌      | 9/25 [00:00<00:00, 35.36it/s] 52%|█████▏    | 13/25 [00:00<00:00, 34.40it/s] 68%|██████▊   | 17/25 [00:00<00:00, 33.91it/s] 84%|████████▍ | 21/25 [00:00<00:00, 33.64it/s]100%|██████████| 25/25 [00:00<00:00, 33.48it/s]100%|██████████| 25/25 [00:00<00:00, 34.11it/s]
+torch.Size([1, 290560])
+SEGMENT COMPLETE finetuned-short-segments 03 4
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 40.59it/s] 40%|████      | 10/25 [00:00<00:00, 36.10it/s] 56%|█████▌    | 14/25 [00:00<00:00, 35.45it/s] 72%|███████▏  | 18/25 [00:00<00:00, 35.09it/s] 88%|████████▊ | 22/25 [00:00<00:00, 34.92it/s]100%|██████████| 25/25 [00:00<00:00, 35.38it/s]
+torch.Size([1, 262400])
+SEGMENT COMPLETE finetuned-short-segments 03 5
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 37.78it/s] 36%|███▌      | 9/25 [00:00<00:00, 34.42it/s] 52%|█████▏    | 13/25 [00:00<00:00, 33.31it/s] 68%|██████▊   | 17/25 [00:00<00:00, 32.80it/s] 84%|████████▍ | 21/25 [00:00<00:00, 32.48it/s]100%|██████████| 25/25 [00:00<00:00, 32.29it/s]100%|██████████| 25/25 [00:00<00:00, 32.96it/s]
+torch.Size([1, 308224])
+SEGMENT COMPLETE finetuned-short-segments 03 6
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 38.97it/s] 36%|███▌      | 9/25 [00:00<00:00, 35.01it/s] 52%|█████▏    | 13/25 [00:00<00:00, 34.20it/s] 68%|██████▊   | 17/25 [00:00<00:00, 33.84it/s] 84%|████████▍ | 21/25 [00:00<00:00, 33.61it/s]100%|██████████| 25/25 [00:00<00:00, 33.51it/s]100%|██████████| 25/25 [00:00<00:00, 34.05it/s]
+torch.Size([1, 291328])
+SEGMENT COMPLETE finetuned-short-segments 03 7
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 40.82it/s] 40%|████      | 10/25 [00:00<00:00, 36.86it/s] 56%|█████▌    | 14/25 [00:00<00:00, 35.94it/s] 72%|███████▏  | 18/25 [00:00<00:00, 35.48it/s] 88%|████████▊ | 22/25 [00:00<00:00, 35.21it/s]100%|██████████| 25/25 [00:00<00:00, 35.72it/s]
+torch.Size([1, 267520])
+SEGMENT COMPLETE finetuned-short-segments 03 8
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 40.69it/s] 40%|████      | 10/25 [00:00<00:00, 36.58it/s] 56%|█████▌    | 14/25 [00:00<00:00, 35.79it/s] 72%|███████▏  | 18/25 [00:00<00:00, 35.33it/s] 88%|████████▊ | 22/25 [00:00<00:00, 35.10it/s]100%|██████████| 25/25 [00:00<00:00, 35.59it/s]
+torch.Size([1, 267520])
+SEGMENT COMPLETE finetuned-short-segments 03 9
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 39.18it/s] 36%|███▌      | 9/25 [00:00<00:00, 35.29it/s] 52%|█████▏    | 13/25 [00:00<00:00, 34.36it/s] 68%|██████▊   | 17/25 [00:00<00:00, 33.88it/s] 84%|████████▍ | 21/25 [00:00<00:00, 33.62it/s]100%|██████████| 25/25 [00:00<00:00, 33.43it/s]100%|██████████| 25/25 [00:00<00:00, 34.07it/s]
+torch.Size([1, 290560])
+SEGMENT COMPLETE finetuned-short-segments 03 10
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 44.70it/s] 40%|████      | 10/25 [00:00<00:00, 40.24it/s] 60%|██████    | 15/25 [00:00<00:00, 39.12it/s] 76%|███████▌  | 19/25 [00:00<00:00, 38.66it/s] 92%|█████████▏| 23/25 [00:00<00:00, 38.38it/s]100%|██████████| 25/25 [00:00<00:00, 38.99it/s]
+torch.Size([1, 244736])
+SEGMENT COMPLETE finetuned-short-segments 03 11
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 39.21it/s] 36%|███▌      | 9/25 [00:00<00:00, 35.02it/s] 52%|█████▏    | 13/25 [00:00<00:00, 34.19it/s] 68%|██████▊   | 17/25 [00:00<00:00, 33.83it/s] 84%|████████▍ | 21/25 [00:00<00:00, 33.60it/s]100%|██████████| 25/25 [00:00<00:00, 33.44it/s]100%|██████████| 25/25 [00:00<00:00, 34.02it/s]
+torch.Size([1, 288768])
+SEGMENT COMPLETE finetuned-short-segments 03 12
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 39.83it/s] 36%|███▌      | 9/25 [00:00<00:00, 36.15it/s] 52%|█████▏    | 13/25 [00:00<00:00, 35.07it/s] 68%|██████▊   | 17/25 [00:00<00:00, 34.55it/s] 84%|████████▍ | 21/25 [00:00<00:00, 34.23it/s]100%|██████████| 25/25 [00:00<00:00, 34.06it/s]100%|██████████| 25/25 [00:00<00:00, 34.73it/s]
+torch.Size([1, 270336])
+SEGMENT COMPLETE finetuned-short-segments 03 13
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 41.33it/s] 40%|████      | 10/25 [00:00<00:00, 36.98it/s] 56%|█████▌    | 14/25 [00:00<00:00, 36.17it/s] 72%|███████▏  | 18/25 [00:00<00:00, 35.76it/s] 88%|████████▊ | 22/25 [00:00<00:00, 35.52it/s]100%|██████████| 25/25 [00:00<00:00, 36.00it/s]
+torch.Size([1, 254464])
+SEGMENT COMPLETE finetuned-short-segments 03 14
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 42.96it/s] 40%|████      | 10/25 [00:00<00:00, 44.39it/s] 60%|██████    | 15/25 [00:00<00:00, 45.10it/s] 80%|████████  | 20/25 [00:00<00:00, 45.89it/s]100%|██████████| 25/25 [00:00<00:00, 46.16it/s]100%|██████████| 25/25 [00:00<00:00, 45.57it/s]
+torch.Size([1, 108288])
+SEGMENT COMPLETE finetuned-short-segments 03 15
+>> gpt_gen_time: 134.61 seconds
+>> s2mel_time: 10.98 seconds
+>> bigvgan_time: 1.67 seconds
+>> Total inference time: 149.03 seconds
+>> Generated audio length: 182.34 seconds
+>> RTF: 0.8173
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/longtext-20261010/audio/finetuned-short-segments/03.wav
+LONGTEXT COMPLETE finetuned-short-segments 03 182.33668934240362
+LONGTEXT SCORE baseline 01 0.007142857142857143 0.007142857142857143
+LONGTEXT SCORE baseline 02 0.016025641025641024 0.01282051282051282
+LONGTEXT SCORE baseline 03 0.017777777777777778 0.02666666666666667
+LONGTEXT SCORE finetuned 01 0.0 0.0
+LONGTEXT SCORE finetuned 02 0.00641025641025641 0.003205128205128205
+LONGTEXT SCORE finetuned 03 0.18814814814814815 0.034074074074074076
+LONGTEXT SCORE finetuned-short-segments 03 0.014814814814814815 0.023703703703703703
+LONGTEXT PACKAGE 49730606 a2e932033bf02b0d64225b09841231efe6f476c3be4fb11e73b303c97924b9f1

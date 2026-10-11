@@ -1,0 +1,7 @@
+{
+  "disabled_matches_baseline_exact": true,
+  "disabled_matches_shape": true,
+  "disabled_max_abs_difference": 0.0,
+  "enabled_changes_output": true,
+  "seed": 20261010
+}

@@ -1,0 +1,6 @@
+{
+  "arch": "gpt",
+  "run": "gpt-first-round",
+  "val": 5.859821296956417,
+  "dataset": "mirror-verified-asr"
+}

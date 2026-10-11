@@ -1,0 +1,36 @@
+gpt 建立训练记录
+gpt 校验底座完整性
+gpt 显存体检
+gpt 加载 gpt.pth（约 3.2 GB，请稍候）
+/root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/transformers/configuration_utils.py:312: UserWarning: Passing `gradient_checkpointing` to a config initialization is deprecated and will be removed in v5 Transformers. Using `model.gradient_checkpointing_enable()` instead, or if you are using the `Trainer` API, pass `gradient_checkpointing=True` in your `TrainingArguments`.
+  warnings.warn(
+gpt 注入 LoRA（attn, r=8）
+/root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/peft/tuners/lora/layer.py:2631: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+gpt 对齐精度（底座 bf16 / adapter fp32）
+gpt 切换到训练态（非重入梯度检查点）
+gpt 建立 AdamW 与余弦退火
+gpt 准备完成
+/root/voice-training/indextts25-mirror-20261010/repo/webui_app/training/gpt_lora.py:690: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  return {"loss": float(loss), "n": len(samples),
+PROBE gpt {'loss': 6.2719573974609375, 'grad_norm': 0.4316769540309906, 'max_abs_grad': 0.018798828125, 'nonzero_gradient_tensors': 48, 'seconds': 0.43042967800010956}
+PROBE gpt {'loss': 5.934961795806885, 'grad_norm': 0.5178028345108032, 'max_abs_grad': 0.02001953125, 'nonzero_gradient_tensors': 96, 'seconds': 0.1446936680001727}
+PROBE gpt {'loss': 5.484960079193115, 'grad_norm': 0.5062744617462158, 'max_abs_grad': 0.01483154296875, 'nonzero_gradient_tensors': 96, 'seconds': 0.1431078719999732}
+PROBE gpt {'loss': 5.831696033477783, 'grad_norm': 0.45476067066192627, 'max_abs_grad': 0.01806640625, 'nonzero_gradient_tensors': 96, 'seconds': 0.14288880599997356}
+cfm 建立训练记录
+cfm 校验底座完整性
+cfm 显存体检
+cfm 加载 s2mel.pth（CFM 98M 参数）
+/root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+cfm 注入 LoRA（attn, r=8）
+cfm 对齐精度（底座 / adapter fp32）
+cfm 切换到训练态（dropout / CFG 丢弃）
+cfm 建立 AdamW 与余弦退火
+cfm 准备完成
+PROBE cfm {'loss': 0.4545600712299347, 'grad_norm': 0.16140374541282654, 'max_abs_grad': 0.009601784870028496, 'nonzero_gradient_tensors': 26, 'seconds': 0.42202500000007603}
+PROBE cfm {'loss': 0.7732223272323608, 'grad_norm': 0.08799140155315399, 'max_abs_grad': 0.007853234186768532, 'nonzero_gradient_tensors': 52, 'seconds': 0.18963691299995844}
+PROBE cfm {'loss': 0.665313184261322, 'grad_norm': 0.09345715492963791, 'max_abs_grad': 0.007109984755516052, 'nonzero_gradient_tensors': 52, 'seconds': 0.34740512799999124}
+PROBE cfm {'loss': 0.7888978719711304, 'grad_norm': 0.11337647587060928, 'max_abs_grad': 0.011946070939302444, 'nonzero_gradient_tensors': 52, 'seconds': 0.09202902900005938}
+GRADIENT PROBES COMPLETE

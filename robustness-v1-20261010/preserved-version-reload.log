@@ -1,0 +1,35 @@
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+2026-10-10 14:01:34,508 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 14:01:34,509 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 14:01:34,509 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 14:01:34,944 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 14:01:34,944 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 14:01:34,944 WETEXT INFO skip building fst for en_normalizer ...
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.53.0. You should pass an instance of `Cache` instead, e.g. `past_key_values=DynamicCache.from_legacy_cache(past_key_values)`.
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  1.1589148890006982
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:03,  7.86it/s] 24%|██▍       | 6/25 [00:00<00:00, 29.42it/s] 44%|████▍     | 11/25 [00:00<00:00, 37.49it/s] 64%|██████▍   | 16/25 [00:00<00:00, 41.79it/s] 84%|████████▍ | 21/25 [00:00<00:00, 44.24it/s]100%|██████████| 25/25 [00:00<00:00, 40.16it/s]
+torch.Size([1, 122368])
+>> gpt_gen_time: 4.30 seconds
+>> s2mel_time: 0.64 seconds
+>> bigvgan_time: 0.12 seconds
+>> Total inference time: 6.02 seconds
+>> Generated audio length: 5.55 seconds
+>> RTF: 1.0856
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/robustness-v1-20261010/preserved-version-reload.wav

@@ -1,0 +1,107 @@
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  1.2290789629998926
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:18:11,363 WETEXT INFO building fst for zh_normalizer ...
+2026-10-10 12:18:53,059 WETEXT INFO done
+2026-10-10 12:18:53,059 WETEXT INFO fst path: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:18:53,059 WETEXT INFO           /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:18:53,064 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:18:53,064 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:18:53,064 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.53.0. You should pass an instance of `Cache` instead, e.g. `past_key_values=DynamicCache.from_legacy_cache(past_key_values)`.
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:02,  8.32it/s] 28%|██▊       | 7/25 [00:00<00:00, 33.70it/s] 52%|█████▏    | 13/25 [00:00<00:00, 42.19it/s] 76%|███████▌  | 19/25 [00:00<00:00, 46.75it/s]100%|██████████| 25/25 [00:00<00:00, 49.79it/s]100%|██████████| 25/25 [00:00<00:00, 43.98it/s]
+torch.Size([1, 123136])
+>> gpt_gen_time: 3.29 seconds
+>> s2mel_time: 0.58 seconds
+>> bigvgan_time: 0.11 seconds
+>> Total inference time: 6.73 seconds
+>> Generated audio length: 5.58 seconds
+>> RTF: 1.2060
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/baseline/01.wav
+SYNTHESIZED baseline 1 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/baseline/01.wav', 'text': '今天下午三点，我们在地铁站旁边的咖啡店见面。', 'seed': 20261010, 'seconds': 6.7459988260000046, 'duration': 5.584399092970521}
+>> starting inference...
+text after normalization: 冰箱里还有牛奶和面包,记得吃完早餐再出门.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 12%|█▏        | 3/25 [00:00<00:00, 27.75it/s] 36%|███▌      | 9/25 [00:00<00:00, 42.99it/s] 60%|██████    | 15/25 [00:00<00:00, 47.79it/s] 84%|████████▍ | 21/25 [00:00<00:00, 49.93it/s]100%|██████████| 25/25 [00:00<00:00, 47.90it/s]
+torch.Size([1, 119552])
+>> gpt_gen_time: 3.00 seconds
+>> s2mel_time: 0.53 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 3.64 seconds
+>> Generated audio length: 5.42 seconds
+>> RTF: 0.6711
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/baseline/02.wav
+SYNTHESIZED baseline 2 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/baseline/02.wav', 'text': '冰箱里还有牛奶和面包，记得吃完早餐再出门。', 'seed': 20261011, 'seconds': 3.643059446000052, 'duration': 5.421859410430839}
+>> starting inference...
+text after normalization: 刚才那份文件已经发给你了,方便的时候看一下.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:05,  4.43it/s] 28%|██▊       | 7/25 [00:00<00:00, 24.72it/s] 52%|█████▏    | 13/25 [00:00<00:00, 35.47it/s] 76%|███████▌  | 19/25 [00:00<00:00, 41.97it/s]100%|██████████| 25/25 [00:00<00:00, 46.44it/s]100%|██████████| 25/25 [00:00<00:00, 37.41it/s]
+torch.Size([1, 130304])
+>> gpt_gen_time: 3.25 seconds
+>> s2mel_time: 0.68 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 4.03 seconds
+>> Generated audio length: 5.91 seconds
+>> RTF: 0.6824
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/baseline/03.wav
+SYNTHESIZED baseline 3 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/baseline/03.wav', 'text': '刚才那份文件已经发给你了，方便的时候看一下。', 'seed': 20261012, 'seconds': 4.0372427780000635, 'duration': 5.909478458049887}
+>> starting inference...
+text after normalization: 外面开始下雨了,我把窗户关上,你先休息一会儿.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 51.43it/s] 48%|████▊     | 12/25 [00:00<00:00, 52.75it/s] 72%|███████▏  | 18/25 [00:00<00:00, 53.15it/s] 96%|█████████▌| 24/25 [00:00<00:00, 53.40it/s]100%|██████████| 25/25 [00:00<00:00, 53.13it/s]
+torch.Size([1, 139008])
+>> gpt_gen_time: 3.42 seconds
+>> s2mel_time: 0.48 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 4.02 seconds
+>> Generated audio length: 6.30 seconds
+>> RTF: 0.6371
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/baseline/04.wav
+SYNTHESIZED baseline 4 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/baseline/04.wav', 'text': '外面开始下雨了，我把窗户关上，你先休息一会儿。', 'seed': 20261013, 'seconds': 4.023404491000065, 'duration': 6.30421768707483}
+>> starting inference...
+text after normalization: 明天的会议改到上午十点,地点还是二楼的小会议室.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 53.20it/s] 48%|████▊     | 12/25 [00:00<00:00, 54.78it/s] 72%|███████▏  | 18/25 [00:00<00:00, 54.84it/s] 96%|█████████▌| 24/25 [00:00<00:00, 55.16it/s]100%|██████████| 25/25 [00:00<00:00, 54.93it/s]
+torch.Size([1, 133632])
+>> gpt_gen_time: 3.24 seconds
+>> s2mel_time: 0.47 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 3.81 seconds
+>> Generated audio length: 6.06 seconds
+>> RTF: 0.6293
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/baseline/05.wav
+SYNTHESIZED baseline 5 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/baseline/05.wav', 'text': '明天的会议改到上午十点，地点还是二楼的小会议室。', 'seed': 20261014, 'seconds': 3.8191587219998837, 'duration': 6.060408163265306}
+>> starting inference...
+text after normalization: 这个周末我想去公园散步,然后顺路买一点水果.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 52.98it/s] 48%|████▊     | 12/25 [00:00<00:00, 54.28it/s] 72%|███████▏  | 18/25 [00:00<00:00, 54.75it/s] 96%|█████████▌| 24/25 [00:00<00:00, 55.00it/s]100%|██████████| 25/25 [00:00<00:00, 54.72it/s]
+torch.Size([1, 129280])
+>> gpt_gen_time: 3.12 seconds
+>> s2mel_time: 0.47 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 3.69 seconds
+>> Generated audio length: 5.86 seconds
+>> RTF: 0.6298
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/baseline/06.wav
+SYNTHESIZED baseline 6 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/baseline/06.wav', 'text': '这个周末我想去公园散步，然后顺路买一点水果。', 'seed': 20261015, 'seconds': 3.69818946700002, 'duration': 5.863038548752835}
+FEATURES 10 / 35
+FEATURES 20 / 35
+FEATURES 30 / 35
+FEATURES 35 / 35
+BASELINE AND FEATURES COMPLETE

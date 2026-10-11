@@ -1,0 +1,403 @@
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  1.1743957809999301
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:25:33,944 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:25:33,944 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:25:33,944 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:25:34,573 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:25:34,574 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:25:34,574 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.53.0. You should pass an instance of `Cache` instead, e.g. `past_key_values=DynamicCache.from_legacy_cache(past_key_values)`.
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:03,  7.94it/s] 24%|██▍       | 6/25 [00:00<00:00, 29.93it/s] 44%|████▍     | 11/25 [00:00<00:00, 38.47it/s] 64%|██████▍   | 16/25 [00:00<00:00, 42.82it/s] 84%|████████▍ | 21/25 [00:00<00:00, 45.19it/s]100%|██████████| 25/25 [00:00<00:00, 41.00it/s]
+torch.Size([1, 122368])
+>> gpt_gen_time: 4.30 seconds
+>> s2mel_time: 0.62 seconds
+>> bigvgan_time: 0.12 seconds
+>> Total inference time: 6.00 seconds
+>> Generated audio length: 5.55 seconds
+>> RTF: 1.0817
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/01.wav
+SYNTHESIZED finetuned-best 1 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/01.wav', 'text': '今天下午三点，我们在地铁站旁边的咖啡店见面。', 'seed': 20261010, 'seconds': 6.009240060000138, 'duration': 5.5495691609977325}
+>> starting inference...
+text after normalization: 冰箱里还有牛奶和面包,记得吃完早餐再出门.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s]  8%|▊         | 2/25 [00:00<00:01, 19.03it/s] 28%|██▊       | 7/25 [00:00<00:00, 34.98it/s] 48%|████▊     | 12/25 [00:00<00:00, 40.08it/s] 68%|██████▊   | 17/25 [00:00<00:00, 42.44it/s] 88%|████████▊ | 22/25 [00:00<00:00, 43.50it/s]100%|██████████| 25/25 [00:00<00:00, 41.04it/s]
+torch.Size([1, 132096])
+>> gpt_gen_time: 4.40 seconds
+>> s2mel_time: 0.62 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 5.12 seconds
+>> Generated audio length: 5.99 seconds
+>> RTF: 0.8552
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/02.wav
+SYNTHESIZED finetuned-best 2 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/02.wav', 'text': '冰箱里还有牛奶和面包，记得吃完早餐再出门。', 'seed': 20261011, 'seconds': 5.1333898510001745, 'duration': 5.990748299319728}
+>> starting inference...
+text after normalization: 刚才那份文件已经发给你了,方便的时候看一下.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:05,  4.20it/s] 24%|██▍       | 6/25 [00:00<00:00, 20.32it/s] 44%|████▍     | 11/25 [00:00<00:00, 29.40it/s] 64%|██████▍   | 16/25 [00:00<00:00, 34.38it/s] 84%|████████▍ | 21/25 [00:00<00:00, 38.63it/s]100%|██████████| 25/25 [00:00<00:00, 32.79it/s]
+torch.Size([1, 138240])
+>> gpt_gen_time: 4.72 seconds
+>> s2mel_time: 0.77 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 5.60 seconds
+>> Generated audio length: 6.27 seconds
+>> RTF: 0.8928
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/03.wav
+SYNTHESIZED finetuned-best 3 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/03.wav', 'text': '刚才那份文件已经发给你了，方便的时候看一下。', 'seed': 20261012, 'seconds': 5.603308919000028, 'duration': 6.2693877551020405}
+>> starting inference...
+text after normalization: 外面开始下雨了,我把窗户关上,你先休息一会儿.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 46.16it/s] 40%|████      | 10/25 [00:00<00:00, 47.98it/s] 60%|██████    | 15/25 [00:00<00:00, 48.50it/s] 80%|████████  | 20/25 [00:00<00:00, 48.74it/s]100%|██████████| 25/25 [00:00<00:00, 48.16it/s]100%|██████████| 25/25 [00:00<00:00, 48.12it/s]
+torch.Size([1, 126720])
+>> gpt_gen_time: 4.22 seconds
+>> s2mel_time: 0.53 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 4.86 seconds
+>> Generated audio length: 5.75 seconds
+>> RTF: 0.8465
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/04.wav
+SYNTHESIZED finetuned-best 4 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/04.wav', 'text': '外面开始下雨了，我把窗户关上，你先休息一会儿。', 'seed': 20261013, 'seconds': 4.870694060999995, 'duration': 5.746938775510204}
+>> starting inference...
+text after normalization: 明天的会议改到上午十点,地点还是二楼的小会议室.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 46.22it/s] 40%|████      | 10/25 [00:00<00:00, 47.84it/s] 60%|██████    | 15/25 [00:00<00:00, 48.37it/s] 80%|████████  | 20/25 [00:00<00:00, 48.73it/s]100%|██████████| 25/25 [00:00<00:00, 48.95it/s]100%|██████████| 25/25 [00:00<00:00, 48.54it/s]
+torch.Size([1, 125696])
+>> gpt_gen_time: 4.15 seconds
+>> s2mel_time: 0.53 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 4.78 seconds
+>> Generated audio length: 5.70 seconds
+>> RTF: 0.8393
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/05.wav
+SYNTHESIZED finetuned-best 5 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/05.wav', 'text': '明天的会议改到上午十点，地点还是二楼的小会议室。', 'seed': 20261014, 'seconds': 4.791911119999895, 'duration': 5.7004988662131515}
+>> starting inference...
+text after normalization: 这个周末我想去公园散步,然后顺路买一点水果.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 44.29it/s] 40%|████      | 10/25 [00:00<00:00, 46.84it/s] 60%|██████    | 15/25 [00:00<00:00, 47.47it/s] 80%|████████  | 20/25 [00:00<00:00, 47.88it/s]100%|██████████| 25/25 [00:00<00:00, 48.24it/s]100%|██████████| 25/25 [00:00<00:00, 47.67it/s]
+torch.Size([1, 131072])
+>> gpt_gen_time: 4.30 seconds
+>> s2mel_time: 0.54 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 4.94 seconds
+>> Generated audio length: 5.94 seconds
+>> RTF: 0.8305
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/06.wav
+SYNTHESIZED finetuned-best 6 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/06.wav', 'text': '这个周末我想去公园散步，然后顺路买一点水果。', 'seed': 20261015, 'seconds': 4.946137963000183, 'duration': 5.944308390022676}
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 53.75it/s] 48%|████▊     | 12/25 [00:00<00:00, 54.89it/s] 72%|███████▏  | 18/25 [00:00<00:00, 55.57it/s] 96%|█████████▌| 24/25 [00:00<00:00, 55.47it/s]100%|██████████| 25/25 [00:00<00:00, 55.26it/s]
+torch.Size([1, 123136])
+>> gpt_gen_time: 2.98 seconds
+>> s2mel_time: 0.46 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 3.55 seconds
+>> Generated audio length: 5.58 seconds
+>> RTF: 0.6365
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/adapter-disabled-control/01.wav
+SYNTHESIZED adapter-disabled-control 1 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/adapter-disabled-control/01.wav', 'text': '今天下午三点，我们在地铁站旁边的咖啡店见面。', 'seed': 20261010, 'seconds': 3.561041259999911, 'duration': 5.584399092970521}
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  0.9303600859998369
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:26:28,019 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:26:28,019 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:26:28,019 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:26:28,804 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:26:28,804 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:26:28,804 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 57.16it/s] 48%|████▊     | 12/25 [00:00<00:00, 57.77it/s] 72%|███████▏  | 18/25 [00:00<00:00, 57.11it/s] 96%|█████████▌| 24/25 [00:00<00:00, 56.99it/s]100%|██████████| 25/25 [00:00<00:00, 57.12it/s]
+torch.Size([1, 122368])
+>> gpt_gen_time: 4.08 seconds
+>> s2mel_time: 0.45 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.85 seconds
+>> Generated audio length: 5.55 seconds
+>> RTF: 0.8744
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/gpt-only/01.wav
+SYNTHESIZED gpt-only 1 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/gpt-only/01.wav', 'text': '今天下午三点，我们在地铁站旁边的咖啡店见面。', 'seed': 20261010, 'seconds': 4.860282666999865, 'duration': 5.5495691609977325}
+>> starting inference...
+text after normalization: 冰箱里还有牛奶和面包,记得吃完早餐再出门.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 52.20it/s] 48%|████▊     | 12/25 [00:00<00:00, 52.53it/s] 72%|███████▏  | 18/25 [00:00<00:00, 53.08it/s] 96%|█████████▌| 24/25 [00:00<00:00, 53.29it/s]100%|██████████| 25/25 [00:00<00:00, 53.08it/s]
+torch.Size([1, 132096])
+>> gpt_gen_time: 4.47 seconds
+>> s2mel_time: 0.48 seconds
+>> bigvgan_time: 0.05 seconds
+>> Total inference time: 5.01 seconds
+>> Generated audio length: 5.99 seconds
+>> RTF: 0.8369
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/gpt-only/02.wav
+SYNTHESIZED gpt-only 2 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/gpt-only/02.wav', 'text': '冰箱里还有牛奶和面包，记得吃完早餐再出门。', 'seed': 20261011, 'seconds': 5.023065726999903, 'duration': 5.990748299319728}
+>> starting inference...
+text after normalization: 刚才那份文件已经发给你了,方便的时候看一下.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 52.67it/s] 48%|████▊     | 12/25 [00:00<00:00, 52.64it/s] 72%|███████▏  | 18/25 [00:00<00:00, 52.83it/s] 96%|█████████▌| 24/25 [00:00<00:00, 52.85it/s]100%|██████████| 25/25 [00:00<00:00, 52.78it/s]
+torch.Size([1, 138240])
+>> gpt_gen_time: 4.75 seconds
+>> s2mel_time: 0.48 seconds
+>> bigvgan_time: 0.05 seconds
+>> Total inference time: 5.29 seconds
+>> Generated audio length: 6.27 seconds
+>> RTF: 0.8443
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/gpt-only/03.wav
+SYNTHESIZED gpt-only 3 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/gpt-only/03.wav', 'text': '刚才那份文件已经发给你了，方便的时候看一下。', 'seed': 20261012, 'seconds': 5.299966225999924, 'duration': 6.2693877551020405}
+>> starting inference...
+text after normalization: 外面开始下雨了,我把窗户关上,你先休息一会儿.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 55.31it/s] 48%|████▊     | 12/25 [00:00<00:00, 55.72it/s] 72%|███████▏  | 18/25 [00:00<00:00, 55.90it/s] 96%|█████████▌| 24/25 [00:00<00:00, 56.03it/s]100%|██████████| 25/25 [00:00<00:00, 55.81it/s]
+torch.Size([1, 126720])
+>> gpt_gen_time: 4.33 seconds
+>> s2mel_time: 0.46 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.85 seconds
+>> Generated audio length: 5.75 seconds
+>> RTF: 0.8434
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/gpt-only/04.wav
+SYNTHESIZED gpt-only 4 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/gpt-only/04.wav', 'text': '外面开始下雨了，我把窗户关上，你先休息一会儿。', 'seed': 20261013, 'seconds': 4.851718962000177, 'duration': 5.746938775510204}
+>> starting inference...
+text after normalization: 明天的会议改到上午十点,地点还是二楼的小会议室.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 55.87it/s] 48%|████▊     | 12/25 [00:00<00:00, 56.14it/s] 72%|███████▏  | 18/25 [00:00<00:00, 56.28it/s] 96%|█████████▌| 24/25 [00:00<00:00, 56.06it/s]100%|██████████| 25/25 [00:00<00:00, 56.08it/s]
+torch.Size([1, 125696])
+>> gpt_gen_time: 4.20 seconds
+>> s2mel_time: 0.45 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.71 seconds
+>> Generated audio length: 5.70 seconds
+>> RTF: 0.8260
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/gpt-only/05.wav
+SYNTHESIZED gpt-only 5 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/gpt-only/05.wav', 'text': '明天的会议改到上午十点，地点还是二楼的小会议室。', 'seed': 20261014, 'seconds': 4.718354863000059, 'duration': 5.7004988662131515}
+>> starting inference...
+text after normalization: 这个周末我想去公园散步,然后顺路买一点水果.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 55.00it/s] 48%|████▊     | 12/25 [00:00<00:00, 55.09it/s] 72%|███████▏  | 18/25 [00:00<00:00, 55.38it/s] 96%|█████████▌| 24/25 [00:00<00:00, 55.49it/s]100%|██████████| 25/25 [00:00<00:00, 55.37it/s]
+torch.Size([1, 131072])
+>> gpt_gen_time: 4.35 seconds
+>> s2mel_time: 0.47 seconds
+>> bigvgan_time: 0.05 seconds
+>> Total inference time: 4.88 seconds
+>> Generated audio length: 5.94 seconds
+>> RTF: 0.8211
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/gpt-only/06.wav
+SYNTHESIZED gpt-only 6 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/gpt-only/06.wav', 'text': '这个周末我想去公园散步，然后顺路买一点水果。', 'seed': 20261015, 'seconds': 4.887694548000127, 'duration': 5.944308390022676}
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  0.8902515690001565
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:27:15,779 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:27:15,779 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:27:15,780 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:27:16,528 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:27:16,528 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:27:16,528 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 47.49it/s] 40%|████      | 10/25 [00:00<00:00, 48.18it/s] 60%|██████    | 15/25 [00:00<00:00, 48.52it/s] 80%|████████  | 20/25 [00:00<00:00, 48.68it/s]100%|██████████| 25/25 [00:00<00:00, 48.81it/s]100%|██████████| 25/25 [00:00<00:00, 48.60it/s]
+torch.Size([1, 123136])
+>> gpt_gen_time: 2.96 seconds
+>> s2mel_time: 0.53 seconds
+>> bigvgan_time: 0.05 seconds
+>> Total inference time: 3.78 seconds
+>> Generated audio length: 5.58 seconds
+>> RTF: 0.6769
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/cfm-only/01.wav
+SYNTHESIZED cfm-only 1 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/cfm-only/01.wav', 'text': '今天下午三点，我们在地铁站旁边的咖啡店见面。', 'seed': 20261010, 'seconds': 3.790460038999754, 'duration': 5.584399092970521}
+>> starting inference...
+text after normalization: 冰箱里还有牛奶和面包,记得吃完早餐再出门.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 45.59it/s] 40%|████      | 10/25 [00:00<00:00, 47.35it/s] 60%|██████    | 15/25 [00:00<00:00, 48.04it/s] 80%|████████  | 20/25 [00:00<00:00, 48.37it/s]100%|██████████| 25/25 [00:00<00:00, 46.80it/s]100%|██████████| 25/25 [00:00<00:00, 47.14it/s]
+torch.Size([1, 119552])
+>> gpt_gen_time: 2.81 seconds
+>> s2mel_time: 0.55 seconds
+>> bigvgan_time: 0.11 seconds
+>> Total inference time: 3.48 seconds
+>> Generated audio length: 5.42 seconds
+>> RTF: 0.6410
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/cfm-only/02.wav
+SYNTHESIZED cfm-only 2 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/cfm-only/02.wav', 'text': '冰箱里还有牛奶和面包，记得吃完早餐再出门。', 'seed': 20261011, 'seconds': 3.4816229420002855, 'duration': 5.421859410430839}
+>> starting inference...
+text after normalization: 刚才那份文件已经发给你了,方便的时候看一下.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 45.57it/s] 40%|████      | 10/25 [00:00<00:00, 47.25it/s] 60%|██████    | 15/25 [00:00<00:00, 47.94it/s] 80%|████████  | 20/25 [00:00<00:00, 48.01it/s]100%|██████████| 25/25 [00:00<00:00, 48.15it/s]100%|██████████| 25/25 [00:00<00:00, 47.82it/s]
+torch.Size([1, 130304])
+>> gpt_gen_time: 3.05 seconds
+>> s2mel_time: 0.54 seconds
+>> bigvgan_time: 0.11 seconds
+>> Total inference time: 3.70 seconds
+>> Generated audio length: 5.91 seconds
+>> RTF: 0.6269
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/cfm-only/03.wav
+SYNTHESIZED cfm-only 3 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/cfm-only/03.wav', 'text': '刚才那份文件已经发给你了，方便的时候看一下。', 'seed': 20261012, 'seconds': 3.713512463999905, 'duration': 5.909478458049887}
+>> starting inference...
+text after normalization: 外面开始下雨了,我把窗户关上,你先休息一会儿.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 46.12it/s] 40%|████      | 10/25 [00:00<00:00, 47.92it/s] 60%|██████    | 15/25 [00:00<00:00, 48.46it/s] 80%|████████  | 20/25 [00:00<00:00, 48.74it/s]100%|██████████| 25/25 [00:00<00:00, 48.94it/s]100%|██████████| 25/25 [00:00<00:00, 48.55it/s]
+torch.Size([1, 139008])
+>> gpt_gen_time: 3.30 seconds
+>> s2mel_time: 0.53 seconds
+>> bigvgan_time: 0.11 seconds
+>> Total inference time: 3.95 seconds
+>> Generated audio length: 6.30 seconds
+>> RTF: 0.6263
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/cfm-only/04.wav
+SYNTHESIZED cfm-only 4 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/cfm-only/04.wav', 'text': '外面开始下雨了，我把窗户关上，你先休息一会儿。', 'seed': 20261013, 'seconds': 3.9543067950003206, 'duration': 6.30421768707483}
+>> starting inference...
+text after normalization: 明天的会议改到上午十点,地点还是二楼的小会议室.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 45.05it/s] 40%|████      | 10/25 [00:00<00:00, 46.45it/s] 60%|██████    | 15/25 [00:00<00:00, 47.07it/s] 80%|████████  | 20/25 [00:00<00:00, 47.16it/s]100%|██████████| 25/25 [00:00<00:00, 47.34it/s]100%|██████████| 25/25 [00:00<00:00, 47.03it/s]
+torch.Size([1, 133632])
+>> gpt_gen_time: 3.18 seconds
+>> s2mel_time: 0.55 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 3.84 seconds
+>> Generated audio length: 6.06 seconds
+>> RTF: 0.6341
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/cfm-only/05.wav
+SYNTHESIZED cfm-only 5 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/cfm-only/05.wav', 'text': '明天的会议改到上午十点，地点还是二楼的小会议室。', 'seed': 20261014, 'seconds': 3.8510492440000235, 'duration': 6.060408163265306}
+>> starting inference...
+text after normalization: 这个周末我想去公园散步,然后顺路买一点水果.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 45.64it/s] 40%|████      | 10/25 [00:00<00:00, 46.77it/s] 60%|██████    | 15/25 [00:00<00:00, 47.28it/s] 80%|████████  | 20/25 [00:00<00:00, 47.66it/s]100%|██████████| 25/25 [00:00<00:00, 47.86it/s]100%|██████████| 25/25 [00:00<00:00, 47.49it/s]
+torch.Size([1, 129280])
+>> gpt_gen_time: 3.13 seconds
+>> s2mel_time: 0.54 seconds
+>> bigvgan_time: 0.10 seconds
+>> Total inference time: 3.78 seconds
+>> Generated audio length: 5.86 seconds
+>> RTF: 0.6441
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/cfm-only/06.wav
+SYNTHESIZED cfm-only 6 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/cfm-only/06.wav', 'text': '这个周末我想去公园散步，然后顺路买一点水果。', 'seed': 20261015, 'seconds': 3.781433287999789, 'duration': 5.863038548752835}
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  0.8844046690001051
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:27:55,961 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:27:55,961 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:27:55,961 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:27:57,315 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:27:57,315 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:27:57,315 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 49.01it/s] 40%|████      | 10/25 [00:00<00:00, 49.58it/s] 60%|██████    | 15/25 [00:00<00:00, 49.57it/s] 80%|████████  | 20/25 [00:00<00:00, 49.69it/s]100%|██████████| 25/25 [00:00<00:00, 49.76it/s]100%|██████████| 25/25 [00:00<00:00, 49.65it/s]
+torch.Size([1, 122368])
+>> gpt_gen_time: 4.05 seconds
+>> s2mel_time: 0.51 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.85 seconds
+>> Generated audio length: 5.55 seconds
+>> RTF: 0.8742
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/01.wav
+SYNTHESIZED alternate-checkpoints 1 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/01.wav', 'text': '今天下午三点，我们在地铁站旁边的咖啡店见面。', 'seed': 20261010, 'seconds': 4.860035754999899, 'duration': 5.5495691609977325}
+>> starting inference...
+text after normalization: 冰箱里还有牛奶和面包,记得吃完早餐再出门.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 48.19it/s] 40%|████      | 10/25 [00:00<00:00, 48.69it/s] 60%|██████    | 15/25 [00:00<00:00, 48.91it/s] 80%|████████  | 20/25 [00:00<00:00, 49.00it/s]100%|██████████| 25/25 [00:00<00:00, 48.42it/s]100%|██████████| 25/25 [00:00<00:00, 48.57it/s]
+torch.Size([1, 132096])
+>> gpt_gen_time: 4.39 seconds
+>> s2mel_time: 0.52 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.97 seconds
+>> Generated audio length: 5.99 seconds
+>> RTF: 0.8301
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/02.wav
+SYNTHESIZED alternate-checkpoints 2 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/02.wav', 'text': '冰箱里还有牛奶和面包，记得吃完早餐再出门。', 'seed': 20261011, 'seconds': 4.977742150000267, 'duration': 5.990748299319728}
+>> starting inference...
+text after normalization: 刚才那份文件已经发给你了,方便的时候看一下.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 48.10it/s] 40%|████      | 10/25 [00:00<00:00, 48.39it/s] 60%|██████    | 15/25 [00:00<00:00, 48.35it/s] 80%|████████  | 20/25 [00:00<00:00, 48.46it/s]100%|██████████| 25/25 [00:00<00:00, 48.48it/s]100%|██████████| 25/25 [00:00<00:00, 48.41it/s]
+torch.Size([1, 138240])
+>> gpt_gen_time: 4.58 seconds
+>> s2mel_time: 0.53 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 5.17 seconds
+>> Generated audio length: 6.27 seconds
+>> RTF: 0.8251
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/03.wav
+SYNTHESIZED alternate-checkpoints 3 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/03.wav', 'text': '刚才那份文件已经发给你了，方便的时候看一下。', 'seed': 20261012, 'seconds': 5.18020122300004, 'duration': 6.2693877551020405}
+>> starting inference...
+text after normalization: 外面开始下雨了,我把窗户关上,你先休息一会儿.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 46.76it/s] 40%|████      | 10/25 [00:00<00:00, 46.84it/s] 60%|██████    | 15/25 [00:00<00:00, 47.22it/s] 80%|████████  | 20/25 [00:00<00:00, 47.13it/s]100%|██████████| 25/25 [00:00<00:00, 47.32it/s]100%|██████████| 25/25 [00:00<00:00, 47.18it/s]
+torch.Size([1, 126720])
+>> gpt_gen_time: 4.28 seconds
+>> s2mel_time: 0.54 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.88 seconds
+>> Generated audio length: 5.75 seconds
+>> RTF: 0.8489
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/04.wav
+SYNTHESIZED alternate-checkpoints 4 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/04.wav', 'text': '外面开始下雨了，我把窗户关上，你先休息一会儿。', 'seed': 20261013, 'seconds': 4.886559503000171, 'duration': 5.746938775510204}
+>> starting inference...
+text after normalization: 明天的会议改到上午十点,地点还是二楼的小会议室.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 47.41it/s] 40%|████      | 10/25 [00:00<00:00, 47.82it/s] 60%|██████    | 15/25 [00:00<00:00, 47.92it/s] 80%|████████  | 20/25 [00:00<00:00, 48.04it/s]100%|██████████| 25/25 [00:00<00:00, 48.15it/s]100%|██████████| 25/25 [00:00<00:00, 48.01it/s]
+torch.Size([1, 125696])
+>> gpt_gen_time: 4.26 seconds
+>> s2mel_time: 0.53 seconds
+>> bigvgan_time: 0.05 seconds
+>> Total inference time: 4.85 seconds
+>> Generated audio length: 5.70 seconds
+>> RTF: 0.8516
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/05.wav
+SYNTHESIZED alternate-checkpoints 5 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/05.wav', 'text': '明天的会议改到上午十点，地点还是二楼的小会议室。', 'seed': 20261014, 'seconds': 4.862432718000036, 'duration': 5.7004988662131515}
+>> starting inference...
+text after normalization: 这个周末我想去公园散步,然后顺路买一点水果.
+Use the specified emotion vector
+  0%|          | 0/25 [00:00<?, ?it/s] 20%|██        | 5/25 [00:00<00:00, 46.83it/s] 40%|████      | 10/25 [00:00<00:00, 46.53it/s] 60%|██████    | 15/25 [00:00<00:00, 45.83it/s] 80%|████████  | 20/25 [00:00<00:00, 45.82it/s]100%|██████████| 25/25 [00:00<00:00, 46.50it/s]100%|██████████| 25/25 [00:00<00:00, 46.31it/s]
+torch.Size([1, 131072])
+>> gpt_gen_time: 4.32 seconds
+>> s2mel_time: 0.55 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.93 seconds
+>> Generated audio length: 5.94 seconds
+>> RTF: 0.8297
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/06.wav
+SYNTHESIZED alternate-checkpoints 6 {'path': '/root/voice-training/indextts25-mirror-20261010/listening/alternate-checkpoints/06.wav', 'text': '这个周末我想去公园散步，然后顺路买一点水果。', 'seed': 20261015, 'seconds': 4.940905474000374, 'duration': 5.944308390022676}
+EVALUATION SYNTHESIS COMPLETE

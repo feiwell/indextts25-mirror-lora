@@ -1,0 +1,19 @@
+NO CONTEXT baseline 0.025185185185185185
+NO CONTEXT finetuned 0.03111111111111111
+NO CONTEXT finetuned-short-segments 0.028148148148148148
+funasr version: 1.4.16.
+2026-10-10 13:01:53,251 [INFO] download models from model hub: ms
+2026-10-10 13:01:53,283 [WARNING] trust_remote_code: False
+2026-10-10 13:01:54,360 [INFO] Loading pretrained params from /model/ModelScope/gongjy/SenseVoiceSmall/model.pt
+2026-10-10 13:01:54,365 [INFO] ckpt: /model/ModelScope/gongjy/SenseVoiceSmall/model.pt
+2026-10-10 13:01:54,922 [INFO] scope_map: ['module.', 'None']
+2026-10-10 13:01:54,922 [INFO] excludes: None
+2026-10-10 13:01:55,003 [INFO] Loading ckpt: /model/ModelScope/gongjy/SenseVoiceSmall/model.pt, status: <All keys matched successfully>
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]100%|[34m██████████[0m| 1/1 [00:00<00:00,  8.33it/s]{'load_data': '0.017', 'extract_feat': '0.011', 'forward': '0.120', 'batch_size': '1', 'rtf': '0.006'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00,  8.33it/s]rtf_avg: 0.006: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  8.33it/s]                                                                                          rtf_avg: 0.006: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  8.13it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.017', 'extract_feat': '0.020', 'forward': '0.099', 'batch_size': '1', 'rtf': '0.004'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.10it/s]rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.08it/s]                                                                                          rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  9.85it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.017', 'extract_feat': '0.018', 'forward': '0.097', 'batch_size': '1', 'rtf': '0.004'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.29it/s]rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.26it/s]                                                                                          rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.02it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.016', 'extract_feat': '0.014', 'forward': '0.092', 'batch_size': '1', 'rtf': '0.004'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.87it/s]rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.84it/s]                                                                                          rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.57it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.019', 'extract_feat': '0.017', 'forward': '0.098', 'batch_size': '1', 'rtf': '0.004'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.18it/s]rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.16it/s]                                                                                          rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  9.92it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.017', 'extract_feat': '0.014', 'forward': '0.092', 'batch_size': '1', 'rtf': '0.004'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.81it/s]rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.79it/s]                                                                                          rtf_avg: 0.004: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 10.52it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.014', 'extract_feat': '0.012', 'forward': '0.086', 'batch_size': '1', 'rtf': '0.006'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 11.66it/s]rtf_avg: 0.006: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 11.63it/s]                                                                                          rtf_avg: 0.006: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 11.40it/s]
+ASR DIAGNOSTICS COMPLETE 0.03259259259259259

@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "f95bbadc771506a672aea202b5bfb62efb05f4e425cd5da1f3f66404617809c6",
+  "cloud_files_verified": 36,
+  "full_story_segment_pcm_exact": true,
+  "all_paragraph_pcm_exact": true,
+  "approved_opening_pcm_exact": true,
+  "paragraph_count": 10,
+  "segment_count": 20,
+  "targeted_crosscheck_source_hashes_verified": true,
+  "targeted_crosscheck_sha256": "de98c7d0629192e5a5999a702aeee7c921642457938de33d180060e4f5168c1b"
+}

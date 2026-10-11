@@ -1,0 +1,27 @@
+{
+  "version": "mirror-joint-v1-20261010",
+  "both_adapters_loaded_from_preserved_directory": true,
+  "original_audio": "/root/voice-training/indextts25-mirror-20261010/listening/finetuned-best/01.wav",
+  "restored_audio": "preserved-version-reload.wav",
+  "pcm_samples_exact": true,
+  "original_wav_sha256": "a2b8f34329f53c7a24dfcf41d2dde42d37454a90e0327b51a6c0d672a100ce34",
+  "restored_wav_sha256": "a2b8f34329f53c7a24dfcf41d2dde42d37454a90e0327b51a6c0d672a100ce34",
+  "command": [
+    "/root/voice-training/indextts25-mirror-20261010/repo/.venv/bin/python",
+    "/root/voice-training/indextts25-mirror-20261010/infer-preserved-version.py",
+    "--repo",
+    "/root/voice-training/indextts25-mirror-20261010/repo",
+    "--models",
+    "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints",
+    "--version",
+    "/root/voice-training/indextts25-mirror-20261010/versions/mirror-joint-v1-20261010",
+    "--text",
+    "\u4eca\u5929\u4e0b\u5348\u4e09\u70b9\uff0c\u6211\u4eec\u5728\u5730\u94c1\u7ad9\u65c1\u8fb9\u7684\u5496\u5561\u5e97\u89c1\u9762\u3002",
+    "--output",
+    "/root/voice-training/indextts25-mirror-20261010/robustness-v1-20261010/preserved-version-reload.wav",
+    "--seed",
+    "20261010",
+    "--variant",
+    "both"
+  ]
+}

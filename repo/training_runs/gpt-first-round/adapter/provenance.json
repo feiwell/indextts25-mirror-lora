@@ -1,0 +1,5 @@
+{
+  "run": "gpt-first-round",
+  "from": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/checkpoints/ckpt-e005-s000042",
+  "at": 1791634930.7478423
+}

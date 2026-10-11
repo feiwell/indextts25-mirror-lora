@@ -1,0 +1,36 @@
+{
+  "version": "mirror-joint-v1-20261010",
+  "status": "preserved; user-approved listening baseline",
+  "gpt_steps": 42,
+  "cfm_steps": 84,
+  "adapters": {
+    "gpt": "adapters/gpt",
+    "cfm": "adapters/cfm"
+  },
+  "sha256": {
+    "README.md": "43722cb5dc2c455d094e225f044f4f43b590b9c0618073ceecf9121c0217aae4",
+    "adapters/cfm/README.md": "835fdcb5acfbdc7a2454561b7c9593b6ef1a794a75a655ec25fad7389840f73b",
+    "adapters/cfm/adapter_config.json": "a6d2b97845c46d6111ac5c11350c1779f7d333ccd3c6ae235e757d216bfdfc12",
+    "adapters/cfm/adapter_model.safetensors": "1a91576a02ce8f3578062b1e9beda6cdae92f2057df07cbe3cd3b344c2037075",
+    "adapters/cfm/extra.json": "42ab4a8f1ae18332ea8d1c736ff941b1f3cb26513196308774a1ee26e66b6a19",
+    "adapters/cfm/provenance.json": "31d444bc7e6828872f66d43bea97c284e5983a6f6bcd22008a7acec216356a5d",
+    "adapters/cfm/train_state.pt": "f5b1d4fd469686f2405b3e5923c74b4902e0fd5cf7b03b8765ba71bfb919e83f",
+    "adapters/gpt/README.md": "835fdcb5acfbdc7a2454561b7c9593b6ef1a794a75a655ec25fad7389840f73b",
+    "adapters/gpt/adapter_config.json": "2ec86e3ba3baff0120f336907f5959a7c69893caa96f41d492743b92ae5f59da",
+    "adapters/gpt/adapter_model.safetensors": "c7b81d3e3f27bba715c1bcae56c4b0116a19684cbe07564aeca9865e754996f8",
+    "adapters/gpt/extra.json": "2fe975cce9a65fc2c55f125a3ebd85f20a6cd6a44189ffc87c807f73e186e2a9",
+    "adapters/gpt/provenance.json": "4841502e34b1e93f867a62d79042ada0beb4344b45d4e63468202b6f699bdecf",
+    "adapters/gpt/train_state.pt": "142e534eadb42cd58178c8ffbd5b608dd5488773263614953a81a5f283a009ed",
+    "cfm-training-config.json": "086ee59e5c9ab37e718ccd1858f7eea0dc52932d9ec9cc1d5bedd24b2f724f62",
+    "cfm-training-report.json": "6410d6152a60ee8b882d850f2c41a39237eeab7ad27f328d7f1efb156d45e397",
+    "evaluation-adapters.json": "956a55c712218a9cf38cf4624af188328be18129840eeb901df3dc9a44b8e51f",
+    "evaluation-metrics.json": "db8945dec3b89a2b4f956a80966ea55f8161cdc93ed721fc62aa5b08188ffb5f",
+    "experiment.py": "add976759888a57804fbe7ccfc908255e5cbd6760e7beabdf6320a430e69d095",
+    "gpt-training-config.json": "00f5432ec6d575ca1f991ddce134a5850934cce4bc7066668f2859dc6f0a8c05",
+    "gpt-training-report.json": "a0fafa4044127ca8a3da59117e55a4cd75fba16593eac40c8ed049b65faa9aa3",
+    "infer-adapters.py": "d05e524c0addbeaa14f4818a16f2ae6c35b50f190ffcdea0f2d5749be0746c27",
+    "provenance.json": "82173df3cd7835d5030e2daa898fb746fe96ad4501b39a70a76b9ac4c9220e5f",
+    "reference.json": "d3ffdeb89d1849518caa035f2c7151a2b8a11fb99425fe8e9cd98200ba2f91a6",
+    "reference.wav": "a7073fb5aee81abdc1a4cb949588ab074448019471e05b11d31ac15ffe8ac83a"
+  }
+}

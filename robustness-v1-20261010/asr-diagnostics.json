@@ -1,0 +1,823 @@
+{
+  "asr": "SenseVoiceSmall, Chinese, ITN disabled, independent segments",
+  "rows": [
+    {
+      "id": "01",
+      "label": "baseline",
+      "segments": [
+        {
+          "path": "audio/baseline/01-segment-01.wav",
+          "asr_text": "录制声音之前先把麦克风固定在合适的位置让嘴巴与收音端保持稳定的距离输入音量不宜过高说到最响的一句话时波形也应该流出余量录完以后先检查有没有爆音碰撞声和明显的背景音乐再决定是否需要重新录制不要为了让曲线看起来整齐",
+          "character_edits": 1,
+          "target_characters": 105,
+          "cer": 0.009523809523809525,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/01-segment-02.wav",
+          "asr_text": "反复压缩每一句话的音量过度处理可能改变原来的呼吸和语气保存文件时分别保留原始录音剪辑版本和文字记录之后排查问题会方便的多",
+          "character_edits": 1,
+          "target_characters": 60,
+          "cer": 0.016666666666666666,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.012121212121212121
+    },
+    {
+      "id": "02",
+      "label": "baseline",
+      "segments": [
+        {
+          "path": "audio/baseline/02-segment-01.wav",
+          "asr_text": "真的吗你已经拿到录取通知了我还以为结果要等到下个星期呢他忍不住笑了起来又认真问道那你什么时候出发心里都准备好了吗朋友停了一会儿小声说其实我也有点担心到了陌生的地方会不会什么事情都做不好他收起笑容回答说",
+          "character_edits": 4,
+          "target_characters": 100,
+          "cer": 0.04,
+          "substitutions": 4,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/02-segment-02.wav",
+          "asr_text": "担心也没关系我们可以一件一件准备先把今天能做的事情做好剩下的明天再说你不用马上变得特别勇敢",
+          "character_edits": 0,
+          "target_characters": 45,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.027586206896551724
+    },
+    {
+      "id": "03",
+      "label": "baseline",
+      "segments": [
+        {
+          "path": "audio/baseline/03-segment-01.wav",
+          "asr_text": "清晨许宁走进社区活动室的时候里面还没有开灯窗外的雨刚刚停玻璃上留着几道细细的水痕他把背包放在门边打开靠近墙角的灯桌上的纸箱便显出了原来的颜色箱子里装着旧照片几本笔记还有一张已经折过很多次的街区地图今天",
+          "character_edits": 1,
+          "target_characters": 100,
+          "cer": 0.01,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-02.wav",
+          "asr_text": "他要和几位邻居一起整理这些东西为周末的社区展览做准备最先来的邻居姓周他家平时叫他周叔他端着一杯热茶站在门口看了看问道这么多材料真的能在两天里整理完吗许宁笑着说先把能确定的部分挑出来剩下的可以留一个位置",
+          "character_edits": 2,
+          "target_characters": 100,
+          "cer": 0.02,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-03.wav",
+          "asr_text": "请来看展览的人帮忙补充周叔点点头放下茶杯从箱子里拿出一张照片照片上是一条窄窄的小路两边没有现在这么多商店只有几棵树和一间修自行车的小铺周叔说他小时候每天从这条路去学校走到拐角总会听见打气筒的声音",
+          "character_edits": 0,
+          "target_characters": 97,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-04.wav",
+          "asr_text": "修车的师傅很少抬头说话但看见孩子的轮胎瘪了常常会招手让他们停下来徐宁把这段话记在纸上又问您还记得那位师傅的名字吗周叔想了很久摇摇头说大家都喊他师傅好像没有谁认真问过名字他说完以后把照片放回桌上神清有一点遗憾",
+          "character_edits": 2,
+          "target_characters": 103,
+          "cer": 0.019417475728155338,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-05.wav",
+          "asr_text": "过了一会儿隔壁楼的阿姨也来了她带着一个透明的文件袋里面是几封旧信和一张手写的菜谱他解释说这些东西看起来不算特别珍贵可是当年搬到这里的时候附近的邻居经常照着这张菜谱一起做饭谁家的孩子放学澡就先到有人在家的那一户等着",
+          "character_edits": 2,
+          "target_characters": 106,
+          "cer": 0.018867924528301886,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-06.wav",
+          "asr_text": "那时候大家都忙门口却总能找到一个愿意帮忙的人许宁听着这些故事原来写好的展览标题忽然显得太大了他原本想介绍街剧的发展准备按年代排出一条长长的时间线现在他发现真正让人停下来看的可能是一张普通的照片",
+          "character_edits": 3,
+          "target_characters": 96,
+          "cer": 0.03125,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-07.wav",
+          "asr_text": "或是一句只在某个家庭里记得的话他把时间线挪到旁边另取一张白纸写下照片中的路门口的饭箱和放学后的等待准备把这些傻事分别整理出来上午快结束的时候一个背着书包的男孩在门口探了探头他说老师布置了一个作业要采访家附近的老人",
+          "character_edits": 3,
+          "target_characters": 106,
+          "cer": 0.02830188679245283,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-08.wav",
+          "asr_text": "了解一件过去发生的事周叔把椅子往旁边挪了挪请他坐下男孩打开本子第一句话就问您觉得以前的生活更好还是现在更好屋子里安静了一瞬周叔笑了说这个问题太难了以前有以前的难处现在也有现在的不方便",
+          "character_edits": 0,
+          "target_characters": 91,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-09.wav",
+          "asr_text": "不如先问问我们当时怎么过一天男孩想了想把问题改成了您小时候最喜欢一天里的哪个时候周叔说是夏天吃过晚饭以后大家搬着小凳子坐到门外有的人聊工作有的人修东西孩子在旁边跑来跑去街灯没有那么亮可是走到哪一段",
+          "character_edits": 0,
+          "target_characters": 98,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-10.wav",
+          "asr_text": "都知道门后住着谁男孩一边听一边写偶尔抬头追问许宁没有打断他们只把窗户开了一点让屋子里的空气更清爽一些下午整理工作遇到了一个小问题两张照片的背面写着不同的年份画面里却出现了同一块刚换好的招牌",
+          "character_edits": 0,
+          "target_characters": 94,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-11.wav",
+          "asr_text": "许宁没有急着把其中一张判成错误而是把两张并排放好贴上需要合适的纸条阿姨说也许写日期的人记错了也许照片洗出来的时候已经过了一年周叔建议等隔壁修表店的老板来看看他对那块招牌应该还有印象天色慢慢暗下来",
+          "character_edits": 2,
+          "target_characters": 97,
+          "cer": 0.020618556701030927,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-12.wav",
+          "asr_text": "几张桌子终于整理出空隙许宁把确定的信息贴到展板上又留了几个空白位置男孩临走前看着那些空白问是不是还有很多事情不知道许宁回答说是啊这也是展览的一部分我们不一定能把每个名字和日期都找回来但可以把已经知道的认真保存",
+          "character_edits": 0,
+          "target_characters": 104,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-13.wav",
+          "asr_text": "也让后来的人有机会补上新的线索男孩点点头说周末会带奶奶一起来锁门之前许宁又看了一眼最早拿出来的街区地图上面有几条路已经改了名字还有一些小店早就不在了可是今天听到的声音让那些地方重新有了具体的样子他没有在该展览的标题",
+          "character_edits": 3,
+          "target_characters": 107,
+          "cer": 0.028037383177570093,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/03-segment-14.wav",
+          "asr_text": "只在下面加了一行很小的字写着这些故事还在继续走出活动室的时候路边有人正收起雨伞许宁向对方点了点头沿着熟悉的小路慢慢往家走",
+          "character_edits": 0,
+          "target_characters": 60,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.013245033112582781
+    },
+    {
+      "id": "04",
+      "label": "baseline",
+      "segments": [
+        {
+          "path": "audio/baseline/04-segment-01.wav",
+          "asr_text": "各位乘客请注意原定于上午九点四十五分出发的列车预计晚点二十分钟请前往二号候车区留意屏幕上的最新通知今天的室外温度为十二摄氏度傍晚可能降到七摄氏度需要办理改签的旅客可以到三号窗口咨询每张车票的服务费为十八元五角",
+          "character_edits": 0,
+          "target_characters": 104,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/04-segment-02.wav",
+          "asr_text": "办理完成后请核对姓名日期和座位信息预计到达时间为下午一点零五分我们会在行程恢复后再次广播",
+          "character_edits": 0,
+          "target_characters": 44,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.0
+    },
+    {
+      "id": "05",
+      "label": "baseline",
+      "segments": [
+        {
+          "path": "audio/baseline/05-segment-01.wav",
+          "asr_text": "银行行长今天要参加行业会议还要检查仓库里两行货架的摆放情况重复检查并不意味着每次都要重新开始先分清轻重再调整处理的顺序你觉得这个方案合适吗如果时间不够我们可以延期吗如果只改其中一部分结果会不会更好请想清楚以后再回答",
+          "character_edits": 0,
+          "target_characters": 107,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/baseline/05-segment-02.wav",
+          "asr_text": "不用着急",
+          "character_edits": 0,
+          "target_characters": 4,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.0
+    },
+    {
+      "id": "01",
+      "label": "finetuned",
+      "segments": [
+        {
+          "path": "audio/finetuned/01-segment-01.wav",
+          "asr_text": "录制声音之前先把麦克风固定在合适的位置让嘴巴与收音端保持稳定的距离输入音量不宜过高说到最响的一句话时波形也应该流出余量录完以后先检查有没有爆烟碰撞声和明显的背景音乐再决定是否需要重新录制不要为了让曲线看起来整齐",
+          "character_edits": 2,
+          "target_characters": 105,
+          "cer": 0.01904761904761905,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/01-segment-02.wav",
+          "asr_text": "反复压缩每一句话的音量过度处理可能改变原来的呼吸和语气保存文件时分别保留原始录音剪辑版本和文字记录之后排查问题会方便的多",
+          "character_edits": 1,
+          "target_characters": 60,
+          "cer": 0.016666666666666666,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.01818181818181818
+    },
+    {
+      "id": "02",
+      "label": "finetuned",
+      "segments": [
+        {
+          "path": "audio/finetuned/02-segment-01.wav",
+          "asr_text": "真的吗你已经拿到录取通知了我还以为结果要等到下个星期呢他忍不住笑了起来又认真问道那你什么时候出发行李都准备好了吗朋友停了一会儿小声说其实我也有点担心到了陌生的地方会不会什么事情都做不好他收起笑容回答说",
+          "character_edits": 2,
+          "target_characters": 100,
+          "cer": 0.02,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/02-segment-02.wav",
+          "asr_text": "谈心也没关系我们可以一件一件准备先把今天能做的事情做好剩下的明天再说你不用马上变得特别勇敢",
+          "character_edits": 1,
+          "target_characters": 45,
+          "cer": 0.022222222222222223,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.020689655172413793
+    },
+    {
+      "id": "03",
+      "label": "finetuned",
+      "segments": [
+        {
+          "path": "audio/finetuned/03-segment-01.wav",
+          "asr_text": "清晨许妮走进社区活动室的时候里面还没有开灯窗外的雨刚刚停玻璃上留着几道细细的水痕他把背包放在门边打开靠近墙角的灯桌上的纸箱便显出了原来的颜色箱子里装着旧照片几本笔记还有一张已经折过很多次的截取地图今天",
+          "character_edits": 4,
+          "target_characters": 100,
+          "cer": 0.04,
+          "substitutions": 4,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-02.wav",
+          "asr_text": "他要和几位邻居一起整理这些东西为周末的社区展览做准备最先来的邻居姓周大家平时叫他周叔他端着一杯热茶站在门口看了看问道这么多材料真的能在两天里整理完吗许宁笑着说先把能确定的部分挑出来剩下的可以留一个位置",
+          "character_edits": 1,
+          "target_characters": 100,
+          "cer": 0.01,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-03.wav",
+          "asr_text": "请来看展览的人帮忙补充周叔点点头放下茶杯从箱子里拿出一张照片照片上是一条窄窄的小路两边没有现在这么多商店只有几棵树和一间修自行车的小铺周叔说他小时候每天从这条路去学校走到拐角总会听见打气筒的声音",
+          "character_edits": 0,
+          "target_characters": 97,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-04.wav",
+          "asr_text": "修车的师傅很少抬头说话但看见孩子的轮胎瘪了常常会招手让他们停下来许宁把这段话记在纸上又问你还记得那位师傅的名字吗周叔想了很久摇摇头说大家都喊他师傅好像没有谁认真问过名字他说完以后把照片放回桌上神经有一点遗憾",
+          "character_edits": 2,
+          "target_characters": 103,
+          "cer": 0.019417475728155338,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-05.wav",
+          "asr_text": "过了一会儿隔壁楼的阿姨也来了她带着一个透明的文件袋里面是几封旧信和一张手写的菜谱她解释说这些东西看起来不算特别珍贵可是当年搬到这里的时候附近的邻居经常照着这张菜谱一起做饭谁家的孩子放学澡就嫌到有人在家的那一户等着",
+          "character_edits": 2,
+          "target_characters": 106,
+          "cer": 0.018867924528301886,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-06.wav",
+          "asr_text": "那时候大家都忙门口却总能找到一个愿意帮忙的人许凝听着这些故事原来写好的展览标题忽然显得太大了他原本想介绍街区的发展准备按年代排出一条长长的时间线现在他发现真正让人停下来看的可能是一张普通的照片",
+          "character_edits": 3,
+          "target_characters": 96,
+          "cer": 0.03125,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-07.wav",
+          "asr_text": "或是一句只在某个家庭里记得的话他把时间线挪到旁边另取一张白纸写下照片中的路门口的饭箱和放学后的等待准备把这些小事分别整理出来上午快结束的时候一个背着书包的男孩在门口探了探头他说老师布置了一个作业要采访家附近的老人",
+          "character_edits": 2,
+          "target_characters": 106,
+          "cer": 0.018867924528301886,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-08.wav",
+          "asr_text": "了解一件过去发生的事周树把椅子往旁边挪了挪请他坐下男孩打开本子第一句话就问您觉得以前的生活更好还是现在更好屋子里安静了一瞬周叔笑了说这个问题太难了以前有以前的难处现在也有现在的不方便",
+          "character_edits": 1,
+          "target_characters": 91,
+          "cer": 0.01098901098901099,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-09.wav",
+          "asr_text": "不如先问问我们当时怎么过一天男孩想了想把问题改成了您小时候最喜欢一天里的哪个时候周叔说是夏天吃过晚饭以后大家搬着小凳子坐到门外有的人聊工作有的人修东西孩子在旁边跑来跑去街灯没有那么亮可是走到哪一段",
+          "character_edits": 0,
+          "target_characters": 98,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-10.wav",
+          "asr_text": "都知道门后住着谁男孩一边听一边写偶尔抬头追问许宁没有打断他们只把窗户开了一点让屋子里的空气更清爽一些下午整理工作遇到了一个小问题两张照片的背面写着不同的年份画面里却出现了同一块刚画好的招牌",
+          "character_edits": 1,
+          "target_characters": 94,
+          "cer": 0.010638297872340425,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-11.wav",
+          "asr_text": "许宁没有急着把其中一张判成错误而是把两张兵牌放好贴上需要合实的纸条阿姨说也许写日期的人记错了也许照片洗出来的时候已经过了一年周叔建议等隔壁修表店的老板来看看他对那块招牌应该还有印象天色慢慢暗下来",
+          "character_edits": 3,
+          "target_characters": 97,
+          "cer": 0.030927835051546393,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-12.wav",
+          "asr_text": "几张桌子终于整理出空隙许宁把确定的信息贴到展板上又留了几个空白位置男孩临走前看着那些空白问是不是还有很多事情不知道许宁回答说是啊这也是展览的一部分我们不一定能把每个名字和日期都找回来但可以把已经知道的认真保存",
+          "character_edits": 0,
+          "target_characters": 104,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-13.wav",
+          "asr_text": "也让后来的人有机会补上新的线索男孩点点头说周末会带奶奶一起来锁门之前许宁又看了一眼最早拿出来的街区地图上面有几条路已经改了名字还有一些小店早就不在了可是今天听到的声音让那些地方重新有了具体的样子他没有在该展览的标题",
+          "character_edits": 3,
+          "target_characters": 107,
+          "cer": 0.028037383177570093,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/03-segment-14.wav",
+          "asr_text": "只在下面加了一行很小的字写着这些故事还在继续走出活动室的时候路边有人正收紧雨伞许宁向对方点了点头沿着熟悉的小路慢慢往家走",
+          "character_edits": 1,
+          "target_characters": 60,
+          "cer": 0.016666666666666666,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.01692420897718911
+    },
+    {
+      "id": "04",
+      "label": "finetuned",
+      "segments": [
+        {
+          "path": "audio/finetuned/04-segment-01.wav",
+          "asr_text": "各位乘客请注意原定于上午九点四十五分出发的列车预计晚点二十分钟请前往二号候车区留意屏幕上的最新通知今天的室外温度为十二摄氏度傍晚可能降到七摄氏度需要办理改签的旅客可以到三号窗口咨询每张车票的服务费为十八元五角",
+          "character_edits": 0,
+          "target_characters": 104,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/04-segment-02.wav",
+          "asr_text": "办理完成后请核对姓名日期和座位信息预计到达时间为下午一点零五分我们会在行程恢复后再次广播",
+          "character_edits": 0,
+          "target_characters": 44,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.0
+    },
+    {
+      "id": "05",
+      "label": "finetuned",
+      "segments": [
+        {
+          "path": "audio/finetuned/05-segment-01.wav",
+          "asr_text": "银行行长今天要参加行业会议还要检查仓库里两行货架的摆放情况重复检查并不意味着每次都要重新开始先分轻轻重再调整处理的顺序你觉得这个方案合适吗如果时间不够我们可以延期吗如果只改其中一部分结果会不会更好请想清楚以后再回答",
+          "character_edits": 1,
+          "target_characters": 107,
+          "cer": 0.009345794392523364,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned/05-segment-02.wav",
+          "asr_text": "不用着急",
+          "character_edits": 0,
+          "target_characters": 4,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.009009009009009009
+    },
+    {
+      "id": "03",
+      "label": "finetuned-short-segments",
+      "segments": [
+        {
+          "path": "audio/finetuned-short-segments/03-segment-01.wav",
+          "asr_text": "清晨许宁走进社区活动室的时候里面还没有开灯窗外的雨刚刚停玻璃上留着几道细细的水痕他把背包放在门边",
+          "character_edits": 1,
+          "target_characters": 48,
+          "cer": 0.020833333333333332,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-02.wav",
+          "asr_text": "打开靠近墙角的灯桌上的纸箱便显出了原来的颜色箱子里装着旧照片几本笔记还有一张已经折过很多次的街区地图今天",
+          "character_edits": 0,
+          "target_characters": 52,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-03.wav",
+          "asr_text": "他要和几位邻居一起整理这些东西为周末的社区展览做准备最先来的邻居姓周他家平时叫他周叔他端着一杯热茶",
+          "character_edits": 2,
+          "target_characters": 49,
+          "cer": 0.04081632653061224,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-04.wav",
+          "asr_text": "站在门口看了看问道这么多材料真的能在两天里整理完吗徐宁笑着说先把能确定的部分挑出来剩下的可以留一个位置",
+          "character_edits": 1,
+          "target_characters": 51,
+          "cer": 0.0196078431372549,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-05.wav",
+          "asr_text": "请来看展览的人帮忙补充卓叔点点头放下茶杯从箱子里拿出一张照片照片上是一条窄窄的小路两边没有现在这么多商店",
+          "character_edits": 1,
+          "target_characters": 52,
+          "cer": 0.019230769230769232,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-06.wav",
+          "asr_text": "只有几棵树和一间修自行车的小铺周叔说他小时候每天从这条路去学校走到拐角总会听见打气筒的声音",
+          "character_edits": 0,
+          "target_characters": 45,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-07.wav",
+          "asr_text": "修车的师傅很少抬头说话但看见孩子的轮胎瘪了常常会招手让他们停下来许宁把这段话记在纸上又问",
+          "character_edits": 0,
+          "target_characters": 44,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-08.wav",
+          "asr_text": "你还记得那位师傅的名字吗周书想了很久摇摇头说大家都喊他师傅好像没有谁认真问过名字他说完以后",
+          "character_edits": 2,
+          "target_characters": 45,
+          "cer": 0.044444444444444446,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-09.wav",
+          "asr_text": "把照片放回桌上深情有一点遗憾过了一会儿隔壁楼的阿姨也来了她带着一个透明的文件袋",
+          "character_edits": 1,
+          "target_characters": 39,
+          "cer": 0.02564102564102564,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-10.wav",
+          "asr_text": "里面是几封旧信和一张手写的菜谱他解释说这些东西看起来不算特别珍贵可是当年搬到这里的时候",
+          "character_edits": 1,
+          "target_characters": 43,
+          "cer": 0.023255813953488372,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-11.wav",
+          "asr_text": "附近的邻居经常照着这张菜谱一起做饭谁家的孩子放学早就先到有人在家的那一户等着那时候大家都忙",
+          "character_edits": 0,
+          "target_characters": 45,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-12.wav",
+          "asr_text": "门口却总能找到一个愿意帮忙的人徐宁听着这些故事原来写好的展览标题忽然显得太大了他原本想介绍街区的发展",
+          "character_edits": 2,
+          "target_characters": 50,
+          "cer": 0.04,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-13.wav",
+          "asr_text": "准备按年代排出一条长长的时间线现在他发现真正让人停下来看的可能是一张普通的照片",
+          "character_edits": 1,
+          "target_characters": 39,
+          "cer": 0.02564102564102564,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-14.wav",
+          "asr_text": "或是一句只在某个家庭里记得的话他把时间线挪到旁边另取一张白纸写下照片中的路门口的饭箱和放学后的等待",
+          "character_edits": 2,
+          "target_characters": 49,
+          "cer": 0.04081632653061224,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-15.wav",
+          "asr_text": "准备把这些小事分别整理出来上午快结束的时候一个背着书包的男孩在门口探了探头他说老师布置了一个作业",
+          "character_edits": 0,
+          "target_characters": 48,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-16.wav",
+          "asr_text": "要采访家附近的老人了解一件过去发生的事咒叔把椅子往旁边挪了挪请他坐下男孩打开本子第一句话就问",
+          "character_edits": 1,
+          "target_characters": 46,
+          "cer": 0.021739130434782608,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-17.wav",
+          "asr_text": "您觉得以前的生活更好还是现在更好屋子里安静了一瞬周舒笑了说这个问题太难了以前有以前的难处",
+          "character_edits": 1,
+          "target_characters": 44,
+          "cer": 0.022727272727272728,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-18.wav",
+          "asr_text": "现在也有现在的不方便不如先问问我们当时怎么过一天男孩想了想把问题改成了你小时候最喜欢一天里的哪个时候",
+          "character_edits": 1,
+          "target_characters": 50,
+          "cer": 0.02,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-19.wav",
+          "asr_text": "周叔说是夏天吃过晚饭以后他家搬着小凳子坐到门外有的人聊工作有的人修东西孩子在旁边跑来跑去街灯没有那么亮",
+          "character_edits": 1,
+          "target_characters": 51,
+          "cer": 0.0196078431372549,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-20.wav",
+          "asr_text": "可是走到哪一段都知道门后住着谁男孩一边听一边写偶尔抬头追问许宁没有打断他们只把窗户开了一点",
+          "character_edits": 0,
+          "target_characters": 45,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-21.wav",
+          "asr_text": "让屋子里的空气更清爽一些下午整理工作遇到了一个小问题两张照片的背面写着不同的年份",
+          "character_edits": 0,
+          "target_characters": 40,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-22.wav",
+          "asr_text": "画面里却出现了同一块刚换好的招牌许宁没有急着把其中一张判成错误而是把两张并排放好贴上需要核实的纸条阿姨说",
+          "character_edits": 0,
+          "target_characters": 52,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-23.wav",
+          "asr_text": "也许写日期的人记错了也许照片洗出来的时候已经过了一年周叔建议等隔壁修表店的老板来看看",
+          "character_edits": 0,
+          "target_characters": 42,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-24.wav",
+          "asr_text": "他对那块招牌应该还有印象天色慢慢暗下来几张桌子终于整理出空隙旭宁把确定的信息贴到展板上又留了几个空白位置",
+          "character_edits": 1,
+          "target_characters": 52,
+          "cer": 0.019230769230769232,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-25.wav",
+          "asr_text": "男海临走前看着那些空白问是不是还有很多事情不知道许宁回答说是啊这也是展览的一部分",
+          "character_edits": 1,
+          "target_characters": 40,
+          "cer": 0.025,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-26.wav",
+          "asr_text": "我们不一定能把每个名字和日期都找回来但可以把已经知道的认真保存也让后来的人有机会补上新的线索南海点点头",
+          "character_edits": 2,
+          "target_characters": 51,
+          "cer": 0.0392156862745098,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-27.wav",
+          "asr_text": "说周末会带奶奶一起来锁门之前史宁又看了一眼最早拿出来的街区地图上面有几条路已经改了名字",
+          "character_edits": 1,
+          "target_characters": 43,
+          "cer": 0.023255813953488372,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-28.wav",
+          "asr_text": "还有一些小店早就不在了可是今天听到的声音让那些地方重新有了具体的样子他没有再改展览的标题",
+          "character_edits": 1,
+          "target_characters": 44,
+          "cer": 0.022727272727272728,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-29.wav",
+          "asr_text": "只在下面加了一行很小的字写着这些故事还在继续走出活动室的时候路边有人正收起雨伞徐宁向对方点了点头",
+          "character_edits": 1,
+          "target_characters": 48,
+          "cer": 0.020833333333333332,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0
+        },
+        {
+          "path": "audio/finetuned-short-segments/03-segment-30.wav",
+          "asr_text": "沿着熟悉的小路慢慢往家走",
+          "character_edits": 0,
+          "target_characters": 12,
+          "cer": 0.0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0
+        }
+      ],
+      "segment_corpus_cer": 0.01839587932303164
+    }
+  ],
+  "limitations": "Independent ASR check only; not a human listening review."
+}

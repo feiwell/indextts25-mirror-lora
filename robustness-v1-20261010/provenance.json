@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/SrQingChen/IndexTTS-2.5-Pro",
+  "revision_query": {
+    "head_at_query": null,
+    "query_error": "HTTP Error 403: rate limit exceeded"
+  },
+  "source_tar_sha256": "fd0038191caf49a5789314f6f1496321c25a980aa8afea2857c1e7b42ce32687",
+  "source_url": "https://www.bilibili.com/video/BV1FA4m1G7fY",
+  "cid": 1447013227,
+  "creator": "美御Mirror",
+  "creator_training_permission": "not verified",
+  "use": "private user experiment; no model publication",
+  "source_sha256": "f9a4858b21dcd8048959b480a3d5725e9b72eb0e6c1a51a52adfaffa6bd29837",
+  "weights": {
+    "gpt.pth": {
+      "bytes": 3259599833,
+      "sha256": "43a8f4c30eccdf201958d3b9713511482c19d56dc20b0b1c4ee1e6b080b19d85"
+    },
+    "s2mel.pth": {
+      "bytes": 414908601,
+      "sha256": "9b1b0003fc189c94cc349758d7ebc25f903b7eb2de4602879959cc64ce816456"
+    },
+    "codec.pth": {
+      "bytes": 607290935,
+      "sha256": "d15cbed16a40f478438c961fb043f68dfa6353bf56c966761315db3433e9722c"
+    },
+    "config.yaml": {
+      "bytes": 2860,
+      "sha256": "18adf417be3e8f5e2e48e30f7420c719170a6870619436250f360d626877870e"
+    }
+  },
+  "archive_commit": "d3439bccb061944abf745844274aa0c2edfa35a3"
+}

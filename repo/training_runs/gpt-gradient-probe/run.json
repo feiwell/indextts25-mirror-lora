@@ -1,0 +1,85 @@
+{
+  "arch": "gpt",
+  "run": "gpt-gradient-probe",
+  "dataset": "mirror-verified-asr",
+  "status": "running",
+  "created_at": 1791634821.3125665,
+  "config": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "use_rslora": false,
+    "target_modules": [
+      "attn/c_attn",
+      "attn/c_proj"
+    ],
+    "target_preset": "attn",
+    "lr": 5e-05,
+    "weight_decay": 0.02,
+    "warmup_ratio": 0.06,
+    "grad_clip": 1.0,
+    "epochs": 6,
+    "max_steps": 4,
+    "batch_size": 1,
+    "grad_accum": 1,
+    "replay_ratio": 0,
+    "replay_source": "none",
+    "replay_dataset": "",
+    "eval_every": 25,
+    "val_patience": 4,
+    "val_min_delta": 0.0001,
+    "keep_checkpoints": 4,
+    "adapter_scale": 1.0,
+    "bf16": true,
+    "grad_checkpointing": true,
+    "seed": 20261010,
+    "_effective_scale": 2.0
+  },
+  "options": {
+    "text_loss_weight": 0.0,
+    "max_codes": 320,
+    "max_text_tokens": 200,
+    "sort_by_length": true,
+    "base_dropout": 0.0,
+    "min_lr_ratio": 0.1,
+    "log_every": 5,
+    "save_optimizer_state": true
+  },
+  "device": "cuda:0",
+  "model_dir": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints",
+  "total_steps": 4,
+  "steps_per_epoch": 28,
+  "adapter_params": 1474560,
+  "base_params": 812289460,
+  "data": {
+    "n_train": 28,
+    "n_val": 7,
+    "n_replay_pool": 0,
+    "steps_per_epoch": 28,
+    "total_steps": 4
+  },
+  "notes": [
+    {
+      "level": "warn",
+      "message": "**回放比例 = 0**，这是灾难性遗忘最主要的成因。训练全程只看目标角色的数据，模型会逐步丢掉通用发音能力。建议 ≥0.2，数据越少比例越高。"
+    },
+    {
+      "level": "warn",
+      "message": "可用样本 28 条（约 168 个 step）。属于极小数据集，请用「保守」档并把 replay_ratio 提到 0.5 以上。"
+    }
+  ],
+  "steps": 0,
+  "epochs": 0,
+  "history": [],
+  "resume_from": "",
+  "resumed_tensors": 0,
+  "lora_layers": 48,
+  "target_regex": "(.*\\.)?(attn\\.(\\d+\\.)?c_attn|attn\\.(\\d+\\.)?c_proj)$",
+  "target_patterns": [
+    "attn/c_attn",
+    "attn/c_proj"
+  ],
+  "base_dtype": "bfloat16",
+  "base_weights": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth",
+  "promoted_fp32": 0
+}

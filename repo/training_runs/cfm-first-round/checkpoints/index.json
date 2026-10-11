@@ -1,0 +1,43 @@
+{
+  "mode": "min",
+  "keep": 4,
+  "updated_at": 1791634951.219816,
+  "checkpoints": [
+    {
+      "name": "ckpt-e003-s000056",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/checkpoints/ckpt-e003-s000056",
+      "epoch": 3,
+      "step": 56,
+      "metric": 0.578389108013571,
+      "saved_at": 1791634945.5171719,
+      "is_best": false
+    },
+    {
+      "name": "ckpt-e004-s000070",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/checkpoints/ckpt-e004-s000070",
+      "epoch": 4,
+      "step": 70,
+      "metric": 0.5781379867486612,
+      "saved_at": 1791634947.9721673,
+      "is_best": false
+    },
+    {
+      "name": "ckpt-e005-s000084",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/checkpoints/ckpt-e005-s000084",
+      "epoch": 5,
+      "step": 84,
+      "metric": 0.5780099152864907,
+      "saved_at": 1791634950.921366,
+      "is_best": true
+    },
+    {
+      "name": "ckpt-e006-s000084",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/checkpoints/ckpt-e006-s000084",
+      "epoch": 6,
+      "step": 84,
+      "metric": 0.5780099152864907,
+      "saved_at": 1791634951.2181604,
+      "is_best": false
+    }
+  ]
+}

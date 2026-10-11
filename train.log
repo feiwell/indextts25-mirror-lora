@@ -1,0 +1,71 @@
+gpt 0.020 建立训练记录
+gpt 0.050 校验底座完整性
+gpt 0.120 显存体检
+gpt 0.180 加载 gpt.pth（约 3.2 GB，请稍候）
+/root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/transformers/configuration_utils.py:312: UserWarning: Passing `gradient_checkpointing` to a config initialization is deprecated and will be removed in v5 Transformers. Using `model.gradient_checkpointing_enable()` instead, or if you are using the `Trainer` API, pass `gradient_checkpointing=True` in your `TrainingArguments`.
+  warnings.warn(
+gpt 0.580 注入 LoRA（attn, r=8）
+/root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/peft/tuners/lora/layer.py:2631: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+gpt 0.640 对齐精度（底座 bf16 / adapter fp32）
+gpt 0.700 切换到训练态（非重入梯度检查点）
+gpt 0.760 建立 AdamW 与余弦退火
+gpt 0.950 准备完成
+gpt 0.050 评估底座基线
+/root/voice-training/indextts25-mirror-20261010/repo/webui_app/training/gpt_lora.py:690: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  return {"loss": float(loss), "n": len(samples),
+gpt 0.157 epoch 1 · step 5/42 · loss 6.0922
+gpt 0.167 epoch 1 轮末评估
+gpt 0.264 epoch 2 · step 10/42 · loss 5.8997
+gpt 0.333 epoch 2 轮末评估
+gpt 0.371 epoch 3 · step 15/42 · loss 6.0287
+gpt 0.479 epoch 3 · step 20/42 · loss 5.9986
+gpt 0.500 epoch 3 轮末评估
+gpt 0.586 epoch 4 · step 25/42 · loss 6.0675
+gpt 0.595 评估中（step 25）
+gpt 0.667 epoch 4 轮末评估
+gpt 0.693 epoch 5 · step 30/42 · loss 5.9375
+gpt 0.800 epoch 5 · step 35/42 · loss 5.9876
+gpt 0.833 epoch 5 轮末评估
+gpt 0.907 epoch 6 · step 40/42 · loss 5.8663
+gpt 0.970 epoch 6 轮末评估
+TRAINING COMPLETE gpt 42 13.930446413000027
+cfm 0.020 建立训练记录
+cfm 0.050 校验底座完整性
+cfm 0.120 显存体检
+cfm 0.180 加载 s2mel.pth（CFM 98M 参数）
+/root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+cfm 0.580 注入 LoRA（attn, r=8）
+cfm 0.640 对齐精度（底座 / adapter fp32）
+cfm 0.700 切换到训练态（dropout / CFG 丢弃）
+cfm 0.760 建立 AdamW 与余弦退火
+cfm 0.950 准备完成
+cfm 0.050 评估底座基线
+cfm 0.104 epoch 1 · step 5/84 · loss 0.6360
+cfm 0.157 epoch 1 · step 10/84 · loss 0.5652
+cfm 0.167 epoch 1 轮末评估
+cfm 0.211 epoch 2 · step 15/84 · loss 0.5605
+cfm 0.264 epoch 2 · step 20/84 · loss 0.5902
+cfm 0.318 epoch 2 · step 25/84 · loss 0.6409
+cfm 0.298 评估中（step 25）
+cfm 0.333 epoch 2 轮末评估
+cfm 0.371 epoch 3 · step 30/84 · loss 0.5787
+cfm 0.425 epoch 3 · step 35/84 · loss 0.6587
+cfm 0.479 epoch 3 · step 40/84 · loss 0.5622
+cfm 0.500 epoch 3 轮末评估
+cfm 0.532 epoch 4 · step 45/84 · loss 0.5923
+cfm 0.586 epoch 4 · step 50/84 · loss 0.5874
+cfm 0.595 评估中（step 50）
+cfm 0.639 epoch 4 · step 55/84 · loss 0.6306
+cfm 0.667 epoch 4 轮末评估
+cfm 0.693 epoch 5 · step 60/84 · loss 0.5640
+cfm 0.746 epoch 5 · step 65/84 · loss 0.6465
+cfm 0.800 epoch 5 · step 70/84 · loss 0.6633
+cfm 0.833 epoch 5 轮末评估
+cfm 0.854 epoch 6 · step 75/84 · loss 0.6006
+cfm 0.893 评估中（step 75）
+cfm 0.907 epoch 6 · step 80/84 · loss 0.6114
+cfm 0.970 epoch 6 轮末评估
+TRAINING COMPLETE cfm 84 18.086651760000223

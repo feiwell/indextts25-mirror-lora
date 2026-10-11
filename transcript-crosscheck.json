@@ -1,0 +1,354 @@
+[
+  {
+    "id": "utt_00015",
+    "whisper": "晚上疯的。就别站在阳台上了",
+    "sensevoice": "晚上风大就别站在阳台上了。",
+    "disagreement_cer": 0.16666666666666666,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00017",
+    "whisper": "你感冒不是刚好吗",
+    "sensevoice": "你感冒不是刚好吗？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00018",
+    "whisper": "忘了前两天那难受的劲儿了",
+    "sensevoice": "忘了前两天那难受的劲儿了。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00052",
+    "whisper": "我又不是一个笨蛋",
+    "sensevoice": "我又不是一个笨蛋。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00066",
+    "whisper": "不管你发生了什么事",
+    "sensevoice": "不管你发生了什么事儿。",
+    "disagreement_cer": 0.1111111111111111,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00078",
+    "whisper": "我感应到底。也会跟着你一起难受",
+    "sensevoice": "我感应到了也会跟着你一起难受。",
+    "disagreement_cer": 0.07142857142857142,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00081",
+    "whisper": "回到我们刚刚的那个问题",
+    "sensevoice": "回到我们刚刚的那个问题。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00096",
+    "whisper": "那也挺久的了",
+    "sensevoice": "那也挺久的啦。",
+    "disagreement_cer": 0.16666666666666666,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00099",
+    "whisper": "真的有好点了吗",
+    "sensevoice": "真的有好点了吗？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00100",
+    "whisper": "对不起啊宝宝",
+    "sensevoice": "对不起啊，宝宝。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00119",
+    "whisper": "我当时还以为。你又在地外上",
+    "sensevoice": "我当时还以为你有在DY上。",
+    "disagreement_cer": 0.25,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00121",
+    "whisper": "刷到什么视频。跑过来问我呢",
+    "sensevoice": "刷到什么视频好过来问我呢。",
+    "disagreement_cer": 0.08333333333333333,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00124",
+    "whisper": "问这种问题的你傻",
+    "sensevoice": "问这种问题的你傻。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00125",
+    "whisper": "没察觉到医疗的我也傻",
+    "sensevoice": "没察觉到异样的，我也是。",
+    "disagreement_cer": 0.3,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00144",
+    "whisper": "那咱们俩时间发生了那么多事。我不早就跑没眼了",
+    "sensevoice": "那咱们俩之间发生了那么多事儿，我不早就跑没影了。",
+    "disagreement_cer": 0.14285714285714285,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00146",
+    "whisper": "还用等到现在吗",
+    "sensevoice": "还用等到现在吗？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00157",
+    "whisper": "我那么那么喜欢你",
+    "sensevoice": "我那么那么喜欢你。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00163",
+    "whisper": "你是不是要哭了",
+    "sensevoice": "你是不是要哭了？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00165",
+    "whisper": "你真的不哭吗",
+    "sensevoice": "你真的不哭吗？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00166",
+    "whisper": "哎呀。我明明说的那么感人",
+    "sensevoice": "哎呀，我明明说的那么感人。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00184",
+    "whisper": "明明我们每次打电话都打到半夜",
+    "sensevoice": "明明我们每次打电话都打到半夜。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00185",
+    "whisper": "你是挂了电话。就开始哭了吗",
+    "sensevoice": "你是挂了电话就开始哭了吗？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00191",
+    "whisper": "原来都是你骗我的",
+    "sensevoice": "原来都是你骗我的。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00206",
+    "whisper": "你就是老板是吧。就是你不让我的对象休息的",
+    "sensevoice": "你就是老板是吧？就是你不让我的对象休息的。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00208",
+    "whisper": "是不是。什么垃圾公司。脑子不让他干了",
+    "sensevoice": "是不是什么垃圾公司啊，老子不让他干了。",
+    "disagreement_cer": 0.125,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00225",
+    "whisper": "我觉得要你开心最重要",
+    "sensevoice": "我觉得要你开心最重要。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00261",
+    "whisper": "你不是最喜欢。去安静的地方了吗",
+    "sensevoice": "你不是最喜欢去安静的地方了吗？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00263",
+    "whisper": "那。我去做一下攻略。看一下我们第一站要去",
+    "sensevoice": "那我去做一下攻略，看一下我们第一站要去。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00290",
+    "whisper": "那我们回屋好不好",
+    "sensevoice": "那我们回屋好不好？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00312",
+    "whisper": "缓缓地讲道",
+    "sensevoice": "缓缓的想到。",
+    "disagreement_cer": 0.6,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00313",
+    "whisper": "从前有一朵乌云",
+    "sensevoice": "从前有一朵乌云。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00314",
+    "whisper": "它远远地看了太阳一眼",
+    "sensevoice": "他远远的看了太阳一眼。",
+    "disagreement_cer": 0.2,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00315",
+    "whisper": "虽然只是匆匆的一片",
+    "sensevoice": "虽然只是匆匆的一瞥。",
+    "disagreement_cer": 0.1111111111111111,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00340",
+    "whisper": "是因为被蒸发到上面去了",
+    "sensevoice": "是因为被蒸发到上面去了。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00341",
+    "whisper": "等到太阳出现的时候",
+    "sensevoice": "等到太阳出现的时候。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00342",
+    "whisper": "自己就会被蒸发",
+    "sensevoice": "自己就会被蒸发。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00348",
+    "whisper": "一点一点地聚集在一起",
+    "sensevoice": "一天的聚集在一起。",
+    "disagreement_cer": 0.4,
+    "accepted": false,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00368",
+    "whisper": "小兔子高兴到手舞足蹈",
+    "sensevoice": "小兔子高兴到手舞足蹈。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00369",
+    "whisper": "小狐狸宠溺地看着小兔子说",
+    "sensevoice": "小狐狸宠溺的看着小兔子说。",
+    "disagreement_cer": 0.08333333333333333,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00370",
+    "whisper": "明天。我带你去寻找彩虹吧",
+    "sensevoice": "明天我带你去寻找彩虹吧。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00392",
+    "whisper": "晚上怎么会有彩虹呢",
+    "sensevoice": "晚上怎么会有彩虹呢？",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00393",
+    "whisper": "小狐狸也抬头望着夜空。说道。我没有骗你",
+    "sensevoice": "小狐狸也抬头望着夜空，说道，我没有骗你。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00396",
+    "whisper": "我一直躲在彩虹的下面",
+    "sensevoice": "我一直都在彩虹的下面。",
+    "disagreement_cer": 0.1,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  },
+  {
+    "id": "utt_00397",
+    "whisper": "即便是没有彩虹的夜晚",
+    "sensevoice": "即便是没有彩虹的夜晚。",
+    "disagreement_cer": 0.0,
+    "accepted": true,
+    "policy": "Reject disagreement > 0.12; keep original aligned Whisper text"
+  }
+]

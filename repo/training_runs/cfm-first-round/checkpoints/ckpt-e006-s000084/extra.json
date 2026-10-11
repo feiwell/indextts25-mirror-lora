@@ -1,0 +1,5 @@
+{
+  "kind": "final",
+  "arch": "cfm",
+  "run": "cfm-first-round"
+}

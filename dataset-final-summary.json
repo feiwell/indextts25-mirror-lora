@@ -1,0 +1,8 @@
+{
+  "dataset": "mirror-verified-asr",
+  "train_count": 28,
+  "val_count": 7,
+  "train_seconds": 80.65999999999983,
+  "val_seconds": 21.739999999999668,
+  "review": "Automated acoustic/event screening and two-ASR agreement; no manual listening review"
+}

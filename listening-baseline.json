@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/root/voice-training/indextts25-mirror-20261010/listening/baseline/01.wav",
+    "text": "今天下午三点，我们在地铁站旁边的咖啡店见面。",
+    "seed": 20261010,
+    "seconds": 6.7459988260000046,
+    "duration": 5.584399092970521
+  },
+  {
+    "path": "/root/voice-training/indextts25-mirror-20261010/listening/baseline/02.wav",
+    "text": "冰箱里还有牛奶和面包，记得吃完早餐再出门。",
+    "seed": 20261011,
+    "seconds": 3.643059446000052,
+    "duration": 5.421859410430839
+  },
+  {
+    "path": "/root/voice-training/indextts25-mirror-20261010/listening/baseline/03.wav",
+    "text": "刚才那份文件已经发给你了，方便的时候看一下。",
+    "seed": 20261012,
+    "seconds": 4.0372427780000635,
+    "duration": 5.909478458049887
+  },
+  {
+    "path": "/root/voice-training/indextts25-mirror-20261010/listening/baseline/04.wav",
+    "text": "外面开始下雨了，我把窗户关上，你先休息一会儿。",
+    "seed": 20261013,
+    "seconds": 4.023404491000065,
+    "duration": 6.30421768707483
+  },
+  {
+    "path": "/root/voice-training/indextts25-mirror-20261010/listening/baseline/05.wav",
+    "text": "明天的会议改到上午十点，地点还是二楼的小会议室。",
+    "seed": 20261014,
+    "seconds": 3.8191587219998837,
+    "duration": 6.060408163265306
+  },
+  {
+    "path": "/root/voice-training/indextts25-mirror-20261010/listening/baseline/06.wav",
+    "text": "这个周末我想去公园散步，然后顺路买一点水果。",
+    "seed": 20261015,
+    "seconds": 3.69818946700002,
+    "duration": 5.863038548752835
+  }
+]

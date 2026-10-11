@@ -1,0 +1,43 @@
+{
+  "config": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "use_rslora": false,
+    "target_modules": [
+      "attn/c_attn",
+      "attn/c_proj"
+    ],
+    "target_preset": "attn",
+    "lr": 5e-05,
+    "weight_decay": 0.02,
+    "warmup_ratio": 0.06,
+    "grad_clip": 1.0,
+    "epochs": 6,
+    "max_steps": 300,
+    "batch_size": 2,
+    "grad_accum": 2,
+    "replay_ratio": 0,
+    "replay_source": "none",
+    "replay_dataset": "",
+    "eval_every": 25,
+    "val_patience": 4,
+    "val_min_delta": 0.0001,
+    "keep_checkpoints": 4,
+    "adapter_scale": 1.0,
+    "bf16": true,
+    "grad_checkpointing": true,
+    "seed": 20261010,
+    "_effective_scale": 2.0
+  },
+  "options": {
+    "text_loss_weight": 0.0,
+    "max_codes": 320,
+    "max_text_tokens": 200,
+    "sort_by_length": true,
+    "base_dropout": 0.0,
+    "min_lr_ratio": 0.1,
+    "log_every": 5,
+    "save_optimizer_state": true
+  }
+}

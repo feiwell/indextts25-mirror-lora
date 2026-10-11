@@ -1,0 +1,301 @@
+{
+  "ok": true,
+  "run": "cfm-first-round",
+  "arch": "cfm",
+  "steps": 84,
+  "epochs": 6,
+  "seconds": 18.086651760000223,
+  "best_val": 0.5780099152864907,
+  "first_val": 0.5812779295374327,
+  "final_train": 0.5839887443624558,
+  "stopped_early": false,
+  "stop_reason": "",
+  "adapter_dir": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/adapter",
+  "n_checkpoints": 4,
+  "vram_peak_gb": 1.09,
+  "adapter_params": 319488,
+  "base_params": 98187344,
+  "drift": {
+    "global_rel": 0.004965,
+    "max_rel": 0.011503,
+    "max_name": "base_model.model.estimator.transformer.layers.0.attention.wo",
+    "mean_rel": 0.005381,
+    "n_layers": 26,
+    "seconds": 0.04,
+    "level": "🟢 保守",
+    "advice": "底座几乎没被带动，通用能力基本无损。若角色相似度不够，可提高 rank / alpha"
+  },
+  "base_verify": {
+    "ok": true,
+    "checked": 5,
+    "changed": [],
+    "missing": [],
+    "when": "after"
+  },
+  "notes": [
+    {
+      "level": "warn",
+      "message": "**回放比例 = 0**，这是灾难性遗忘最主要的成因。训练全程只看目标角色的数据，模型会逐步丢掉通用发音能力。建议 ≥0.2，数据越少比例越高。"
+    },
+    {
+      "level": "info",
+      "message": "关闭了梯度检查点：速度快约 30%，但显存占用明显上升。"
+    },
+    {
+      "level": "warn",
+      "message": "可用样本 28 条（约 84 个 step）。属于极小数据集，请用「保守」档并把 replay_ratio 提到 0.5 以上。"
+    },
+    {
+      "level": "info",
+      "message": "max_prompt_frames=350 明显短于推理上限 1292（15s）。省显存，但长参考音频的行为没被训练约束过"
+    },
+    {
+      "level": "info",
+      "message": "val_repeats=2：每次评估会平均这么多组**固定**噪声。更稳，但评估耗时按倍数增加"
+    },
+    {
+      "level": "info",
+      "message": "truncate_target=False：超过 1050 帧的目标会被**整条丢弃**而不是截断。长句多的数据集会损失不少数据"
+    },
+    {
+      "level": "warn",
+      "message": "漂移只有 0.0050，几乎没改到底座。可能是学习率太小、步数太少，或者梯度根本没回传（看日志里的 grad 列）。"
+    }
+  ],
+  "history": [
+    {
+      "step": 0,
+      "epoch": 0,
+      "train": null,
+      "val": 0.58128,
+      "lr": 1e-05
+    },
+    {
+      "step": 5,
+      "epoch": 0,
+      "train": 0.63598,
+      "val": null,
+      "lr": 5e-05,
+      "grad_norm": 0.1411,
+      "samples": 10
+    },
+    {
+      "step": 10,
+      "epoch": 0,
+      "train": 0.56521,
+      "val": null,
+      "lr": 4.955669075310432e-05,
+      "grad_norm": 1.1752,
+      "samples": 10
+    },
+    {
+      "step": 14,
+      "epoch": 0,
+      "train": null,
+      "val": 0.5807,
+      "lr": 4.857425371104638e-05
+    },
+    {
+      "step": 15,
+      "epoch": 1,
+      "train": 0.56054,
+      "val": null,
+      "lr": 4.8244231731384645e-05,
+      "grad_norm": 0.0981,
+      "samples": 2
+    },
+    {
+      "step": 20,
+      "epoch": 1,
+      "train": 0.59017,
+      "val": null,
+      "lr": 4.611434073221879e-05,
+      "grad_norm": 0.109,
+      "samples": 10
+    },
+    {
+      "step": 25,
+      "epoch": 1,
+      "train": 0.6409,
+      "val": null,
+      "lr": 4.325094667781207e-05,
+      "grad_norm": 0.1887,
+      "samples": 10
+    },
+    {
+      "step": 25,
+      "epoch": 1,
+      "train": null,
+      "val": 0.58045,
+      "lr": 4.325094667781207e-05
+    },
+    {
+      "step": 28,
+      "epoch": 1,
+      "train": null,
+      "val": 0.58034,
+      "lr": 4.12266907852368e-05
+    },
+    {
+      "step": 30,
+      "epoch": 2,
+      "train": 0.57872,
+      "val": null,
+      "lr": 3.976688237366002e-05,
+      "grad_norm": 0.1441,
+      "samples": 4
+    },
+    {
+      "step": 35,
+      "epoch": 2,
+      "train": 0.65872,
+      "val": null,
+      "lr": 3.579943830179018e-05,
+      "grad_norm": 0.095,
+      "samples": 10
+    },
+    {
+      "step": 40,
+      "epoch": 2,
+      "train": 0.56219,
+      "val": null,
+      "lr": 3.150495265274489e-05,
+      "grad_norm": 0.0682,
+      "samples": 10
+    },
+    {
+      "step": 42,
+      "epoch": 2,
+      "train": null,
+      "val": 0.57878,
+      "lr": 2.973321047543139e-05
+    },
+    {
+      "step": 45,
+      "epoch": 3,
+      "train": 0.59226,
+      "val": null,
+      "lr": 2.705265077753592e-05,
+      "grad_norm": 0.1398,
+      "samples": 6
+    },
+    {
+      "step": 50,
+      "epoch": 3,
+      "train": 0.58742,
+      "val": null,
+      "lr": 2.2617976817607843e-05,
+      "grad_norm": 0.0798,
+      "samples": 10
+    },
+    {
+      "step": 50,
+      "epoch": 3,
+      "train": null,
+      "val": 0.57851,
+      "lr": 2.2617976817607843e-05
+    },
+    {
+      "step": 55,
+      "epoch": 3,
+      "train": 0.63059,
+      "val": null,
+      "lr": 1.837568028170764e-05,
+      "grad_norm": 0.4474,
+      "samples": 10
+    },
+    {
+      "step": 56,
+      "epoch": 3,
+      "train": null,
+      "val": 0.57839,
+      "lr": 1.7565226290141995e-05
+    },
+    {
+      "step": 60,
+      "epoch": 4,
+      "train": 0.56405,
+      "val": null,
+      "lr": 1.449292999494091e-05,
+      "grad_norm": 0.1369,
+      "samples": 8
+    },
+    {
+      "step": 65,
+      "epoch": 4,
+      "train": 0.64646,
+      "val": null,
+      "lr": 1.1122726766686384e-05,
+      "grad_norm": 0.1087,
+      "samples": 10
+    },
+    {
+      "step": 70,
+      "epoch": 4,
+      "train": 0.6633,
+      "val": null,
+      "lr": 8.39787435294431e-06,
+      "grad_norm": 0.0755,
+      "samples": 10
+    },
+    {
+      "step": 70,
+      "epoch": 4,
+      "train": null,
+      "val": 0.57814,
+      "lr": 8.39787435294431e-06
+    },
+    {
+      "step": 75,
+      "epoch": 5,
+      "train": 0.60064,
+      "val": null,
+      "lr": 6.425746288953626e-06,
+      "grad_norm": 0.1564,
+      "samples": 10
+    },
+    {
+      "step": 75,
+      "epoch": 5,
+      "train": null,
+      "val": 0.57809,
+      "lr": 6.425746288953626e-06
+    },
+    {
+      "step": 80,
+      "epoch": 5,
+      "train": 0.61144,
+      "val": null,
+      "lr": 5.2840548064325e-06,
+      "grad_norm": 0.5912,
+      "samples": 10
+    },
+    {
+      "step": 84,
+      "epoch": 5,
+      "train": null,
+      "val": 0.57801,
+      "lr": 5e-06
+    }
+  ],
+  "replay": {
+    "source": "none",
+    "dataset": "",
+    "pool": 0,
+    "ratio": 0.0,
+    "n_replay": 0,
+    "achieved": 0.0,
+    "with_replacement": false,
+    "pair_mode": "other",
+    "note": ""
+  },
+  "data": {
+    "n_train": 28,
+    "n_val": 7,
+    "n_val_pairs": 7,
+    "n_replay_pool": 0,
+    "steps_per_epoch": 14,
+    "total_steps": 84
+  },
+  "error": ""
+}

@@ -1,0 +1,16 @@
+{
+  "finetuned-best": {
+    "gpt": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/adapter",
+    "cfm": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/adapter"
+  },
+  "gpt-only": {
+    "gpt": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/adapter"
+  },
+  "cfm-only": {
+    "cfm": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/adapter"
+  },
+  "alternate-checkpoints": {
+    "gpt": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/checkpoints/ckpt-e004-s000035",
+    "cfm": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/checkpoints/ckpt-e004-s000070"
+  }
+}

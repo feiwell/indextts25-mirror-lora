@@ -1,0 +1,19 @@
+{
+  "candidate_count": 302,
+  "train_count": 37,
+  "val_count": 7,
+  "train_seconds": 109.13999999999976,
+  "val_seconds": 21.739999999999668,
+  "rejected_count": 258,
+  "thresholds": {
+    "duration_min": 1.5,
+    "duration_max": 12,
+    "active_ratio_min": 0.5,
+    "voiced_ratio_min": 0.22,
+    "music_max": 0.2,
+    "whisper_max": 0.45
+  },
+  "segmentation": "Merge consecutive ASR segments if gap <= 1.2s and total <= 10s; close at >=5s",
+  "dataset": "mirror-second-screen",
+  "review_limitation": "Automated ASR and acoustic/event filtering; manual listening and transcript verification not completed."
+}

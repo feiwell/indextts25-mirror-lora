@@ -1,0 +1,88 @@
+{
+  "gpt": {
+    "steps": [
+      {
+        "loss": 6.2719573974609375,
+        "grad_norm": 0.4316769540309906,
+        "max_abs_grad": 0.018798828125,
+        "nonzero_gradient_tensors": 48,
+        "seconds": 0.43042967800010956
+      },
+      {
+        "loss": 5.934961795806885,
+        "grad_norm": 0.5178028345108032,
+        "max_abs_grad": 0.02001953125,
+        "nonzero_gradient_tensors": 96,
+        "seconds": 0.1446936680001727
+      },
+      {
+        "loss": 5.484960079193115,
+        "grad_norm": 0.5062744617462158,
+        "max_abs_grad": 0.01483154296875,
+        "nonzero_gradient_tensors": 96,
+        "seconds": 0.1431078719999732
+      },
+      {
+        "loss": 5.831696033477783,
+        "grad_norm": 0.45476067066192627,
+        "max_abs_grad": 0.01806640625,
+        "nonzero_gradient_tensors": 96,
+        "seconds": 0.14288880599997356
+      }
+    ],
+    "peak_vram_gb": 1.836304384,
+    "adapter_roundtrip_exact": true,
+    "base_load": {
+      "missing": 0,
+      "unexpected": 0,
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth",
+      "model_dir": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints"
+    },
+    "nonzero_B_tensors": 48,
+    "mean_step_seconds": 0.14356344866670648,
+    "notes": "Probe weights are discarded; official training starts from base."
+  },
+  "cfm": {
+    "steps": [
+      {
+        "loss": 0.4545600712299347,
+        "grad_norm": 0.16140374541282654,
+        "max_abs_grad": 0.009601784870028496,
+        "nonzero_gradient_tensors": 26,
+        "seconds": 0.42202500000007603
+      },
+      {
+        "loss": 0.7732223272323608,
+        "grad_norm": 0.08799140155315399,
+        "max_abs_grad": 0.007853234186768532,
+        "nonzero_gradient_tensors": 52,
+        "seconds": 0.18963691299995844
+      },
+      {
+        "loss": 0.665313184261322,
+        "grad_norm": 0.09345715492963791,
+        "max_abs_grad": 0.007109984755516052,
+        "nonzero_gradient_tensors": 52,
+        "seconds": 0.34740512799999124
+      },
+      {
+        "loss": 0.7888978719711304,
+        "grad_norm": 0.11337647587060928,
+        "max_abs_grad": 0.011946070939302444,
+        "nonzero_gradient_tensors": 52,
+        "seconds": 0.09202902900005938
+      }
+    ],
+    "peak_vram_gb": 0.928553984,
+    "adapter_roundtrip_exact": true,
+    "base_load": {
+      "missing": 0,
+      "unexpected": 0,
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth",
+      "model_dir": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints"
+    },
+    "nonzero_B_tensors": 26,
+    "mean_step_seconds": 0.20969035666666969,
+    "notes": "Probe weights are discarded; official training starts from base."
+  }
+}

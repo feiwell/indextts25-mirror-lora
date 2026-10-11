@@ -1,0 +1,15 @@
+{
+  "sha256_verified_files": 226,
+  "evaluated_audio_files": 30,
+  "different_from_baseline": {
+    "finetuned-best": 6,
+    "gpt-only": 6,
+    "cfm-only": 6,
+    "alternate-checkpoints": 6
+  },
+  "adapter_disabled_exact": true,
+  "test_sentences_not_in_dataset": true,
+  "standalone_inference_exact": true,
+  "alternate_weights_distinct": true,
+  "archive_sha256": "857af65ad167f73e64bf238ed3638cf50a66cdb00a892a53ff14c31d8d087a2f"
+}

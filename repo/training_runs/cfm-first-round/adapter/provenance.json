@@ -1,0 +1,5 @@
+{
+  "run": "cfm-first-round",
+  "from": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/cfm-first-round/checkpoints/ckpt-e005-s000084",
+  "at": 1791634950.9310334
+}

@@ -1,0 +1,197 @@
+{
+  "ok": true,
+  "run": "gpt-first-round",
+  "arch": "gpt",
+  "steps": 42,
+  "epochs": 6,
+  "seconds": 13.930446413000027,
+  "best_val": 5.859821296956417,
+  "first_val": 5.916263336682841,
+  "final_train": 6.106917485201924,
+  "stopped_early": false,
+  "stop_reason": "",
+  "adapter_dir": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/adapter",
+  "n_checkpoints": 4,
+  "vram_peak_gb": 1.94,
+  "adapter_params": 1474560,
+  "base_params": 812289460,
+  "drift": {
+    "global_rel": 0.000699,
+    "max_rel": 0.00133,
+    "max_name": "base_model.model.gpt.h.0.attn.c_proj",
+    "mean_rel": 0.00078,
+    "n_layers": 48,
+    "seconds": 0.36,
+    "level": "🟢 保守",
+    "advice": "底座几乎没被带动，通用能力基本无损。若角色相似度不够，可提高 rank / alpha"
+  },
+  "base_verify": {
+    "ok": true,
+    "checked": 5,
+    "changed": [],
+    "missing": [],
+    "when": "after"
+  },
+  "notes": [
+    {
+      "level": "warn",
+      "message": "**回放比例 = 0**，这是灾难性遗忘最主要的成因。训练全程只看目标角色的数据，模型会逐步丢掉通用发音能力。建议 ≥0.2，数据越少比例越高。"
+    },
+    {
+      "level": "warn",
+      "message": "可用样本 28 条（约 42 个 step）。属于极小数据集，请用「保守」档并把 replay_ratio 提到 0.5 以上。"
+    },
+    {
+      "level": "warn",
+      "message": "漂移只有 0.0007，几乎没改到底座。可能是学习率太小、步数太少，或者梯度根本没回传（看日志里的 grad 列）。"
+    }
+  ],
+  "history": [
+    {
+      "step": 0,
+      "epoch": 0,
+      "train": null,
+      "val": 5.91626,
+      "lr": 1.6666666666666667e-05
+    },
+    {
+      "step": 5,
+      "epoch": 0,
+      "train": 6.09221,
+      "val": null,
+      "lr": 4.970863090935304e-05,
+      "grad_norm": 0.2436,
+      "samples": 20
+    },
+    {
+      "step": 7,
+      "epoch": 0,
+      "train": null,
+      "val": 5.91353,
+      "lr": 4.884206994381078e-05
+    },
+    {
+      "step": 10,
+      "epoch": 1,
+      "train": 5.89966,
+      "val": null,
+      "lr": 4.651677692473538e-05,
+      "grad_norm": 0.3426,
+      "samples": 12
+    },
+    {
+      "step": 14,
+      "epoch": 1,
+      "train": null,
+      "val": 5.90167,
+      "lr": 4.173002095089599e-05
+    },
+    {
+      "step": 15,
+      "epoch": 2,
+      "train": 6.02871,
+      "val": null,
+      "lr": 4.0281456801451004e-05,
+      "grad_norm": 0.3634,
+      "samples": 4
+    },
+    {
+      "step": 20,
+      "epoch": 2,
+      "train": 5.99863,
+      "val": null,
+      "lr": 3.2000578109961004e-05,
+      "grad_norm": 0.3238,
+      "samples": 20
+    },
+    {
+      "step": 21,
+      "epoch": 2,
+      "train": null,
+      "val": 5.88874,
+      "lr": 3.021207530574477e-05
+    },
+    {
+      "step": 25,
+      "epoch": 3,
+      "train": 6.06751,
+      "val": null,
+      "lr": 2.299942189003901e-05,
+      "grad_norm": 0.5062,
+      "samples": 16
+    },
+    {
+      "step": 25,
+      "epoch": 3,
+      "train": null,
+      "val": 5.87845,
+      "lr": 2.299942189003901e-05
+    },
+    {
+      "step": 28,
+      "epoch": 3,
+      "train": null,
+      "val": 5.87336,
+      "lr": 1.785441736843128e-05
+    },
+    {
+      "step": 30,
+      "epoch": 4,
+      "train": 5.93747,
+      "val": null,
+      "lr": 1.4718543198548998e-05,
+      "grad_norm": 0.483,
+      "samples": 8
+    },
+    {
+      "step": 35,
+      "epoch": 4,
+      "train": 5.98765,
+      "val": null,
+      "lr": 8.483223075264622e-06,
+      "grad_norm": 0.3862,
+      "samples": 20
+    },
+    {
+      "step": 35,
+      "epoch": 4,
+      "train": null,
+      "val": 5.86477,
+      "lr": 8.483223075264622e-06
+    },
+    {
+      "step": 40,
+      "epoch": 5,
+      "train": 5.86629,
+      "val": null,
+      "lr": 5.291369090646961e-06,
+      "grad_norm": 0.4393,
+      "samples": 20
+    },
+    {
+      "step": 42,
+      "epoch": 5,
+      "train": null,
+      "val": 5.85982,
+      "lr": 5e-06
+    }
+  ],
+  "replay": {
+    "source": "none",
+    "dataset": "",
+    "pool": 0,
+    "ratio": 0.0,
+    "n_replay": 0,
+    "achieved": 0.0,
+    "with_replacement": false,
+    "note": ""
+  },
+  "data": {
+    "n_train": 28,
+    "n_val": 7,
+    "n_replay_pool": 0,
+    "steps_per_epoch": 7,
+    "total_steps": 42
+  },
+  "error": ""
+}

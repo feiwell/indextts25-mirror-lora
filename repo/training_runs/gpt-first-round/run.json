@@ -1,0 +1,259 @@
+{
+  "arch": "gpt",
+  "run": "gpt-first-round",
+  "dataset": "mirror-verified-asr",
+  "status": "done",
+  "created_at": 1791634916.9420853,
+  "config": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "use_rslora": false,
+    "target_modules": [
+      "attn/c_attn",
+      "attn/c_proj"
+    ],
+    "target_preset": "attn",
+    "lr": 5e-05,
+    "weight_decay": 0.02,
+    "warmup_ratio": 0.06,
+    "grad_clip": 1.0,
+    "epochs": 6,
+    "max_steps": 300,
+    "batch_size": 2,
+    "grad_accum": 2,
+    "replay_ratio": 0,
+    "replay_source": "none",
+    "replay_dataset": "",
+    "eval_every": 25,
+    "val_patience": 4,
+    "val_min_delta": 0.0001,
+    "keep_checkpoints": 4,
+    "adapter_scale": 1.0,
+    "bf16": true,
+    "grad_checkpointing": true,
+    "seed": 20261010,
+    "_effective_scale": 2.0
+  },
+  "options": {
+    "text_loss_weight": 0.0,
+    "max_codes": 320,
+    "max_text_tokens": 200,
+    "sort_by_length": true,
+    "base_dropout": 0.0,
+    "min_lr_ratio": 0.1,
+    "log_every": 5,
+    "save_optimizer_state": true
+  },
+  "device": "cuda:0",
+  "model_dir": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints",
+  "total_steps": 42,
+  "steps_per_epoch": 7,
+  "adapter_params": 1474560,
+  "base_params": 812289460,
+  "data": {
+    "n_train": 28,
+    "n_val": 7,
+    "n_replay_pool": 0,
+    "steps_per_epoch": 7,
+    "total_steps": 42
+  },
+  "notes": [
+    {
+      "level": "warn",
+      "message": "**回放比例 = 0**，这是灾难性遗忘最主要的成因。训练全程只看目标角色的数据，模型会逐步丢掉通用发音能力。建议 ≥0.2，数据越少比例越高。"
+    },
+    {
+      "level": "warn",
+      "message": "可用样本 28 条（约 42 个 step）。属于极小数据集，请用「保守」档并把 replay_ratio 提到 0.5 以上。"
+    },
+    {
+      "level": "warn",
+      "message": "漂移只有 0.0007，几乎没改到底座。可能是学习率太小、步数太少，或者梯度根本没回传（看日志里的 grad 列）。"
+    }
+  ],
+  "steps": 42,
+  "epochs": 6,
+  "history": [
+    {
+      "step": 0,
+      "epoch": 0,
+      "train": null,
+      "val": 5.91626,
+      "lr": 1.6666666666666667e-05
+    },
+    {
+      "step": 5,
+      "epoch": 0,
+      "train": 6.09221,
+      "val": null,
+      "lr": 4.970863090935304e-05,
+      "grad_norm": 0.2436,
+      "samples": 20
+    },
+    {
+      "step": 7,
+      "epoch": 0,
+      "train": null,
+      "val": 5.91353,
+      "lr": 4.884206994381078e-05
+    },
+    {
+      "step": 10,
+      "epoch": 1,
+      "train": 5.89966,
+      "val": null,
+      "lr": 4.651677692473538e-05,
+      "grad_norm": 0.3426,
+      "samples": 12
+    },
+    {
+      "step": 14,
+      "epoch": 1,
+      "train": null,
+      "val": 5.90167,
+      "lr": 4.173002095089599e-05
+    },
+    {
+      "step": 15,
+      "epoch": 2,
+      "train": 6.02871,
+      "val": null,
+      "lr": 4.0281456801451004e-05,
+      "grad_norm": 0.3634,
+      "samples": 4
+    },
+    {
+      "step": 20,
+      "epoch": 2,
+      "train": 5.99863,
+      "val": null,
+      "lr": 3.2000578109961004e-05,
+      "grad_norm": 0.3238,
+      "samples": 20
+    },
+    {
+      "step": 21,
+      "epoch": 2,
+      "train": null,
+      "val": 5.88874,
+      "lr": 3.021207530574477e-05
+    },
+    {
+      "step": 25,
+      "epoch": 3,
+      "train": 6.06751,
+      "val": null,
+      "lr": 2.299942189003901e-05,
+      "grad_norm": 0.5062,
+      "samples": 16
+    },
+    {
+      "step": 25,
+      "epoch": 3,
+      "train": null,
+      "val": 5.87845,
+      "lr": 2.299942189003901e-05
+    },
+    {
+      "step": 28,
+      "epoch": 3,
+      "train": null,
+      "val": 5.87336,
+      "lr": 1.785441736843128e-05
+    },
+    {
+      "step": 30,
+      "epoch": 4,
+      "train": 5.93747,
+      "val": null,
+      "lr": 1.4718543198548998e-05,
+      "grad_norm": 0.483,
+      "samples": 8
+    },
+    {
+      "step": 35,
+      "epoch": 4,
+      "train": 5.98765,
+      "val": null,
+      "lr": 8.483223075264622e-06,
+      "grad_norm": 0.3862,
+      "samples": 20
+    },
+    {
+      "step": 35,
+      "epoch": 4,
+      "train": null,
+      "val": 5.86477,
+      "lr": 8.483223075264622e-06
+    },
+    {
+      "step": 40,
+      "epoch": 5,
+      "train": 5.86629,
+      "val": null,
+      "lr": 5.291369090646961e-06,
+      "grad_norm": 0.4393,
+      "samples": 20
+    },
+    {
+      "step": 42,
+      "epoch": 5,
+      "train": null,
+      "val": 5.85982,
+      "lr": 5e-06
+    }
+  ],
+  "resume_from": "",
+  "resumed_tensors": 0,
+  "lora_layers": 48,
+  "target_regex": "(.*\\.)?(attn\\.(\\d+\\.)?c_attn|attn\\.(\\d+\\.)?c_proj)$",
+  "target_patterns": [
+    "attn/c_attn",
+    "attn/c_proj"
+  ],
+  "base_dtype": "bfloat16",
+  "base_weights": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth",
+  "promoted_fp32": 0,
+  "seconds": 13.9,
+  "best_val": 5.859821296956417,
+  "final_train": 6.106917485201924,
+  "updated_at": 1791634931.324524,
+  "finished_at": 1791634931.3242643,
+  "first_val": 5.916263336682841,
+  "improved": 0.009540150009291315,
+  "stopped_early": false,
+  "stop_reason": "",
+  "n_checkpoints": 4,
+  "vram_peak_gb": 1.94,
+  "drift": {
+    "global_rel": 0.000699,
+    "max_rel": 0.00133,
+    "max_name": "base_model.model.gpt.h.0.attn.c_proj",
+    "mean_rel": 0.00078,
+    "n_layers": 48,
+    "seconds": 0.36,
+    "level": "🟢 保守",
+    "advice": "底座几乎没被带动，通用能力基本无损。若角色相似度不够，可提高 rank / alpha"
+  },
+  "base_verify": {
+    "ok": true,
+    "checked": 5,
+    "changed": [],
+    "missing": [],
+    "when": "after"
+  },
+  "replay": {
+    "source": "none",
+    "dataset": "",
+    "pool": 0,
+    "ratio": 0.0,
+    "n_replay": 0,
+    "achieved": 0.0,
+    "with_replacement": false,
+    "note": ""
+  },
+  "adapter_dir": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/adapter",
+  "error": "",
+  "note": "val 5.9163 → 5.8598（降 1.0%）"
+}

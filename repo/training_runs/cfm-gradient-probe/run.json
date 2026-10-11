@@ -1,0 +1,115 @@
+{
+  "arch": "cfm",
+  "run": "cfm-gradient-probe",
+  "dataset": "mirror-verified-asr",
+  "status": "running",
+  "created_at": 1791634835.2899134,
+  "config": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "use_rslora": false,
+    "target_modules": [
+      "attention/wqkv",
+      "attention/wo"
+    ],
+    "target_preset": "attn",
+    "lr": 5e-05,
+    "weight_decay": 0.02,
+    "warmup_ratio": 0.06,
+    "grad_clip": 1.0,
+    "epochs": 6,
+    "max_steps": 4,
+    "batch_size": 1,
+    "grad_accum": 1,
+    "replay_ratio": 0,
+    "replay_source": "none",
+    "replay_dataset": "",
+    "eval_every": 25,
+    "val_patience": 4,
+    "val_min_delta": 0.0001,
+    "keep_checkpoints": 4,
+    "adapter_scale": 1.0,
+    "bf16": false,
+    "grad_checkpointing": false,
+    "seed": 20261010,
+    "_effective_scale": 2.0
+  },
+  "options": {
+    "pair_mode": "other",
+    "mix_self_prob": 0.25,
+    "max_prompt_frames": 350,
+    "min_prompt_frames": 32,
+    "max_target_frames": 1050,
+    "min_target_frames": 32,
+    "max_total_frames": 1400,
+    "truncate_target": false,
+    "sort_by_length": true,
+    "base_dropout": 0.0,
+    "class_dropout": -1.0,
+    "val_repeats": 2,
+    "min_lr_ratio": 0.1,
+    "log_every": 5,
+    "save_optimizer_state": true
+  },
+  "device": "cuda:0",
+  "model_dir": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints",
+  "total_steps": 4,
+  "steps_per_epoch": 28,
+  "adapter_params": 319488,
+  "base_params": 98187344,
+  "data": {
+    "n_train": 28,
+    "n_val": 7,
+    "n_val_pairs": 7,
+    "n_replay_pool": 0,
+    "steps_per_epoch": 28,
+    "total_steps": 4
+  },
+  "notes": [
+    {
+      "level": "warn",
+      "message": "**回放比例 = 0**，这是灾难性遗忘最主要的成因。训练全程只看目标角色的数据，模型会逐步丢掉通用发音能力。建议 ≥0.2，数据越少比例越高。"
+    },
+    {
+      "level": "info",
+      "message": "关闭了梯度检查点：速度快约 30%，但显存占用明显上升。"
+    },
+    {
+      "level": "warn",
+      "message": "可用样本 28 条（约 168 个 step）。属于极小数据集，请用「保守」档并把 replay_ratio 提到 0.5 以上。"
+    },
+    {
+      "level": "info",
+      "message": "max_prompt_frames=350 明显短于推理上限 1292（15s）。省显存，但长参考音频的行为没被训练约束过"
+    },
+    {
+      "level": "info",
+      "message": "val_repeats=2：每次评估会平均这么多组**固定**噪声。更稳，但评估耗时按倍数增加"
+    },
+    {
+      "level": "info",
+      "message": "truncate_target=False：超过 1050 帧的目标会被**整条丢弃**而不是截断。长句多的数据集会损失不少数据"
+    }
+  ],
+  "steps": 0,
+  "epochs": 0,
+  "history": [],
+  "resume_from": "",
+  "resumed_tensors": 0,
+  "lora_layers": 26,
+  "target_regex": "(.*\\.)?(attention\\.(\\d+\\.)?wqkv|attention\\.(\\d+\\.)?wo)$",
+  "target_patterns": [
+    "attention/wqkv",
+    "attention/wo"
+  ],
+  "base_dtype": "float32",
+  "base_weights": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth",
+  "promoted_fp32": 0,
+  "pair_mode": "other",
+  "frame_caps": {
+    "prompt": 350,
+    "target": 1050,
+    "total": 1400
+  }
+}

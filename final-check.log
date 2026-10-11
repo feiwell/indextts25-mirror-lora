@@ -1,0 +1,67 @@
+SCORE baseline 0.0 0.8979806900024414
+SCORE baseline 0.0 0.8981187343597412
+SCORE baseline 0.0 0.9051406979560852
+SCORE baseline 0.0 0.9017351865768433
+SCORE baseline 0.0 0.8728725910186768
+SCORE baseline 0.05 0.8886604309082031
+SCORE finetuned-best 0.0 0.9076952934265137
+SCORE finetuned-best 0.0 0.8968056440353394
+SCORE finetuned-best 0.0 0.9114173054695129
+SCORE finetuned-best 0.0 0.9052581787109375
+SCORE finetuned-best 0.0 0.8887784481048584
+SCORE finetuned-best 0.0 0.9001706838607788
+SCORE gpt-only 0.0 0.8972046375274658
+SCORE gpt-only 0.0 0.8920226693153381
+SCORE gpt-only 0.0 0.9002914428710938
+SCORE gpt-only 0.0 0.8882485628128052
+SCORE gpt-only 0.0 0.8877991437911987
+SCORE gpt-only 0.0 0.8876223564147949
+SCORE cfm-only 0.0 0.9035606980323792
+SCORE cfm-only 0.0 0.9010079503059387
+SCORE cfm-only 0.0 0.9172945618629456
+SCORE cfm-only 0.0 0.9064650535583496
+SCORE cfm-only 0.0 0.8733081817626953
+SCORE cfm-only 0.05 0.9036551713943481
+SCORE alternate-checkpoints 0.0 0.9025363922119141
+SCORE alternate-checkpoints 0.0 0.9038983583450317
+SCORE alternate-checkpoints 0.0 0.9187738299369812
+SCORE alternate-checkpoints 0.0 0.9029939770698547
+SCORE alternate-checkpoints 0.0 0.896287202835083
+SCORE alternate-checkpoints 0.0 0.9178064465522766
+METRIC EVALUATION COMPLETE {'baseline': {'corpus_cer': 0.008264462809917356, 'mean_reference_similarity': 0.8940847218036652, 'mean_heldout_similarity': 0.6741957856076103, 'samples': 6}, 'finetuned-best': {'corpus_cer': 0.0, 'mean_reference_similarity': 0.9016875922679901, 'mean_heldout_similarity': 0.6951855222384135, 'samples': 6}, 'gpt-only': {'corpus_cer': 0.0, 'mean_reference_similarity': 0.8921981354554495, 'mean_heldout_similarity': 0.6747382041953859, 'samples': 6}, 'cfm-only': {'corpus_cer': 0.008264462809917356, 'mean_reference_similarity': 0.9008819361527761, 'mean_heldout_similarity': 0.6922290630283809, 'samples': 6}, 'alternate-checkpoints': {'corpus_cer': 0.0, 'mean_reference_similarity': 0.9070493678251902, 'mean_heldout_similarity': 0.6980181833108267, 'samples': 6}}
+>> QwenEmotion not loaded (use_qwen_emo=False)
+>> GPT weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+>> semantic_codec weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth
+>> semantic_codec weights restored cost:  1.0955279939998945
+cfm loaded
+length_regulator loaded
+>> s2mel weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth
+>> campplus_model weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin
+Loading config.json from local directory
+Loading weights from local directory
+Removing weight norm...
+>> bigvgan weights restored from: /root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/bigvgan
+2026-10-10 12:33:36,087 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2026-10-10 12:33:36,087 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2026-10-10 12:33:36,087 WETEXT INFO skip building fst for zh_normalizer ...
+2026-10-10 12:33:36,575 WETEXT INFO found existing fst: /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_tagger.fst
+2026-10-10 12:33:36,575 WETEXT INFO                     /root/voice-training/indextts25-mirror-20261010/repo/.venv/lib/python3.11/site-packages/tn/en_tn_verbalizer.fst
+2026-10-10 12:33:36,575 WETEXT INFO skip building fst for en_normalizer ...
+>> starting inference...
+text after normalization: 今天下午三点,我们在地铁站旁边的咖啡店见面.
+Use the specified emotion vector
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.53.0. You should pass an instance of `Cache` instead, e.g. `past_key_values=DynamicCache.from_legacy_cache(past_key_values)`.
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:03,  7.76it/s] 24%|██▍       | 6/25 [00:00<00:00, 28.85it/s] 44%|████▍     | 11/25 [00:00<00:00, 36.96it/s] 64%|██████▍   | 16/25 [00:00<00:00, 41.15it/s] 84%|████████▍ | 21/25 [00:00<00:00, 43.66it/s]100%|██████████| 25/25 [00:00<00:00, 39.60it/s]
+torch.Size([1, 122368])
+>> gpt_gen_time: 4.46 seconds
+>> s2mel_time: 0.64 seconds
+>> bigvgan_time: 0.12 seconds
+>> Total inference time: 6.27 seconds
+>> Generated audio length: 5.55 seconds
+>> RTF: 1.1297
+>> wav file saved to: /root/voice-training/indextts25-mirror-20261010/listening/reproduced/01.wav
+FINAL CHECK COMPLETE {'standalone_inference_matches_delivered_exact': True}

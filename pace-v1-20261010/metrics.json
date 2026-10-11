@@ -1,0 +1,46 @@
+{
+  "version": "mirror-joint-v1-20261010",
+  "text": "清晨，许宁走进社区活动室的时候，里面还没有开灯。窗外的雨刚刚停，玻璃上留着几道细细的水痕。她把背包放在门边，打开靠近墙角的灯，桌上的纸箱便显出了原来的颜色。箱子里装着旧照片、几本笔记，还有一张已经折过很多次的街区地图。今天，她要和几位邻居一起整理这些东西，为周末的社区展览做准备。",
+  "seed": 20261022,
+  "segment_budget": 120,
+  "max_mel_tokens": 1500,
+  "rows": [
+    {
+      "duration_factor": 1.0,
+      "path": "pace-1.00.wav",
+      "duration_seconds": 29.979591836734695,
+      "sample_rate": 22050,
+      "finite": true,
+      "clipping_ratio": 0.0006550185311247258,
+      "asr_text": "清晨使你走进社区活动室的时候里面还没有开灯窗外的雨刚刚停玻璃上留着几道细细的水痕她把背包放在门边打开靠近墙角的灯桌上的纸箱便显出了原来的颜色箱子里装着旧照片几本笔记还有一张已经折过很多次的截取地图今天她要和几位邻居一起整理这些东西为周末的社区展览做准备OK",
+      "cer": 0.047619047619047616,
+      "duration_ratio": 1.0
+    },
+    {
+      "duration_factor": 1.1,
+      "path": "pace-1.10.wav",
+      "duration_seconds": 32.963356009070296,
+      "sample_rate": 22050,
+      "finite": true,
+      "clipping_ratio": 0.0006603911166388293,
+      "asr_text": "清晨,许妮走进社区活动室的时候,里面还没有开灯,窗外的雨刚刚停,玻璃上留着几道细细的水痕。她把背包放在门边,打开靠近墙角的灯,桌上的纸箱便显出了原来的颜色,巷子里装着旧照片,几本笔记还有一张已经折过很多次的街区地图。今天,她要和几位邻居一起整理这些东西。为周末的社区展览做准备",
+      "cer": 0.015873015873015872,
+      "duration_ratio": 1.0995265108539445
+    },
+    {
+      "duration_factor": 1.2,
+      "path": "pace-1.20.wav",
+      "duration_seconds": 35.93551020408163,
+      "sample_rate": 22050,
+      "finite": true,
+      "clipping_ratio": 0.0004088957542990845,
+      "asr_text": "清晨,许妮走进社区活动室的时候,里面还没有开灯,窗外的雨刚刚停,玻璃上留着几道细细的水痕。她把背包放在门边,打开靠近墙角的灯,桌上的纸箱便显出了原来的颜色,箱子里装着旧照片,几本笔记,还有一张已经折过很多次的截取地图。今天他要和几位邻居一起整理这些东西为周末的社区展览做准备",
+      "cer": 0.031746031746031744,
+      "duration_ratio": 1.1986657590197412
+    }
+  ],
+  "preserved_version_verified_before_and_after": true,
+  "control": "Native synthesis duration_factor; no waveform time stretching.",
+  "asr": "Whisper turbo, Chinese, beam 5, temperature 0, context disabled.",
+  "limitations": "Short excerpt comparison; no human listening assessment."
+}

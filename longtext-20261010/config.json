@@ -1,0 +1,13 @@
+{
+  "reference": "/root/voice-training/indextts25-mirror-20261010/reference.wav",
+  "seed_base": 20261020,
+  "max_mel_tokens": 1500,
+  "default_segment_tokens": 120,
+  "short_segment_tokens": 60,
+  "interval_silence_ms": 200,
+  "top_p": 0.8,
+  "top_k": 30,
+  "temperature": 0.8,
+  "num_beams": 3,
+  "postprocessing": "none; upstream segment concatenation only"
+}

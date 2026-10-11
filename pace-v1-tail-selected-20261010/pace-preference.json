@@ -1,0 +1,14 @@
+{
+  "version": "mirror-joint-v1-20261010",
+  "text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备.",
+  "requested_tail_seconds": 7.34,
+  "actual_tail_seconds": 7.337505668934241,
+  "duration_factor": 0.948,
+  "tail_path": "tail-0.948.wav",
+  "full_path": "adjusted-0.948.wav",
+  "tail_start_seconds": 24.441632653061223,
+  "user_feedback": "尾段在7.34秒左右最好",
+  "listening_feedback": "不错不错",
+  "scope": "This specific excerpt, reference, segmentation and seed; not a global speech-rate preset.",
+  "status": "User-approved listening version for this excerpt."
+}

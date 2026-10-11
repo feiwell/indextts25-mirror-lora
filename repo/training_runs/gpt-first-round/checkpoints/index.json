@@ -1,0 +1,43 @@
+{
+  "mode": "min",
+  "keep": 4,
+  "updated_at": 1791634930.962478,
+  "checkpoints": [
+    {
+      "name": "ckpt-e003-s000028",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/checkpoints/ckpt-e003-s000028",
+      "epoch": 3,
+      "step": 28,
+      "metric": 5.873356158715965,
+      "saved_at": 1791634926.187212,
+      "is_best": false
+    },
+    {
+      "name": "ckpt-e004-s000035",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/checkpoints/ckpt-e004-s000035",
+      "epoch": 4,
+      "step": 35,
+      "metric": 5.864766915349195,
+      "saved_at": 1791634928.6649287,
+      "is_best": false
+    },
+    {
+      "name": "ckpt-e005-s000042",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/checkpoints/ckpt-e005-s000042",
+      "epoch": 5,
+      "step": 42,
+      "metric": 5.859821296956417,
+      "saved_at": 1791634930.7180746,
+      "is_best": true
+    },
+    {
+      "name": "ckpt-e006-s000042",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/training_runs/gpt-first-round/checkpoints/ckpt-e006-s000042",
+      "epoch": 6,
+      "step": 42,
+      "metric": 5.859821296956417,
+      "saved_at": 1791634930.9571047,
+      "is_best": false
+    }
+  ]
+}

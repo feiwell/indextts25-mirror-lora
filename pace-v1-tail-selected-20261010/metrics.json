@@ -1,0 +1,455 @@
+{
+  "version": "mirror-joint-v1-20261010",
+  "text": "清晨，许宁走进社区活动室的时候，里面还没有开灯。窗外的雨刚刚停，玻璃上留着几道细细的水痕。她把背包放在门边，打开靠近墙角的灯，桌上的纸箱便显出了原来的颜色。箱子里装着旧照片、几本笔记，还有一张已经折过很多次的街区地图。今天，她要和几位邻居一起整理这些东西，为周末的社区展览做准备。",
+  "rows": [
+    {
+      "duration_factor": 1.0,
+      "full_path": "adjusted-1.00.wav",
+      "tail_path": "tail-1.00.wav",
+      "tail_text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备.",
+      "tail_seconds": 7.743854875283446,
+      "full_seconds": 32.18548752834467,
+      "prefix_pcm_identical": true,
+      "native_tail_pcm_identical": true,
+      "clipping_ratio": 0.0009077492503748126,
+      "finite": true,
+      "asr_text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备。",
+      "cer": 0.0,
+      "asr_segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 7.32,
+          "text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备。",
+          "tokens": [
+            50365,
+            15555,
+            4275,
+            12565,
+            6336,
+            254,
+            11160,
+            3023,
+            119,
+            9636,
+            227,
+            29567,
+            27662,
+            13876,
+            5562,
+            13824,
+            38409,
+            16220,
+            11,
+            13992,
+            37390,
+            1474,
+            104,
+            1546,
+            27658,
+            9937,
+            118,
+            43491,
+            6758,
+            230,
+            10907,
+            6336,
+            228,
+            1787,
+            229,
+            1543,
+            50730
+          ],
+          "temperature": 0,
+          "avg_logprob": -0.0582362036955984,
+          "compression_ratio": 0.8817204301075269,
+          "no_speech_prob": 9.447266753614958e-12,
+          "words": [
+            {
+              "word": "她",
+              "start": 0.0,
+              "end": 0.4,
+              "probability": 0.49069198966026306
+            },
+            {
+              "word": "要",
+              "start": 0.4,
+              "end": 0.58,
+              "probability": 0.9994161128997803
+            },
+            {
+              "word": "和",
+              "start": 0.58,
+              "end": 0.8,
+              "probability": 0.9997536540031433
+            },
+            {
+              "word": "几",
+              "start": 0.8,
+              "end": 0.96,
+              "probability": 0.9993729293346405
+            },
+            {
+              "word": "位",
+              "start": 0.96,
+              "end": 1.1,
+              "probability": 0.9998486042022705
+            },
+            {
+              "word": "邻",
+              "start": 1.1,
+              "end": 1.32,
+              "probability": 0.9973771870136261
+            },
+            {
+              "word": "居",
+              "start": 1.32,
+              "end": 1.56,
+              "probability": 0.9988654851913452
+            },
+            {
+              "word": "一起",
+              "start": 1.56,
+              "end": 1.9,
+              "probability": 0.9998676776885986
+            },
+            {
+              "word": "整",
+              "start": 1.9,
+              "end": 2.14,
+              "probability": 0.9998884201049805
+            },
+            {
+              "word": "理",
+              "start": 2.14,
+              "end": 2.32,
+              "probability": 0.9998193383216858
+            },
+            {
+              "word": "这",
+              "start": 2.32,
+              "end": 2.5,
+              "probability": 0.999750554561615
+            },
+            {
+              "word": "些",
+              "start": 2.5,
+              "end": 2.64,
+              "probability": 0.9999828338623047
+            },
+            {
+              "word": "东",
+              "start": 2.64,
+              "end": 2.84,
+              "probability": 0.9997658133506775
+            },
+            {
+              "word": "西,",
+              "start": 2.84,
+              "end": 3.24,
+              "probability": 0.999845027923584
+            },
+            {
+              "word": "为",
+              "start": 3.58,
+              "end": 5.1,
+              "probability": 0.9986311793327332
+            },
+            {
+              "word": "周",
+              "start": 5.1,
+              "end": 5.3,
+              "probability": 0.9988008737564087
+            },
+            {
+              "word": "末",
+              "start": 5.3,
+              "end": 5.46,
+              "probability": 0.9999275207519531
+            },
+            {
+              "word": "的",
+              "start": 5.46,
+              "end": 5.58,
+              "probability": 0.9998964071273804
+            },
+            {
+              "word": "社",
+              "start": 5.58,
+              "end": 5.74,
+              "probability": 0.9998960494995117
+            },
+            {
+              "word": "区",
+              "start": 5.74,
+              "end": 5.94,
+              "probability": 0.9997079968452454
+            },
+            {
+              "word": "展",
+              "start": 5.94,
+              "end": 6.1,
+              "probability": 0.999737560749054
+            },
+            {
+              "word": "览",
+              "start": 6.1,
+              "end": 6.54,
+              "probability": 0.9945681095123291
+            },
+            {
+              "word": "做",
+              "start": 6.54,
+              "end": 6.8,
+              "probability": 0.9859522581100464
+            },
+            {
+              "word": "准",
+              "start": 6.8,
+              "end": 7.04,
+              "probability": 0.9998542964458466
+            },
+            {
+              "word": "备。",
+              "start": 7.04,
+              "end": 7.32,
+              "probability": 0.9999698996543884
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duration_factor": 0.948,
+      "full_path": "adjusted-0.948.wav",
+      "tail_path": "tail-0.948.wav",
+      "tail_text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备.",
+      "tail_seconds": 7.337505668934241,
+      "full_seconds": 31.779138321995465,
+      "prefix_pcm_identical": true,
+      "native_tail_pcm_identical": true,
+      "clipping_ratio": 0.0009271162974683544,
+      "finite": true,
+      "asr_text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备。",
+      "cer": 0.0,
+      "asr_segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 6.94,
+          "text": "她要和几位邻居一起整理这些东西,为周末的社区展览做准备。",
+          "tokens": [
+            50365,
+            15555,
+            4275,
+            12565,
+            6336,
+            254,
+            11160,
+            3023,
+            119,
+            9636,
+            227,
+            29567,
+            27662,
+            13876,
+            5562,
+            13824,
+            38409,
+            16220,
+            11,
+            13992,
+            37390,
+            1474,
+            104,
+            1546,
+            27658,
+            9937,
+            118,
+            43491,
+            6758,
+            230,
+            10907,
+            6336,
+            228,
+            1787,
+            229,
+            1543,
+            50711
+          ],
+          "temperature": 0,
+          "avg_logprob": -0.06272452755978233,
+          "compression_ratio": 0.8817204301075269,
+          "no_speech_prob": 9.862170975705187e-12,
+          "words": [
+            {
+              "word": "她",
+              "start": 0.0,
+              "end": 0.38,
+              "probability": 0.47903579473495483
+            },
+            {
+              "word": "要",
+              "start": 0.38,
+              "end": 0.54,
+              "probability": 0.9938284754753113
+            },
+            {
+              "word": "和",
+              "start": 0.54,
+              "end": 0.76,
+              "probability": 0.9996836185455322
+            },
+            {
+              "word": "几",
+              "start": 0.76,
+              "end": 0.9,
+              "probability": 0.9985723197460175
+            },
+            {
+              "word": "位",
+              "start": 0.9,
+              "end": 1.04,
+              "probability": 0.9987338185310364
+            },
+            {
+              "word": "邻",
+              "start": 1.04,
+              "end": 1.24,
+              "probability": 0.9973191618919373
+            },
+            {
+              "word": "居",
+              "start": 1.24,
+              "end": 1.46,
+              "probability": 0.9998623430728912
+            },
+            {
+              "word": "一起",
+              "start": 1.46,
+              "end": 1.78,
+              "probability": 0.9996836185455322
+            },
+            {
+              "word": "整",
+              "start": 1.78,
+              "end": 2.02,
+              "probability": 0.9998842477798462
+            },
+            {
+              "word": "理",
+              "start": 2.02,
+              "end": 2.2,
+              "probability": 0.9999501705169678
+            },
+            {
+              "word": "这",
+              "start": 2.2,
+              "end": 2.36,
+              "probability": 0.9997206330299377
+            },
+            {
+              "word": "些",
+              "start": 2.36,
+              "end": 2.5,
+              "probability": 0.9999864101409912
+            },
+            {
+              "word": "东",
+              "start": 2.5,
+              "end": 2.68,
+              "probability": 0.9997050166130066
+            },
+            {
+              "word": "西,",
+              "start": 2.68,
+              "end": 3.06,
+              "probability": 0.9998095631599426
+            },
+            {
+              "word": "为",
+              "start": 3.22,
+              "end": 4.82,
+              "probability": 0.9985597729682922
+            },
+            {
+              "word": "周",
+              "start": 4.82,
+              "end": 5.02,
+              "probability": 0.9989662170410156
+            },
+            {
+              "word": "末",
+              "start": 5.02,
+              "end": 5.18,
+              "probability": 0.9998359978199005
+            },
+            {
+              "word": "的",
+              "start": 5.18,
+              "end": 5.28,
+              "probability": 0.9998984336853027
+            },
+            {
+              "word": "社",
+              "start": 5.28,
+              "end": 5.44,
+              "probability": 0.9998410940170288
+            },
+            {
+              "word": "区",
+              "start": 5.44,
+              "end": 5.62,
+              "probability": 0.9997460544109344
+            },
+            {
+              "word": "展",
+              "start": 5.62,
+              "end": 5.78,
+              "probability": 0.9998586177825928
+            },
+            {
+              "word": "览",
+              "start": 5.78,
+              "end": 6.18,
+              "probability": 0.9966369271278381
+            },
+            {
+              "word": "做",
+              "start": 6.18,
+              "end": 6.42,
+              "probability": 0.9847561717033386
+            },
+            {
+              "word": "准",
+              "start": 6.42,
+              "end": 6.66,
+              "probability": 0.9998675286769867
+            },
+            {
+              "word": "备。",
+              "start": 6.66,
+              "end": 6.94,
+              "probability": 0.9999629259109497
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tail_start_seconds": 24.441632653061223,
+  "seed": 20261022,
+  "sample_rate": 22050,
+  "segment_budget": 120,
+  "max_mel_tokens": 1500,
+  "default_tail_reproduced_exactly": true,
+  "preserved_version_verified_before_and_after": true,
+  "source_hashes": {
+    "pace-1.10.wav": "9a662fe5df3c5e958def93ddabdf052b89763c6cc048ff73d391ba10ea78f8e4",
+    "pace-1.00.wav": "3567cd9ac2edf054650e6c5164a3fa1aabcb56226c4f41fd39d41de45fa254cc"
+  },
+  "method": "Native duration-factor synthesis. Original factor-1.1 prefix plus 200ms silence retained exactly; final native segment replaced. No time stretching.",
+  "limitations": "Single excerpt and seed. ASR is an automated proxy, not human listening."
+}

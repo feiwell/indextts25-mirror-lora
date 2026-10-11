@@ -1,0 +1,58 @@
+{
+  "id": "utt_00263",
+  "start": 1069.3000000000002,
+  "end": 1075.92,
+  "duration": 6.619999999999891,
+  "text": "那。我去做一下攻略。看一下我们第一站要去",
+  "asr_avg_logprob": -0.39098621368408204,
+  "asr_no_speech_prob": 1.1132301677707623e-11,
+  "rejections": [],
+  "source_segment_ids": [
+    263,
+    264,
+    265
+  ],
+  "review": "automatic screening; no human listening review",
+  "rms_dbfs": -17.140180587768555,
+  "clip_ratio": 0.0,
+  "active_ratio": 0.5393939393939394,
+  "voiced_ratio": 0.6235955056179775,
+  "harmonic_median": 0.7577790021896362,
+  "audio_events": [
+    [
+      "Speech",
+      0.7949604392051697
+    ],
+    [
+      "Sigh",
+      0.710679292678833
+    ],
+    [
+      "Gasp",
+      0.07511809468269348
+    ],
+    [
+      "Male speech, man speaking",
+      0.025552958250045776
+    ],
+    [
+      "Narration, monologue",
+      0.02309609390795231
+    ],
+    [
+      "Female speech, woman speaking",
+      0.01796703413128853
+    ],
+    [
+      "Snort",
+      0.017786279320716858
+    ],
+    [
+      "Inside, small room",
+      0.013209426775574684
+    ]
+  ],
+  "music_score": 0.0034723333083093166,
+  "whisper_score": 0.000998075702227652,
+  "split": "train"
+}

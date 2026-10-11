@@ -1,0 +1,6 @@
+{
+  "arch": "cfm",
+  "run": "cfm-first-round",
+  "val": 0.578389108013571,
+  "dataset": "mirror-verified-asr"
+}

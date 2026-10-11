@@ -1,0 +1,47 @@
+{
+  "created_at": 1791634808.2073717,
+  "model_dir": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints",
+  "hashed": true,
+  "files": {
+    "codec.pth": {
+      "name": "codec.pth",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/codec.pth",
+      "size": 607290935,
+      "mtime": 1786457662.0,
+      "sha256": "d15cbed16a40f478438c961fb043f68dfa6353bf56c966761315db3433e9722c",
+      "read_only": false
+    },
+    "config.yaml": {
+      "name": "config.yaml",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/config.yaml",
+      "size": 2860,
+      "mtime": 1791008970.0,
+      "sha256": "18adf417be3e8f5e2e48e30f7420c719170a6870619436250f360d626877870e",
+      "read_only": false
+    },
+    "gpt.pth": {
+      "name": "gpt.pth",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/gpt.pth",
+      "size": 3259599833,
+      "mtime": 1786457765.0,
+      "sha256": "43a8f4c30eccdf201958d3b9713511482c19d56dc20b0b1c4ee1e6b080b19d85",
+      "read_only": false
+    },
+    "hf_cache/campplus_cn_common.bin": {
+      "name": "hf_cache/campplus_cn_common.bin",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/hf_cache/campplus_cn_common.bin",
+      "size": 14173135,
+      "mtime": 1778464792.0,
+      "sha256": "55ffb1a55d04bac4a9b7ed80497cb731909985c9b55d120fce04b851a697886c",
+      "read_only": false
+    },
+    "s2mel.pth": {
+      "name": "s2mel.pth",
+      "path": "/root/voice-training/indextts25-mirror-20261010/repo/checkpoints/s2mel.pth",
+      "size": 414908601,
+      "mtime": 1786457866.0,
+      "sha256": "9b1b0003fc189c94cc349758d7ebc25f903b7eb2de4602879959cc64ce816456",
+      "read_only": false
+    }
+  }
+}

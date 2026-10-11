@@ -1,0 +1,40 @@
+[12:21:56] 准备完成：48 个 LoRA 层，1.47M 可训练参数（0.181%），total_steps=42
+[12:21:57] 评估 step=0 epoch=0 val=5.9163 best=5.9163 bad=0
+[12:21:57] 底座基线 val=5.9163（LoRA 零初始化，此刻等价于不加载 adapter）
+[12:21:57] === epoch 1/6 · 14 个 batch · 回放 0 ===
+[12:21:58] step 5/42 loss=6.0922 lr=4.97e-05 grad=0.244 前向占比=70% ETA 0.2min
+[12:21:59] epoch 1 完成：0.0 分钟 · 均 loss 6.0131 · 28 条样本
+[12:21:59] 评估 step=7 epoch=0 val=5.9135 best=5.9135 bad=0
+[12:21:59] 已存 checkpoint ckpt-e000-s000007（val=5.9135）并同步到 adapter/
+[12:21:59] === epoch 2/6 · 14 个 batch · 回放 0 ===
+[12:22:00] step 10/42 loss=5.8997 lr=4.65e-05 grad=0.343 前向占比=22% ETA 0.2min
+[12:22:01] epoch 2 完成：0.0 分钟 · 均 loss 6.0119 · 28 条样本
+[12:22:01] 评估 step=14 epoch=1 val=5.9017 best=5.9017 bad=0
+[12:22:01] 已存 checkpoint ckpt-e001-s000014（val=5.9017）并同步到 adapter/
+[12:22:01] === epoch 3/6 · 14 个 batch · 回放 0 ===
+[12:22:01] step 15/42 loss=6.0287 lr=4.03e-05 grad=0.363 前向占比=5% ETA 0.2min
+[12:22:03] step 20/42 loss=5.9986 lr=3.20e-05 grad=0.324 前向占比=20% ETA 0.1min
+[12:22:03] epoch 3 完成：0.0 分钟 · 均 loss 5.9871 · 28 条样本
+[12:22:03] 评估 step=21 epoch=2 val=5.8887 best=5.8887 bad=0
+[12:22:03] 已存 checkpoint ckpt-e002-s000021（val=5.8887）并同步到 adapter/
+[12:22:03] === epoch 4/6 · 14 个 batch · 回放 0 ===
+[12:22:04] step 25/42 loss=6.0675 lr=2.30e-05 grad=0.506 前向占比=13% ETA 0.1min
+[12:22:05] 评估 step=25 epoch=3 val=5.8784 best=5.8784 bad=0
+[12:22:05] 已存 checkpoint ckpt-e003-s000025（val=5.8784）并同步到 adapter/
+[12:22:05] epoch 4 完成：0.0 分钟 · 均 loss 5.9929 · 28 条样本
+[12:22:06] 评估 step=28 epoch=3 val=5.8734 best=5.8734 bad=0
+[12:22:06] 已存 checkpoint ckpt-e003-s000028（val=5.8734）并同步到 adapter/
+[12:22:06] === epoch 5/6 · 14 个 batch · 回放 0 ===
+[12:22:06] step 30/42 loss=5.9375 lr=1.47e-05 grad=0.483 前向占比=5% ETA 0.1min
+[12:22:08] step 35/42 loss=5.9876 lr=8.48e-06 grad=0.386 前向占比=14% ETA 0.0min
+[12:22:08] epoch 5 完成：0.0 分钟 · 均 loss 5.9733 · 28 条样本
+[12:22:08] 评估 step=35 epoch=4 val=5.8648 best=5.8648 bad=0
+[12:22:08] 已存 checkpoint ckpt-e004-s000035（val=5.8648）并同步到 adapter/
+[12:22:08] === epoch 6/6 · 14 个 batch · 回放 0 ===
+[12:22:09] step 40/42 loss=5.8663 lr=5.29e-06 grad=0.439 前向占比=10% ETA 0.0min
+[12:22:10] epoch 6 完成：0.0 分钟 · 均 loss 5.9235 · 28 条样本
+[12:22:10] 评估 step=42 epoch=5 val=5.8598 best=5.8598 bad=0
+[12:22:10] 已存 checkpoint ckpt-e005-s000042（val=5.8598）并同步到 adapter/
+[12:22:10] 底座复校通过（5 个文件未被改动）
+[12:22:11] 漂移体检：全局 0.0007 · 🟢 保守
+[12:22:11] 训练结束（✅ 完成）：42 步 · 0.2 分钟 · 峰值显存 1.94 GB

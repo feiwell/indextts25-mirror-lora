@@ -1,0 +1,50 @@
+{
+  "config": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "use_rslora": false,
+    "target_modules": [
+      "attention/wqkv",
+      "attention/wo"
+    ],
+    "target_preset": "attn",
+    "lr": 5e-05,
+    "weight_decay": 0.02,
+    "warmup_ratio": 0.06,
+    "grad_clip": 1.0,
+    "epochs": 6,
+    "max_steps": 300,
+    "batch_size": 1,
+    "grad_accum": 2,
+    "replay_ratio": 0,
+    "replay_source": "none",
+    "replay_dataset": "",
+    "eval_every": 25,
+    "val_patience": 4,
+    "val_min_delta": 0.0001,
+    "keep_checkpoints": 4,
+    "adapter_scale": 1.0,
+    "bf16": false,
+    "grad_checkpointing": false,
+    "seed": 20261010,
+    "_effective_scale": 2.0
+  },
+  "options": {
+    "pair_mode": "other",
+    "mix_self_prob": 0.25,
+    "max_prompt_frames": 350,
+    "min_prompt_frames": 32,
+    "max_target_frames": 1050,
+    "min_target_frames": 32,
+    "max_total_frames": 1400,
+    "truncate_target": false,
+    "sort_by_length": true,
+    "base_dropout": 0.0,
+    "class_dropout": -1.0,
+    "val_repeats": 2,
+    "min_lr_ratio": 0.1,
+    "log_every": 5,
+    "save_optimizer_state": true
+  }
+}

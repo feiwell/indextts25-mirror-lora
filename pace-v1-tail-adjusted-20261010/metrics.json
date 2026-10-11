@@ -1,0 +1,19 @@
+{
+  "version": "mirror-joint-v1-20261010",
+  "text": "清晨，许宁走进社区活动室的时候，里面还没有开灯。窗外的雨刚刚停，玻璃上留着几道细细的水痕。她把背包放在门边，打开靠近墙角的灯，桌上的纸箱便显出了原来的颜色。箱子里装着旧照片、几本笔记，还有一张已经折过很多次的街区地图。今天，她要和几位邻居一起整理这些东西，为周末的社区展览做准备。",
+  "original_seconds": 32.963356009070296,
+  "adjusted_seconds": 32.18548752834467,
+  "tail_start_seconds": 24.441632653061223,
+  "original_tail_seconds": 8.52172335600907,
+  "adjusted_tail_seconds": 7.743854875283446,
+  "prefix_pcm_identical": true,
+  "tail_pcm_identical_to_default_segment": true,
+  "inter_segment_silence_ms": 200,
+  "source": "Preserved native synthesis segments at factors 1.1 and 1.0; no time stretching.",
+  "source_hashes": {
+    "pace-1.10.wav": "9a662fe5df3c5e958def93ddabdf052b89763c6cc048ff73d391ba10ea78f8e4",
+    "pace-1.00.wav": "3567cd9ac2edf054650e6c5164a3fa1aabcb56226c4f41fd39d41de45fa254cc"
+  },
+  "preserved_version_verified": true,
+  "limitations": "One excerpt; boundary-level adjustment, not a general prosody fix."
+}
