@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 486" width="100%" role="img"
+     aria-label="indextts25-mirror-lora：IndexTTS-2.5 单说话人双 LoRA 微调记录。同一句测试语音在原版底座与 V1 下的波形对照。">
+  <title>indextts25-mirror-lora — IndexTTS-2.5 单说话人联合 LoRA</title>
+  <rect width="1200" height="486" rx="20" fill="#F7F6F1"/>
+  <rect x="0.5" y="0.5" width="1199" height="485" rx="20" fill="none" stroke="#E3DFD4"/>
+
+  <text x="64" y="74" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="16" letter-spacing="2.4" fill="#16705E">INDEXTTS-2.5 · GPT+CFM LoRA · 2026-10-10</text>
+
+  <text x="62" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-0.6" fill="#141A1C">81 秒语音，</text>
+  <text x="62" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-0.6" fill="#141A1C">两组 LoRA，一个声音</text>
+  <text x="64" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#6E767B">底座一行没改，只训练注意力投影：</text>
+  <text x="64" y="276" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#6E767B">GPT 管节奏与读法，CFM 管音色与细节。</text>
+
+  <text x="644" y="74" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="1.4" fill="#6E767B">同一句话 · 同一参考 · 种子 20261010</text>
+  <text x="644" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#141A1C">“今天下午三点，我们在地铁站旁边的咖啡店见面。”</text>
+
+  <text x="644" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#ABB2B4">原版底座</text>
+  <text x="1136" y="152" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="15" fill="#ABB2B4">5.58s</text>
+  <rect x="644.97" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="650.10" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="655.22" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="660.35" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="665.47" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="670.60" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="675.72" y="185.17" width="3.18" height="11.67" rx="1.40" fill="#ABB2B4"/>
+  <rect x="680.85" y="167.90" width="3.18" height="46.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="685.97" y="162.02" width="3.18" height="57.95" rx="1.40" fill="#ABB2B4"/>
+  <rect x="691.10" y="176.43" width="3.18" height="29.14" rx="1.40" fill="#ABB2B4"/>
+  <rect x="696.22" y="172.18" width="3.18" height="37.65" rx="1.40" fill="#ABB2B4"/>
+  <rect x="701.35" y="161.84" width="3.18" height="58.33" rx="1.40" fill="#ABB2B4"/>
+  <rect x="706.47" y="172.53" width="3.18" height="36.94" rx="1.40" fill="#ABB2B4"/>
+  <rect x="711.60" y="183.09" width="3.18" height="15.81" rx="1.40" fill="#ABB2B4"/>
+  <rect x="716.72" y="173.93" width="3.18" height="34.13" rx="1.40" fill="#ABB2B4"/>
+  <rect x="721.85" y="164.27" width="3.18" height="53.47" rx="1.40" fill="#ABB2B4"/>
+  <rect x="726.97" y="170.30" width="3.18" height="41.41" rx="1.40" fill="#ABB2B4"/>
+  <rect x="732.10" y="180.74" width="3.18" height="20.52" rx="1.40" fill="#ABB2B4"/>
+  <rect x="737.22" y="183.46" width="3.18" height="15.07" rx="1.40" fill="#ABB2B4"/>
+  <rect x="742.35" y="184.71" width="3.18" height="12.58" rx="1.40" fill="#ABB2B4"/>
+  <rect x="747.47" y="185.63" width="3.18" height="10.74" rx="1.40" fill="#ABB2B4"/>
+  <rect x="752.60" y="165.75" width="3.18" height="50.49" rx="1.40" fill="#ABB2B4"/>
+  <rect x="757.72" y="162.33" width="3.18" height="57.33" rx="1.40" fill="#ABB2B4"/>
+  <rect x="762.85" y="171.59" width="3.18" height="38.82" rx="1.40" fill="#ABB2B4"/>
+  <rect x="767.97" y="178.29" width="3.18" height="25.42" rx="1.40" fill="#ABB2B4"/>
+  <rect x="773.10" y="175.81" width="3.18" height="30.39" rx="1.40" fill="#ABB2B4"/>
+  <rect x="778.22" y="174.76" width="3.18" height="32.49" rx="1.40" fill="#ABB2B4"/>
+  <rect x="783.35" y="182.02" width="3.18" height="17.97" rx="1.40" fill="#ABB2B4"/>
+  <rect x="788.47" y="186.46" width="3.18" height="9.09" rx="1.40" fill="#ABB2B4"/>
+  <rect x="793.60" y="187.34" width="3.18" height="7.32" rx="1.40" fill="#ABB2B4"/>
+  <rect x="798.72" y="187.46" width="3.18" height="7.08" rx="1.40" fill="#ABB2B4"/>
+  <rect x="803.85" y="190.20" width="3.18" height="1.60" rx="1.40" fill="#ABB2B4"/>
+  <rect x="808.97" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="814.10" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="819.22" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="824.35" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="829.47" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="834.60" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="839.72" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="844.85" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="849.97" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="855.10" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="860.22" y="184.46" width="3.18" height="13.08" rx="1.40" fill="#ABB2B4"/>
+  <rect x="865.35" y="173.66" width="3.18" height="34.67" rx="1.40" fill="#ABB2B4"/>
+  <rect x="870.47" y="170.87" width="3.18" height="40.26" rx="1.40" fill="#ABB2B4"/>
+  <rect x="875.60" y="168.48" width="3.18" height="45.04" rx="1.40" fill="#ABB2B4"/>
+  <rect x="880.72" y="170.76" width="3.18" height="40.48" rx="1.40" fill="#ABB2B4"/>
+  <rect x="885.85" y="182.41" width="3.18" height="17.19" rx="1.40" fill="#ABB2B4"/>
+  <rect x="890.97" y="167.79" width="3.18" height="46.42" rx="1.40" fill="#ABB2B4"/>
+  <rect x="896.10" y="159.00" width="3.18" height="64.00" rx="1.40" fill="#ABB2B4"/>
+  <rect x="901.22" y="181.31" width="3.18" height="19.38" rx="1.40" fill="#ABB2B4"/>
+  <rect x="906.35" y="186.81" width="3.18" height="8.39" rx="1.40" fill="#ABB2B4"/>
+  <rect x="911.47" y="167.75" width="3.18" height="46.49" rx="1.40" fill="#ABB2B4"/>
+  <rect x="916.60" y="185.74" width="3.18" height="10.52" rx="1.40" fill="#ABB2B4"/>
+  <rect x="921.72" y="187.62" width="3.18" height="6.76" rx="1.40" fill="#ABB2B4"/>
+  <rect x="926.85" y="170.04" width="3.18" height="41.92" rx="1.40" fill="#ABB2B4"/>
+  <rect x="931.97" y="184.46" width="3.18" height="13.09" rx="1.40" fill="#ABB2B4"/>
+  <rect x="937.10" y="173.97" width="3.18" height="34.06" rx="1.40" fill="#ABB2B4"/>
+  <rect x="942.22" y="159.18" width="3.18" height="63.64" rx="1.40" fill="#ABB2B4"/>
+  <rect x="947.35" y="172.20" width="3.18" height="37.61" rx="1.40" fill="#ABB2B4"/>
+  <rect x="952.47" y="173.73" width="3.18" height="34.54" rx="1.40" fill="#ABB2B4"/>
+  <rect x="957.60" y="179.37" width="3.18" height="23.27" rx="1.40" fill="#ABB2B4"/>
+  <rect x="962.72" y="170.80" width="3.18" height="40.40" rx="1.40" fill="#ABB2B4"/>
+  <rect x="967.85" y="173.85" width="3.18" height="34.30" rx="1.40" fill="#ABB2B4"/>
+  <rect x="972.97" y="174.27" width="3.18" height="33.46" rx="1.40" fill="#ABB2B4"/>
+  <rect x="978.10" y="167.61" width="3.18" height="46.78" rx="1.40" fill="#ABB2B4"/>
+  <rect x="983.22" y="167.47" width="3.18" height="47.05" rx="1.40" fill="#ABB2B4"/>
+  <rect x="988.35" y="171.61" width="3.18" height="38.78" rx="1.40" fill="#ABB2B4"/>
+  <rect x="993.47" y="179.61" width="3.18" height="22.77" rx="1.40" fill="#ABB2B4"/>
+  <rect x="998.60" y="184.23" width="3.18" height="13.53" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1003.72" y="178.13" width="3.18" height="25.74" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1008.85" y="165.02" width="3.18" height="51.97" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1013.97" y="176.96" width="3.18" height="28.08" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1019.10" y="179.50" width="3.18" height="23.00" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1024.22" y="162.45" width="3.18" height="57.11" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1029.35" y="172.67" width="3.18" height="36.66" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1034.47" y="187.10" width="3.18" height="7.81" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1039.60" y="166.29" width="3.18" height="49.41" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1044.72" y="161.55" width="3.18" height="58.91" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1049.85" y="169.83" width="3.18" height="42.34" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1054.97" y="177.84" width="3.18" height="26.31" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1060.10" y="185.88" width="3.18" height="10.25" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1065.22" y="178.07" width="3.18" height="25.87" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1070.35" y="176.53" width="3.18" height="28.94" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1075.47" y="180.50" width="3.18" height="20.99" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1080.60" y="177.95" width="3.18" height="26.11" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1085.72" y="173.29" width="3.18" height="35.42" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1090.85" y="174.25" width="3.18" height="33.50" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1095.97" y="182.08" width="3.18" height="17.84" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1101.10" y="190.04" width="3.18" height="1.93" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1106.22" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1111.35" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1116.47" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1121.60" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1126.72" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+  <rect x="1131.85" y="190.40" width="3.18" height="1.20" rx="1.40" fill="#ABB2B4"/>
+
+  <text x="644" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#16705E">V1 · GPT + CFM</text>
+  <text x="1136" y="248" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="15" fill="#16705E">5.55s</text>
+  <rect x="644.97" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="650.10" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="655.22" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="660.35" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="665.47" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="670.60" y="283.47" width="3.18" height="7.06" rx="1.40" fill="#16705E"/>
+  <rect x="675.72" y="263.63" width="3.18" height="46.75" rx="1.40" fill="#16705E"/>
+  <rect x="680.85" y="258.57" width="3.18" height="56.85" rx="1.40" fill="#16705E"/>
+  <rect x="685.97" y="276.06" width="3.18" height="21.88" rx="1.40" fill="#16705E"/>
+  <rect x="691.10" y="258.04" width="3.18" height="57.92" rx="1.40" fill="#16705E"/>
+  <rect x="696.22" y="266.44" width="3.18" height="41.12" rx="1.40" fill="#16705E"/>
+  <rect x="701.35" y="280.00" width="3.18" height="14.01" rx="1.40" fill="#16705E"/>
+  <rect x="706.47" y="263.74" width="3.18" height="46.53" rx="1.40" fill="#16705E"/>
+  <rect x="711.60" y="258.97" width="3.18" height="56.05" rx="1.40" fill="#16705E"/>
+  <rect x="716.72" y="262.97" width="3.18" height="48.06" rx="1.40" fill="#16705E"/>
+  <rect x="721.85" y="275.44" width="3.18" height="23.11" rx="1.40" fill="#16705E"/>
+  <rect x="726.97" y="278.19" width="3.18" height="17.63" rx="1.40" fill="#16705E"/>
+  <rect x="732.10" y="279.85" width="3.18" height="14.30" rx="1.40" fill="#16705E"/>
+  <rect x="737.22" y="272.86" width="3.18" height="28.27" rx="1.40" fill="#16705E"/>
+  <rect x="742.35" y="265.19" width="3.18" height="43.62" rx="1.40" fill="#16705E"/>
+  <rect x="747.47" y="270.95" width="3.18" height="32.10" rx="1.40" fill="#16705E"/>
+  <rect x="752.60" y="276.90" width="3.18" height="20.19" rx="1.40" fill="#16705E"/>
+  <rect x="757.72" y="276.68" width="3.18" height="20.65" rx="1.40" fill="#16705E"/>
+  <rect x="762.85" y="270.28" width="3.18" height="33.43" rx="1.40" fill="#16705E"/>
+  <rect x="767.97" y="277.68" width="3.18" height="18.64" rx="1.40" fill="#16705E"/>
+  <rect x="773.10" y="283.78" width="3.18" height="6.44" rx="1.40" fill="#16705E"/>
+  <rect x="778.22" y="283.98" width="3.18" height="6.03" rx="1.40" fill="#16705E"/>
+  <rect x="783.35" y="285.35" width="3.18" height="3.30" rx="1.40" fill="#16705E"/>
+  <rect x="788.47" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="793.60" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="798.72" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="803.85" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="808.97" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="814.10" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="819.22" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="824.35" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="829.47" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="834.60" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="839.72" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="844.85" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="849.97" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="855.10" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="860.22" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="865.35" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="870.47" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="875.60" y="285.73" width="3.18" height="2.53" rx="1.40" fill="#16705E"/>
+  <rect x="880.72" y="262.79" width="3.18" height="48.42" rx="1.40" fill="#16705E"/>
+  <rect x="885.85" y="273.83" width="3.18" height="26.33" rx="1.40" fill="#16705E"/>
+  <rect x="890.97" y="272.75" width="3.18" height="28.50" rx="1.40" fill="#16705E"/>
+  <rect x="896.10" y="271.15" width="3.18" height="31.70" rx="1.40" fill="#16705E"/>
+  <rect x="901.22" y="277.77" width="3.18" height="18.46" rx="1.40" fill="#16705E"/>
+  <rect x="906.35" y="270.14" width="3.18" height="33.73" rx="1.40" fill="#16705E"/>
+  <rect x="911.47" y="259.94" width="3.18" height="54.12" rx="1.40" fill="#16705E"/>
+  <rect x="916.60" y="273.67" width="3.18" height="26.66" rx="1.40" fill="#16705E"/>
+  <rect x="921.72" y="270.97" width="3.18" height="32.06" rx="1.40" fill="#16705E"/>
+  <rect x="926.85" y="255.00" width="3.18" height="64.00" rx="1.40" fill="#16705E"/>
+  <rect x="931.97" y="279.81" width="3.18" height="14.38" rx="1.40" fill="#16705E"/>
+  <rect x="937.10" y="283.70" width="3.18" height="6.60" rx="1.40" fill="#16705E"/>
+  <rect x="942.22" y="268.34" width="3.18" height="37.32" rx="1.40" fill="#16705E"/>
+  <rect x="947.35" y="279.72" width="3.18" height="14.56" rx="1.40" fill="#16705E"/>
+  <rect x="952.47" y="278.79" width="3.18" height="16.41" rx="1.40" fill="#16705E"/>
+  <rect x="957.60" y="260.35" width="3.18" height="53.31" rx="1.40" fill="#16705E"/>
+  <rect x="962.72" y="262.49" width="3.18" height="49.03" rx="1.40" fill="#16705E"/>
+  <rect x="967.85" y="271.06" width="3.18" height="31.88" rx="1.40" fill="#16705E"/>
+  <rect x="972.97" y="278.95" width="3.18" height="16.10" rx="1.40" fill="#16705E"/>
+  <rect x="978.10" y="269.97" width="3.18" height="34.05" rx="1.40" fill="#16705E"/>
+  <rect x="983.22" y="263.81" width="3.18" height="46.37" rx="1.40" fill="#16705E"/>
+  <rect x="988.35" y="276.43" width="3.18" height="21.14" rx="1.40" fill="#16705E"/>
+  <rect x="993.47" y="260.82" width="3.18" height="52.36" rx="1.40" fill="#16705E"/>
+  <rect x="998.60" y="266.56" width="3.18" height="40.89" rx="1.40" fill="#16705E"/>
+  <rect x="1003.72" y="260.89" width="3.18" height="52.21" rx="1.40" fill="#16705E"/>
+  <rect x="1008.85" y="274.27" width="3.18" height="25.46" rx="1.40" fill="#16705E"/>
+  <rect x="1013.97" y="278.39" width="3.18" height="17.23" rx="1.40" fill="#16705E"/>
+  <rect x="1019.10" y="268.20" width="3.18" height="37.60" rx="1.40" fill="#16705E"/>
+  <rect x="1024.22" y="266.21" width="3.18" height="41.58" rx="1.40" fill="#16705E"/>
+  <rect x="1029.35" y="283.98" width="3.18" height="6.04" rx="1.40" fill="#16705E"/>
+  <rect x="1034.47" y="259.74" width="3.18" height="54.51" rx="1.40" fill="#16705E"/>
+  <rect x="1039.60" y="264.08" width="3.18" height="45.84" rx="1.40" fill="#16705E"/>
+  <rect x="1044.72" y="275.36" width="3.18" height="23.29" rx="1.40" fill="#16705E"/>
+  <rect x="1049.85" y="258.75" width="3.18" height="56.49" rx="1.40" fill="#16705E"/>
+  <rect x="1054.97" y="267.22" width="3.18" height="39.56" rx="1.40" fill="#16705E"/>
+  <rect x="1060.10" y="275.66" width="3.18" height="22.67" rx="1.40" fill="#16705E"/>
+  <rect x="1065.22" y="272.23" width="3.18" height="29.54" rx="1.40" fill="#16705E"/>
+  <rect x="1070.35" y="261.85" width="3.18" height="50.29" rx="1.40" fill="#16705E"/>
+  <rect x="1075.47" y="272.36" width="3.18" height="29.29" rx="1.40" fill="#16705E"/>
+  <rect x="1080.60" y="271.11" width="3.18" height="31.78" rx="1.40" fill="#16705E"/>
+  <rect x="1085.72" y="262.11" width="3.18" height="49.78" rx="1.40" fill="#16705E"/>
+  <rect x="1090.85" y="268.44" width="3.18" height="37.12" rx="1.40" fill="#16705E"/>
+  <rect x="1095.97" y="282.22" width="3.18" height="9.56" rx="1.40" fill="#16705E"/>
+  <rect x="1101.10" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="1106.22" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="1111.35" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="1116.47" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="1121.60" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="1126.72" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+  <rect x="1131.85" y="286.40" width="3.18" height="1.20" rx="1.40" fill="#16705E"/>
+
+  <text x="644" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#6E767B">波形取自 listening/ 真实音频的 RMS 包络，不是装饰图</text>
+
+  <line x1="64" y1="362" x2="1136" y2="362" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="64" y="404" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="600" fill="#141A1C">28 条 / 80.7 秒</text>
+  <text x="64" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#6E767B">训练语料</text>
+  <line x1="296" y1="382" x2="296" y2="436" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="332" y="404" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="600" fill="#141A1C">1.79 M</text>
+  <text x="332" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#6E767B">可训练参数</text>
+  <line x1="564" y1="382" x2="564" y2="436" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="600" y="404" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="600" fill="#141A1C">32 秒</text>
+  <text x="600" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#6E767B">训练耗时 · RTX 4090</text>
+  <line x1="832" y1="382" x2="832" y2="436" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="868" y="404" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="600" fill="#141A1C">0.83% → 0.00%</text>
+  <text x="868" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#6E767B">六句字符错误率</text>
+  <text x="64" y="462" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#6E767B">六句对照试听、逐句自动指标、验证清单与失败结论，都在这个仓库里。</text>
+</svg>
