@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="100%" role="img"
+     aria-label="两组适配器的验证损失曲线：GPT 42 步从 5.9163 降到 5.8598（-0.95%），CFM 84 步从 0.5813 降到 0.5780（-0.56%）。">
+  <title>验证损失：GPT 42 步、CFM 84 步</title>
+  <rect width="1200" height="470" rx="20" fill="#F7F6F1"/>
+  <rect x="0.5" y="0.5" width="1199" height="469" rx="20" fill="none" stroke="#E3DFD4"/>
+  <text x="64" y="58" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="15" letter-spacing="2.2" fill="#16705E">TRAINING · 两组适配器各自的验证损失</text>
+  <text x="64" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#141A1C">GPT 注意力投影</text>
+  <text x="64" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#6E767B">42 步 / 6 轮 / 1,474,560 可训练参数</text>
+  <line x1="100" y1="292.0" x2="420" y2="292.0" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="430" y="296.0" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">5.8344</text>
+  <line x1="100" y1="238.7" x2="420" y2="238.7" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="430" y="242.7" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">5.8702</text>
+  <line x1="100" y1="185.3" x2="420" y2="185.3" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="430" y="189.3" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">5.9059</text>
+  <line x1="100" y1="132.0" x2="420" y2="132.0" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="430" y="136.0" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">5.9417</text>
+  <line x1="100" y1="169.9" x2="420" y2="169.9" stroke="#ABB2B4" stroke-width="1.4" stroke-dasharray="5 5"/>
+  <polyline points="100.0,169.9 153.3,174.0 206.7,191.7 260.0,211.0 290.5,226.3 313.3,233.9 366.7,246.7 420.0,254.1" fill="none" stroke="#16705E" stroke-width="2.4" stroke-linejoin="round"/>
+  <circle cx="100.0" cy="169.9" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="153.3" cy="174.0" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="206.7" cy="191.7" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="260.0" cy="211.0" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="290.5" cy="226.3" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="313.3" cy="233.9" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="366.7" cy="246.7" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="420.0" cy="254.1" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <text x="100.0" y="314" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">0</text>
+  <text x="260.0" y="314" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">21</text>
+  <text x="420.0" y="314" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">42</text>
+  <text x="64" y="354" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="16" fill="#141A1C">5.9163 <tspan fill="#6E767B">→</tspan> 5.8598  <tspan fill="#16705E">(-0.95%)</tspan></text>
+  <text x="648" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#141A1C">CFM 估计器投影</text>
+  <text x="648" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#6E767B">84 步 / 6 轮 / 319,488 可训练参数</text>
+  <line x1="684" y1="292.0" x2="1004" y2="292.0" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="1014" y="296.0" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">0.5765</text>
+  <line x1="684" y1="238.7" x2="1004" y2="238.7" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="1014" y="242.7" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">0.5786</text>
+  <line x1="684" y1="185.3" x2="1004" y2="185.3" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="1014" y="189.3" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">0.5807</text>
+  <line x1="684" y1="132.0" x2="1004" y2="132.0" stroke="#E3DFD4" stroke-width="1"/>
+  <text x="1014" y="136.0" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">0.5828</text>
+  <line x1="684" y1="169.9" x2="1004" y2="169.9" stroke="#ABB2B4" stroke-width="1.4" stroke-dasharray="5 5"/>
+  <polyline points="684.0,169.9 737.3,184.8 779.2,191.3 790.7,194.1 844.0,234.3 874.5,241.2 897.3,244.3 950.7,250.8 969.7,252.0 1004.0,254.1" fill="none" stroke="#16705E" stroke-width="2.4" stroke-linejoin="round"/>
+  <circle cx="684.0" cy="169.9" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="737.3" cy="184.8" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="779.2" cy="191.3" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="790.7" cy="194.1" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="844.0" cy="234.3" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="874.5" cy="241.2" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="897.3" cy="244.3" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="950.7" cy="250.8" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="969.7" cy="252.0" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <circle cx="1004.0" cy="254.1" r="3.4" fill="#F7F6F1" stroke="#16705E" stroke-width="2"/>
+  <text x="684.0" y="314" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">0</text>
+  <text x="844.0" y="314" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">42</text>
+  <text x="1004.0" y="314" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6E767B">84</text>
+  <text x="648" y="354" font-family="ui-monospace, SFMono-Regular, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Liberation Mono', monospace" font-size="16" fill="#141A1C">0.5813 <tspan fill="#6E767B">→</tspan> 0.5780  <tspan fill="#16705E">(-0.56%)</tspan></text>
+  <line x1="64" y1="418" x2="1136" y2="418" stroke="#E3DFD4"/>
+  <text x="64" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#6E767B">两个纵轴量级不同，分别取自 gpt-training-report.json 与 cfm-training-report.json 的 history。虚线为首轮验证损失，圆点为每次评估的实际值。</text>
+</svg>
