@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>原版 vs 训练后 · IndexTTS-2.5 单说话人联合 LoRA</title>
+<meta name="description" content="同一句话、同一条参考、同一个种子：IndexTTS-2.5 原版底座与联合 LoRA V1 的直接对照试听。">
+<style>
+  :root {
+    --paper: #F7F6F1;
+    --card: #FFFFFF;
+    --ink: #141A1C;
+    --muted: #6E767B;
+    --line: #E3DFD4;
+    --green: #16705E;
+    --green-soft: #E7F0EC;
+    --gray: #8E9699;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #12171A;
+      --card: #191F22;
+      --ink: #EDEFEA;
+      --muted: #9AA2A6;
+      --line: #2A3134;
+      --green: #6FBFAA;
+      --green-soft: #1D2A27;
+      --gray: #8A9296;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 56px 20px 80px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  .kicker {
+    font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 2.2px;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  h1 { font-size: 34px; line-height: 1.25; margin: 0 0 10px; letter-spacing: -0.4px; }
+  .lead { color: var(--muted); font-size: 16px; margin: 0 0 30px; }
+  blockquote {
+    margin: 0 0 26px;
+    padding: 18px 22px;
+    border-left: 3px solid var(--green);
+    background: var(--green-soft);
+    border-radius: 0 12px 12px 0;
+    font-size: 17px;
+  }
+  blockquote .label {
+    display: block;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: 11.5px;
+    letter-spacing: 1.6px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .pair { display: grid; gap: 14px; margin-bottom: 30px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px 16px;
+  }
+  .row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+  .name { font-size: 16.5px; font-weight: 650; }
+  .name.base { color: var(--gray); }
+  .name.v1 { color: var(--green); }
+  .dur {
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: 13px; color: var(--muted);
+  }
+  audio { width: 100%; height: 40px; display: block; }
+  .note { font-size: 13.5px; color: var(--muted); margin: 0 0 26px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 14.5px; }
+  .links a { color: var(--green); text-decoration: none; border-bottom: 1px solid transparent; }
+  .links a:hover { border-bottom-color: var(--green); }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+           font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker">IndexTTS-2.5 · 单说话人联合 LoRA · V1</div>
+  <h1>原版底座 vs 训练后</h1>
+  <p class="lead">同一句话、同一条 6.62 秒参考、同一个种子 <code>20261010</code>、同一套采样参数。
+    唯一变化的是一组 1,474,560 + 319,488 参数的 LoRA，挂在 GPT 与 CFM 的注意力投影上。</p>
+
+  <blockquote>
+    <span class="label">测试句</span>
+    今天下午三点，我们在地铁站旁边的咖啡店见面。
+  </blockquote>
+
+  <div class="pair">
+    <div class="card">
+      <div class="row">
+        <span class="name base">原版底座</span>
+        <span class="dur">5.58 s</span>
+      </div>
+      <audio controls preload="metadata" src="listening/baseline/01.wav"></audio>
+    </div>
+    <div class="card">
+      <div class="row">
+        <span class="name v1">训练后 · GPT + CFM</span>
+        <span class="dur">5.55 s</span>
+      </div>
+      <audio controls preload="metadata" src="listening/finetuned-best/01.wav"></audio>
+    </div>
+  </div>
+
+  <p class="note">两段都是原始合成结果，没有降噪、拉伸、均衡或手工修补——差别来自权重，不来自后期。
+    六句短句 × 五路模型（原版 / V1 / 仅 GPT / 仅 CFM / 另一组检查点）的完整对照在
+    <a href="listening.html">listening.html</a>。</p>
+
+  <div class="links">
+    <a href="https://github.com/feiwell/indextts25-mirror-lora">← 返回仓库：训练方法、逐句指标与验证清单</a>
+    <a href="longtext-20261010/listening.html">长文对照（756 字）</a>
+  </div>
+
+  <footer>
+    私人实验记录：单一说话人、单一参考、28 条训练语料（80.7 秒），全部指标为自动评价，未做人工听审。
+    源音频未公开，也未取得使用授权。
+  </footer>
+</main>
+</body>
+</html>
